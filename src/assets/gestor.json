@@ -1,0 +1,3874 @@
+{
+    "data": [
+        {
+            "id": 133439321,
+            "name": ".BCO DAYCOVAL",
+            "fullName": ".BANCO DAYCOVAL S/A",
+            "cpf-cnpj": 6.223288900019E13
+        },
+        {
+            "id": 1284792160,
+            "name": ".DAYCOVAL ASSET",
+            "fullName": ".DAYCOVAL ASSET MANAGEM. ADM. REC. LTDA",
+            "cpf-cnpj": 7.2027832000102E13
+        },
+        {
+            "id": 1395532934,
+            "name": "10B GESTORA DE R",
+            "fullName": "10B GESTORA DE RECURSOS LTDA.",
+            "cpf-cnpj": 3.509868600018E13
+        },
+        {
+            "id": 659106514,
+            "name": "2BCAPITAL S.A.",
+            "fullName": "2BCAPITAL S.A.",
+            "cpf-cnpj": 7.063675000129E12
+        },
+        {
+            "id": 1409067953,
+            "name": "3J GESTORA",
+            "fullName": "3J GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.906394400019E13
+        },
+        {
+            "id": 19906956,
+            "name": "4 MAIS CAPITAL",
+            "fullName": "4 MAIS CAPITAL LTDA",
+            "cpf-cnpj": 3.320247300012E13
+        },
+        {
+            "id": 1352221362,
+            "name": "4UM DTVM",
+            "fullName": "4UM DISTRIBUIDORA DE TITULOS E VALORES M",
+            "cpf-cnpj": 7.6621457000185E13
+        },
+        {
+            "id": 1438570159,
+            "name": "4UM GESTÃO",
+            "fullName": "4UM GESTÃO DE RECURSOS LTDA.",
+            "cpf-cnpj": 3.983856000112E12
+        },
+        {
+            "id": 966141028,
+            "name": "ABENGOA CONC BR",
+            "fullName": "ABENGOA CONCESSOES BRASIL HOLDING S/A",
+            "cpf-cnpj": 7.8724080001E12
+        },
+        {
+            "id": 5235557,
+            "name": "ABN AMRO",
+            "fullName": "BANCO ABN AMRO REAL S.A.",
+            "cpf-cnpj": 3.3066408000115E13
+        },
+        {
+            "id": 101430858,
+            "name": "ABN AMRO ASSET",
+            "fullName": "ABN AMRO ASSET MANAGEMENT DTVM S.A.",
+            "cpf-cnpj": 1.0977742000125E13
+        },
+        {
+            "id": 1379713768,
+            "name": "AC2",
+            "fullName": "AC2 INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 1.2147903000189E13
+        },
+        {
+            "id": 159059401,
+            "name": "ACE SEGURADORA",
+            "fullName": "ACE SEGURADORA S/A",
+            "cpf-cnpj": 3.502099000118E12
+        },
+        {
+            "id": 1412575998,
+            "name": "ACTB6",
+            "fullName": "ACT B6 CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 4.1302834000139E13
+        },
+        {
+            "id": 996176944,
+            "name": "Aeroporto BR",
+            "fullName": "AEROPORTOS BRASIL S.A.",
+            "cpf-cnpj": 1.4522206000196E13
+        },
+        {
+            "id": 202199240,
+            "name": "AERUS",
+            "fullName": "INSTITUTO AERUS DE SEGURIDADE SOCIAL",
+            "cpf-cnpj": 2.790171900015E13
+        },
+        {
+            "id": 1353568315,
+            "name": "AFIRA GESTAO DE",
+            "fullName": "AFIRA GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.1431855000147E13
+        },
+        {
+            "id": 1180782158,
+            "name": "AGBI",
+            "fullName": "AGBI ATIVOS REAIS LTDA",
+            "cpf-cnpj": 1.2807978000149E13
+        },
+        {
+            "id": 1410661467,
+            "name": "AGGREGA INVEST",
+            "fullName": "AGGREGA INVESTIMENTOS LTDA",
+            "cpf-cnpj": 8.195535000177E12
+        },
+        {
+            "id": 1399890827,
+            "name": "AGUILA CAPITAL",
+            "fullName": "AGUILA CAPITAL ADM E GESTAO DE CAPITAIS",
+            "cpf-cnpj": 5.946654000126E12
+        },
+        {
+            "id": 1361284899,
+            "name": "AIC HFM GESTAO",
+            "fullName": "LAIC HFM GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.6725273000133E13
+        },
+        {
+            "id": 1336247189,
+            "name": "ALAMOS ADMINISTR",
+            "fullName": "ALAMOS ADMINISTRADORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0354190000107E13
+        },
+        {
+            "id": 1325296335,
+            "name": "ALAOF DO BRASIL",
+            "fullName": "ALAOF DO BRASIL ADMINISTRADORA DE VALORE",
+            "cpf-cnpj": 1.5089883000125E13
+        },
+        {
+            "id": 165810547,
+            "name": "ALBATROSS",
+            "fullName": "ALBATROSS CCV",
+            "cpf-cnpj": 5.452073000138E12
+        },
+        {
+            "id": 30017105,
+            "name": "ALCATEL",
+            "fullName": "ALCATEL TELECOMUNICACOES",
+            "cpf-cnpj": 4.604998700013E13
+        },
+        {
+            "id": 53182651,
+            "name": "ALFA CCVM",
+            "fullName": "ALFA CCVM S/A",
+            "cpf-cnpj": 6.2178421000164E13
+        },
+        {
+            "id": 1434130941,
+            "name": "ALGARVE CAPITAL",
+            "fullName": "ALGARVE CAPITAL GESTORA RECURSOS LTDA",
+            "cpf-cnpj": 3.8481640000133E13
+        },
+        {
+            "id": 1360559568,
+            "name": "ALPHA CAP PARTNE",
+            "fullName": "Alpha Capital Partners Gestão Inv S/A",
+            "cpf-cnpj": 1.557577000013E13
+        },
+        {
+            "id": 1400017097,
+            "name": "ALPHA MAR INVEST",
+            "fullName": "ALPHA MAR INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.1000859000117E13
+        },
+        {
+            "id": 966141023,
+            "name": "ALUBAM PARTICIPA",
+            "fullName": "ALUBAM PARTICIPACOES S/A",
+            "cpf-cnpj": 1.43271220001E13
+        },
+        {
+            "id": 711464852,
+            "name": "ALUPAR INVESTIME",
+            "fullName": "ALUPAR INVESTIMENTO S/A",
+            "cpf-cnpj": 8.364948000138E12
+        },
+        {
+            "id": 701961119,
+            "name": "ANDRADE GUTIERRE",
+            "fullName": "ANDRADE GUTIERREZ SA",
+            "cpf-cnpj": 1.726219700013E13
+        },
+        {
+            "id": 1332375242,
+            "name": "ANGÁ ADM DE RECU",
+            "fullName": "ANGÁ ADM DE RECURSOS",
+            "cpf-cnpj": 9.452272000105E12
+        },
+        {
+            "id": 1348807855,
+            "name": "ANGRA PARTNERS",
+            "fullName": "ANGRA PARTNERS GESTÃO DE RECURSOS S.A",
+            "cpf-cnpj": 5.59743500026E12
+        },
+        {
+            "id": 1395173014,
+            "name": "APUAMA CAPITAL G",
+            "fullName": "APUAMA CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.3557425000148E13
+        },
+        {
+            "id": 1429557614,
+            "name": "AQUA CAPITAL",
+            "fullName": "AQUA CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.562468400017E13
+        },
+        {
+            "id": 362867043,
+            "name": "ARAÚJO FONTES",
+            "fullName": "ARAÚJO FONTES CONSULTORIA E ADM REC LTDA",
+            "cpf-cnpj": 3.226533000184E12
+        },
+        {
+            "id": 1430981653,
+            "name": "ARAZUL",
+            "fullName": "ARAZUL CAPITAL ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 1.2973953000115E13
+        },
+        {
+            "id": 1412805918,
+            "name": "ARBOR",
+            "fullName": "ARBOR GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.8375224000105E13
+        },
+        {
+            "id": 1346643837,
+            "name": "ARENA CAPITAL AS",
+            "fullName": "ARENA CAPITAL ASSET ADMINISTRADORA",
+            "cpf-cnpj": 8.882311000133E12
+        },
+        {
+            "id": 446119409,
+            "name": "ARGUCIA CAPITAL",
+            "fullName": "ARGUCIA CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 7.221832000187E12
+        },
+        {
+            "id": 1412805929,
+            "name": "ARIEN",
+            "fullName": "ARIEN INVEST GESTORA DE RECURSOS LTDA.",
+            "cpf-cnpj": 3.5255886000107E13
+        },
+        {
+            "id": 456002300,
+            "name": "ARION CAPITAL",
+            "fullName": "ARION CAPITAL GESTÃO",
+            "cpf-cnpj": 1.1401701000159E13
+        },
+        {
+            "id": 1430981654,
+            "name": "ARMADA",
+            "fullName": "ARMADA GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 4.487456200013E13
+        },
+        {
+            "id": 327579258,
+            "name": "ARSENAL INV",
+            "fullName": "ARSENAL INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 5.122946000144E12
+        },
+        {
+            "id": 1506107514,
+            "name": "ARTEMIS",
+            "fullName": "ARTEMIS GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 4.6642564000129E13
+        },
+        {
+            "id": 1323470282,
+            "name": "ARTESANAL",
+            "fullName": "ARTESANAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 3.084098000109E12
+        },
+        {
+            "id": 64950188,
+            "name": "ARX CAPITAL",
+            "fullName": "ARX CAPITAL  MANAGEMENT LTDA",
+            "cpf-cnpj": 4.40812800014E12
+        },
+        {
+            "id": 42715615,
+            "name": "ASM ASSET",
+            "fullName": "ASM ASSET MANAGEMENT DTVM S/A",
+            "cpf-cnpj": 2.678955000128E12
+        },
+        {
+            "id": 1430804962,
+            "name": "ASQ",
+            "fullName": "ASQ ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 4.445007500014E13
+        },
+        {
+            "id": 1298729119,
+            "name": "ASTELLA INVEST",
+            "fullName": "ASTELLA INVEST, ASSESSORIA, GESTÃO LTDA",
+            "cpf-cnpj": 9.26864200014E12
+        },
+        {
+            "id": 659106503,
+            "name": "ATICO ADM REC",
+            "fullName": "ATICO ADMINISTRAÇÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.290707000142E12
+        },
+        {
+            "id": 633513261,
+            "name": "ÁTICO ADMI",
+            "fullName": "ÁTICO ADMINISTRAÇÃO DE RECURSOS LTDA.",
+            "cpf-cnpj": 1.290707000142E12
+        },
+        {
+            "id": 5198981,
+            "name": "ATIVA INV. CTCV",
+            "fullName": "ATIVA INVESTIMENTOS S.A. CTCV",
+            "cpf-cnpj": 3.3775974000104E13
+        },
+        {
+            "id": 1413236406,
+            "name": "ATMOS CAPITAL",
+            "fullName": "ATMOS CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0957035000177E13
+        },
+        {
+            "id": 1412576000,
+            "name": "AUGME",
+            "fullName": "AUGME CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.3360896000115E13
+        },
+        {
+            "id": 1359103542,
+            "name": "AURO CAPITAL",
+            "fullName": "AURO CAPITAL LTDA",
+            "cpf-cnpj": 3.751940500014E13
+        },
+        {
+            "id": 1390752236,
+            "name": "AVENTIS GESTAO D",
+            "fullName": "AVENTIS GESTAO DE RECRUSOS LTDA",
+            "cpf-cnpj": 2.7913835000199E13
+        },
+        {
+            "id": 859670567,
+            "name": "AZ QUEST INV",
+            "fullName": "AZ QUEST INVESTIMENTOS LTDA",
+            "cpf-cnpj": 4.506394000105E12
+        },
+        {
+            "id": 19906964,
+            "name": "BANCO BBM S/A",
+            "fullName": "BANCO BBM S/A",
+            "cpf-cnpj": 1.5114366000169E13
+        },
+        {
+            "id": 19906970,
+            "name": "BANCO BMG S/A",
+            "fullName": "BANCO BMG S/A",
+            "cpf-cnpj": 6.1186680000174E13
+        },
+        {
+            "id": 19906976,
+            "name": "BANCO BRADESCO",
+            "fullName": "BANCO BRADESCO S/A",
+            "cpf-cnpj": 6.0746948000112E13
+        },
+        {
+            "id": 238489059,
+            "name": "BANCO CR2",
+            "fullName": "BANCO CR2 S.A",
+            "cpf-cnpj": 3.532415000102E12
+        },
+        {
+            "id": 1326268763,
+            "name": "BANCO DAYCOVAL",
+            "fullName": "BANCO DAYCOVAL",
+            "cpf-cnpj": 4.4479238000117E13
+        },
+        {
+            "id": 19907014,
+            "name": "BANCO FATOR S/A",
+            "fullName": "BANCO FATOR S/A",
+            "cpf-cnpj": 3.3644196000106E13
+        },
+        {
+            "id": 138795166,
+            "name": "BANCO FIBRA",
+            "fullName": "BANCO FIBRA S/A",
+            "cpf-cnpj": 5.8616418000108E13
+        },
+        {
+            "id": 580155073,
+            "name": "BANCO IBM S/A",
+            "fullName": "BANCO IBM S/A",
+            "cpf-cnpj": 3.4270520000136E13
+        },
+        {
+            "id": 633852604,
+            "name": "BANCO ITAUCARD S",
+            "fullName": "BANCO ITAUCARD S/A",
+            "cpf-cnpj": 1.719245100017E13
+        },
+        {
+            "id": 1130202393,
+            "name": "BANCO MORGAN",
+            "fullName": "BANCO MORGAN STANLEY S.A.",
+            "cpf-cnpj": 2.801938000136E12
+        },
+        {
+            "id": 132893063,
+            "name": "BANCO PINE",
+            "fullName": "BANCO PINE S/A",
+            "cpf-cnpj": 6.214417500012E13
+        },
+        {
+            "id": 19906998,
+            "name": "BANCO SAFRA",
+            "fullName": "BANCO SAFRA S/A",
+            "cpf-cnpj": 5.8160789000128E13
+        },
+        {
+            "id": 25093693,
+            "name": "Banco Unibanco",
+            "fullName": "Unibanco União Bancos Brasileiros S/A",
+            "cpf-cnpj": 3.370039400014E13
+        },
+        {
+            "id": 996811955,
+            "name": "BANDEIRANTE ENER",
+            "fullName": "BANDEIRANTE ENERGIA S/A",
+            "cpf-cnpj": 2.302100000106E12
+        },
+        {
+            "id": 1395529150,
+            "name": "BARAUNA GESTORA",
+            "fullName": "BARAUNA GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.3017937000111E13
+        },
+        {
+            "id": 312659209,
+            "name": "BARCLAYS CTVM",
+            "fullName": "BARCLAYS CTVM S/A",
+            "cpf-cnpj": 1.1634773000146E13
+        },
+        {
+            "id": 1506107512,
+            "name": "Basilica",
+            "fullName": "Basilica Partners Latin America Private",
+            "cpf-cnpj": 2.4979104000158E13
+        },
+        {
+            "id": 10049049,
+            "name": "BB BI S.A.",
+            "fullName": "BB BANCO DE INVESTIMENTO S.A.",
+            "cpf-cnpj": 2.493383000013E13
+        },
+        {
+            "id": 19907024,
+            "name": "BB GEST REC DTVM",
+            "fullName": "BB GESTÃO DE RECURSOS DTVM S.A.",
+            "cpf-cnpj": 3.0822936000169E13
+        },
+        {
+            "id": 140226551,
+            "name": "BC ITAU",
+            "fullName": "BCO ITAU S A",
+            "cpf-cnpj": 6.0701190000104E13
+        },
+        {
+            "id": 1135746011,
+            "name": "BC SERVICE",
+            "fullName": "BC SERVICE ENERGETICA LTDA",
+            "cpf-cnpj": 9.395012000137E12
+        },
+        {
+            "id": 19906960,
+            "name": "BCO ALFA INVEST",
+            "fullName": "BANCO ALFA DE INVESTIMENTO S/A",
+            "cpf-cnpj": 6.0770336000165E13
+        },
+        {
+            "id": 701638019,
+            "name": "BCO ALFA S/A",
+            "fullName": "BANCO ALFA S/A",
+            "cpf-cnpj": 3.323840000183E12
+        },
+        {
+            "id": 4455862,
+            "name": "BCO BNP PARIBAS",
+            "fullName": "BANCO BNP PARIBAS BRASIL S.A.",
+            "cpf-cnpj": 1.522368000182E12
+        },
+        {
+            "id": 795939296,
+            "name": "BCO BR PLURAL",
+            "fullName": "BRASIL PLURAL S.A. BANCO MULTIPLO",
+            "cpf-cnpj": 4.5246410000155E13
+        },
+        {
+            "id": 192408504,
+            "name": "BCO BTG PACTUAL",
+            "fullName": "BANCO BTG PACTUAL SA",
+            "cpf-cnpj": 3.0306294000145E13
+        },
+        {
+            "id": 8741213,
+            "name": "BCO C SUISSE",
+            "fullName": "BCO INVESTIMENTOS CREDIT SUISSE BR S/A",
+            "cpf-cnpj": 3.3987793000133E13
+        },
+        {
+            "id": 349009170,
+            "name": "BCO CALYON",
+            "fullName": "BANCO CALYON",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 19906980,
+            "name": "BCO CO.SUDAMERIS",
+            "fullName": "BANCO COM. INV. SUDAMERIS",
+            "cpf-cnpj": 6.1230165000144E13
+        },
+        {
+            "id": 19906982,
+            "name": "BCO CRED SUISSE",
+            "fullName": "Banco de Inv. Credit Suisse SA",
+            "cpf-cnpj": 3.3987793000133E13
+        },
+        {
+            "id": 19907016,
+            "name": "BCO CREDIT S/A",
+            "fullName": "BANCO CREDIT LYONNAIS BRASIL S/A",
+            "cpf-cnpj": 7.5647891000171E13
+        },
+        {
+            "id": 181099666,
+            "name": "BCO D. CHRYSLER",
+            "fullName": "BANCO DAIMLER CHRYSLER S/A",
+            "cpf-cnpj": 2.831756000108E12
+        },
+        {
+            "id": 682133856,
+            "name": "BCO DO BRASIL",
+            "fullName": "BANCO DO BRASIL SA",
+            "cpf-cnpj": 1.91E13
+        },
+        {
+            "id": 132642633,
+            "name": "Bco Ind. e Com.",
+            "fullName": "BANCO INDUSTRIAL E COMERCIAL S/A",
+            "cpf-cnpj": 7.450604000189E12
+        },
+        {
+            "id": 132642635,
+            "name": "BCO INDUSTRIAL",
+            "fullName": "BANCO INDUSTRIAL DO BRASIL S/A",
+            "cpf-cnpj": 3.1895683000116E13
+        },
+        {
+            "id": 19907010,
+            "name": "BCO J.P S/A",
+            "fullName": "BANCO J.P.MORGAN S/A",
+            "cpf-cnpj": 3.3172537000198E13
+        },
+        {
+            "id": 1036208409,
+            "name": "BCO J.P. MORGAN",
+            "fullName": "BANCO J.P. MORGAN S.A.",
+            "cpf-cnpj": 3.3172537000198E13
+        },
+        {
+            "id": 4933787,
+            "name": "BCO LLOYDS SA",
+            "fullName": "BANCO LLOYDS TSB S.A.",
+            "cpf-cnpj": 3.3852567000145E13
+        },
+        {
+            "id": 36111679,
+            "name": "BCO M LYNCH",
+            "fullName": "BANK OF AMERICA MERRILL LYNCH BANCO M SA",
+            "cpf-cnpj": 6.2073200000121E13
+        },
+        {
+            "id": 19907000,
+            "name": "BCO MERRILL LYNC",
+            "fullName": "BANK OF AMERICA MERRILL LYNCH BCO MUL SA",
+            "cpf-cnpj": 6.2073200000121E13
+        },
+        {
+            "id": 29723501,
+            "name": "BCO MODAL SA",
+            "fullName": "BANCO MODAL SA",
+            "cpf-cnpj": 3.0723886000162E13
+        },
+        {
+            "id": 53261253,
+            "name": "BCO NOSSA CAIXA",
+            "fullName": "Banco NOSSA CAIXA S/A",
+            "cpf-cnpj": 4.307339400011E13
+        },
+        {
+            "id": 19907002,
+            "name": "BCO OPPORTUNITY",
+            "fullName": "BANCO OPPORTUNITY S A",
+            "cpf-cnpj": 3.3857830000199E13
+        },
+        {
+            "id": 205671134,
+            "name": "BCO PAULISTA",
+            "fullName": "BANCO PAULISTA S/A",
+            "cpf-cnpj": 6.1820817000109E13
+        },
+        {
+            "id": 19906996,
+            "name": "BCO SANTANDER SA",
+            "fullName": "BANCO SANTANDER BRASIL S/A",
+            "cpf-cnpj": 9.0400888000142E13
+        },
+        {
+            "id": 139026025,
+            "name": "BCO SCHAHIN S/A",
+            "fullName": "BCO SCHAHIN S/A",
+            "cpf-cnpj": 5.0585090000106E13
+        },
+        {
+            "id": 15985080,
+            "name": "Bco Unico S/A",
+            "fullName": "Banco Unico S/A",
+            "cpf-cnpj": 8.641300013E13
+        },
+        {
+            "id": 137331065,
+            "name": "BCO VOLKS S/A",
+            "fullName": "BANCO VOLKSWAGEM S/A",
+            "cpf-cnpj": 5.9109165000149E13
+        },
+        {
+            "id": 240701820,
+            "name": "Bco Volvo S/A",
+            "fullName": "Banco Volvo Brasil S/A",
+            "cpf-cnpj": 5.801717900017E13
+        },
+        {
+            "id": 4346482,
+            "name": "BCO VOTORANTIM S",
+            "fullName": "BANCO VOTORANTIM S.A",
+            "cpf-cnpj": 5.9588111000103E13
+        },
+        {
+            "id": 67927858,
+            "name": "BCO WESTLB",
+            "fullName": "BANCO WESTLB DO BRASIL S.A.",
+            "cpf-cnpj": 6.1088183000133E13
+        },
+        {
+            "id": 701639383,
+            "name": "Bear Stearns",
+            "fullName": "Bear Stearns & Co inc.",
+            "cpf-cnpj": 5.53524800017E12
+        },
+        {
+            "id": 180871352,
+            "name": "BER CAPITAL",
+            "fullName": "BER CAPITAL S.A",
+            "cpf-cnpj": 4.528420000104E12
+        },
+        {
+            "id": 1382300554,
+            "name": "BERKANA INVESTIM",
+            "fullName": "BERKANA INVESTIMENTOS E GESTÃO DE RECURS",
+            "cpf-cnpj": 1.0757908000106E13
+        },
+        {
+            "id": 202202632,
+            "name": "BERKLEY",
+            "fullName": "BERKLEY INTERNATIONAL DO BRASIL SEGUROS",
+            "cpf-cnpj": 7.021544000189E12
+        },
+        {
+            "id": 135600084,
+            "name": "BIC CCV S/A",
+            "fullName": "BIC CCV S/A",
+            "cpf-cnpj": 7.70013100012E12
+        },
+        {
+            "id": 369853694,
+            "name": "BLACKROCK",
+            "fullName": "BLACKROCK BRASIL GESTORA DE INVEST. LTDA",
+            "cpf-cnpj": 1.0979208000158E13
+        },
+        {
+            "id": 1396522100,
+            "name": "BLUE ASSET",
+            "fullName": "BLUE ASSET GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.5068183000161E13
+        },
+        {
+            "id": 1416912991,
+            "name": "BLUEMETRIX",
+            "fullName": "BLUEMETRIX GESTÃO DE ATIVOS SA.",
+            "cpf-cnpj": 9.722735000101E12
+        },
+        {
+            "id": 19907029,
+            "name": "BMC ASSET DTVM",
+            "fullName": "BMC ASSET MANAGEMENT DTVM LTDA",
+            "cpf-cnpj": 4.163016000176E12
+        },
+        {
+            "id": 19907027,
+            "name": "BMG ASSET DTVM S",
+            "fullName": "BMG ASSET MANAGEMENT DTVM S.A.",
+            "cpf-cnpj": 2.279042000139E12
+        },
+        {
+            "id": 1506107509,
+            "name": "BMR ASSET",
+            "fullName": "BMR ASSET MANEGEMENT LTDA",
+            "cpf-cnpj": 3.6833985000183E13
+        },
+        {
+            "id": 19907037,
+            "name": "BNL DTVM S/A",
+            "fullName": "BNL DTVM S/A",
+            "cpf-cnpj": 3.3318163000176E13
+        },
+        {
+            "id": 139026945,
+            "name": "BNP",
+            "fullName": "BANCO BNP PARIBAS BRASIL SA",
+            "cpf-cnpj": 1.522368000182E12
+        },
+        {
+            "id": 23473825,
+            "name": "BNP_ASSET",
+            "fullName": "BNP PARIBAS ASSET MANAGEMENT BRASIL LTDA",
+            "cpf-cnpj": 2.562663000125E12
+        },
+        {
+            "id": 80314407,
+            "name": "BNY MELLON ADM",
+            "fullName": "BNY MELLON ADMINISTRACAO DE ATIVOS LTDA",
+            "cpf-cnpj": 5.236848000138E12
+        },
+        {
+            "id": 166272539,
+            "name": "BNY MELLON ARX",
+            "fullName": "BNY MELLON ARX INVESTIMENTOS LTDA",
+            "cpf-cnpj": 4.40812800014E12
+        },
+        {
+            "id": 19907051,
+            "name": "BNY MELLON DTVM",
+            "fullName": "BNY MELLON DTVM S/A",
+            "cpf-cnpj": 2.201501000161E12
+        },
+        {
+            "id": 1334150463,
+            "name": "BNY MELLON SERVI",
+            "fullName": "BNY MELLON SERVICOS FINANCEIROS DTVM S.A",
+            "cpf-cnpj": 2.201501000161E12
+        },
+        {
+            "id": 1427022750,
+            "name": "BOCAINA CAPITAL",
+            "fullName": "BOCAINA CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.8347420000111E13
+        },
+        {
+            "id": 4346484,
+            "name": "BOSTON",
+            "fullName": "BANKBOSTON CCTVM S/A",
+            "cpf-cnpj": 6.0394079000104E13
+        },
+        {
+            "id": 462647221,
+            "name": "BP GESTORA",
+            "fullName": "BP GESTORA ATIVOS FIN. VAL. MOB. LTDA",
+            "cpf-cnpj": 7.424182000177E12
+        },
+        {
+            "id": 689204585,
+            "name": "BR Partners Gest",
+            "fullName": "BR Partners Gestão de Recursos Ltda",
+            "cpf-cnpj": 1.1159192000108E13
+        },
+        {
+            "id": 29859195,
+            "name": "BRADESCO ASSET",
+            "fullName": "BRADESCO ASSET MANAGEMENT LTDA.",
+            "cpf-cnpj": 6.2375134000144E13
+        },
+        {
+            "id": 304314595,
+            "name": "BRADESCO BBI",
+            "fullName": "BANCO BRADESCO BBI S/A",
+            "cpf-cnpj": 6.271464000119E12
+        },
+        {
+            "id": 4933967,
+            "name": "BRADESCO CTVM",
+            "fullName": "BRADESCO S/A CTVM",
+            "cpf-cnpj": 6.1855045000132E13
+        },
+        {
+            "id": 26226583,
+            "name": "BRAM",
+            "fullName": "BRAM  BRADESCO ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 6.2375134000144E13
+        },
+        {
+            "id": 494807069,
+            "name": "BRASIL PLURAL G",
+            "fullName": "BRASIL PLURAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.139767200028E13
+        },
+        {
+            "id": 76913726,
+            "name": "BRASKEM",
+            "fullName": "BRASKEM SA",
+            "cpf-cnpj": 4.215039100017E13
+        },
+        {
+            "id": 19812990,
+            "name": "BRASLIGHT",
+            "fullName": "FUNDAÇÃO BRASLIGHT DE SEGURIDADE SOCIAL",
+            "cpf-cnpj": 4.2334144000124E13
+        },
+        {
+            "id": 1430811516,
+            "name": "BRAX",
+            "fullName": "BRAX INVESTIMENTOS",
+            "cpf-cnpj": 1.2216351000113E13
+        },
+        {
+            "id": 701639396,
+            "name": "BRAZIL BOND TRUS",
+            "fullName": "BRAZIL BOND TRUST",
+            "cpf-cnpj": 5.838726000111E12
+        },
+        {
+            "id": 28514075,
+            "name": "BRB DTVM SA",
+            "fullName": "BRB  DTVM SA",
+            "cpf-cnpj": 3.3850686000169E13
+        },
+        {
+            "id": 1395173011,
+            "name": "BRDR GESTORA DE",
+            "fullName": "BRDR GESTORA DE VALORES MOBILIARIOS LTDA",
+            "cpf-cnpj": 3.021493900011E13
+        },
+        {
+            "id": 619751691,
+            "name": "BREOF",
+            "fullName": "BREOF SA",
+            "cpf-cnpj": 1.02127570001E13
+        },
+        {
+            "id": 596473336,
+            "name": "BRL TRUST DTVM",
+            "fullName": "BRL TRUST DTVM S/A",
+            "cpf-cnpj": 1.3486793000142E13
+        },
+        {
+            "id": 397770145,
+            "name": "BRL TRUST SERV",
+            "fullName": "BRL TRUST SERVICOS FIDUCIARIOS E PART",
+            "cpf-cnpj": 7.669414000157E12
+        },
+        {
+            "id": 346598497,
+            "name": "BROOKFIELD BR AM",
+            "fullName": "BROOKFIELD BR ASSET MANAG. INVEST. LTDA.",
+            "cpf-cnpj": 7.885392000162E12
+        },
+        {
+            "id": 701961456,
+            "name": "BROOKFIELD FINAN",
+            "fullName": "BROOKFIELD FINANCIAL CORP antiga TRILON",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 1366150188,
+            "name": "BRUNO ROSENMANN",
+            "fullName": "BRUNO ROSENMANN",
+            "cpf-cnpj": 9.030399902E9
+        },
+        {
+            "id": 389694592,
+            "name": "BRZ INVESTIMENTO",
+            "fullName": "BRZ INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.888152000106E12
+        },
+        {
+            "id": 382441148,
+            "name": "BTG PACTUAL DTVM",
+            "fullName": "BTG PACTUAL ASSET MANAGEMENT S/A DTVM",
+            "cpf-cnpj": 2.96500820001E13
+        },
+        {
+            "id": 701961424,
+            "name": "BTG Pactual Gest",
+            "fullName": "BTG Pactual Gestora de Invest Alt Ltda",
+            "cpf-cnpj": 7.62515900014E12
+        },
+        {
+            "id": 633853551,
+            "name": "BTG PACTUAL GR",
+            "fullName": "BTG PACTUAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 9.631542000137E12
+        },
+        {
+            "id": 122705117,
+            "name": "BTG PACTUAL SER.",
+            "fullName": "BTG PACTUAL SERVICOS FINANCEIROS SA DTVM",
+            "cpf-cnpj": 5.9281253000123E13
+        },
+        {
+            "id": 391735815,
+            "name": "BTG Pactual WM G",
+            "fullName": "BTG Pactual WM Gestão de Recursos Ltda",
+            "cpf-cnpj": 6.0451242000123E13
+        },
+        {
+            "id": 1480179127,
+            "name": "BURITI",
+            "fullName": "Buriti Investimentos Gestora de Recursos",
+            "cpf-cnpj": 4.469647300014E13
+        },
+        {
+            "id": 1499045903,
+            "name": "Butiá Gestora",
+            "fullName": "Butiá Gestão de Investimentos LTDA",
+            "cpf-cnpj": 2.289945200019E13
+        },
+        {
+            "id": 19907018,
+            "name": "BV DTVM",
+            "fullName": "BV DISTRIBUIDORA DE TITULOS E VALORES",
+            "cpf-cnpj": 3.384738000198E12
+        },
+        {
+            "id": 131339680,
+            "name": "C SUISSE DTVM",
+            "fullName": "CREDIT SUISSE BR DTVM S/A",
+            "cpf-cnpj": 3.0121792000113E13
+        },
+        {
+            "id": 444946452,
+            "name": "CA I WEALTH BR",
+            "fullName": "CA INDOSUEZ WEALTH BRAZIL S.A. DTVM",
+            "cpf-cnpj": 1.638542000157E12
+        },
+        {
+            "id": 173833313,
+            "name": "CAIXA CEF",
+            "fullName": "CAIXA ECONOMICA FEDERAL CEF",
+            "cpf-cnpj": 3.60305000104E12
+        },
+        {
+            "id": 1384296327,
+            "name": "CALCRED S.A.",
+            "fullName": "CALCRED S.A. CRÉDITO, FINANCIAMENTO",
+            "cpf-cnpj": 3.7122487000195E13
+        },
+        {
+            "id": 996176926,
+            "name": "CALOI NORTE S/A",
+            "fullName": "CALOI NORTE S/A",
+            "cpf-cnpj": 4.301024000131E12
+        },
+        {
+            "id": 21659087,
+            "name": "CAM",
+            "fullName": "CITIBANK ASSET MANAGEMENT",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 1030502630,
+            "name": "CAMIL ALIMENTOS",
+            "fullName": "CAMIL ALIMENTOS S/A",
+            "cpf-cnpj": 6.4904295000103E13
+        },
+        {
+            "id": 1426794874,
+            "name": "CARAVELA",
+            "fullName": "CARAVELA CONSULTORIA E GESTÃO DE INVESTI",
+            "cpf-cnpj": 3.4530561000114E13
+        },
+        {
+            "id": 1395771635,
+            "name": "CARBYNE GESTÃO D",
+            "fullName": "CARBYNE GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.83189630001E13
+        },
+        {
+            "id": 1412125641,
+            "name": "CARLOS H G FERRE",
+            "fullName": "CARLOS HENRIQUE GROSSI FERREIRA",
+            "cpf-cnpj": 5.019623601E9
+        },
+        {
+            "id": 1430631809,
+            "name": "CARPA",
+            "fullName": "CARPA GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.279297900011E13
+        },
+        {
+            "id": 1499520315,
+            "name": "CATALISE",
+            "fullName": "CATALISE INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.8223260000191E13
+        },
+        {
+            "id": 1374557472,
+            "name": "CATARINA CAPITAL",
+            "fullName": "CATARINA CAPITAL CONSULTORIA E GESTÃO LT",
+            "cpf-cnpj": 3.7370840000156E13
+        },
+        {
+            "id": 1430981655,
+            "name": "CEDRO",
+            "fullName": "Cedro Asset Management LTDA",
+            "cpf-cnpj": 1.8190296000116E13
+        },
+        {
+            "id": 21731038,
+            "name": "CEF",
+            "fullName": "Caixa Economica Federal",
+            "cpf-cnpj": 3.60305000104E11
+        },
+        {
+            "id": 1170890072,
+            "name": "CELULOSE IRANI",
+            "fullName": "CELULOSE IRANI S/A",
+            "cpf-cnpj": 9.2791243000103E13
+        },
+        {
+            "id": 348982044,
+            "name": "CFO ADM DE RECUR",
+            "fullName": "CFO ADMINISTRAÇÃO DE RECURSOS S.A.",
+            "cpf-cnpj": 6.128322000105E12
+        },
+        {
+            "id": 80815642,
+            "name": "CGD INVEST CVC",
+            "fullName": "CGD INVESTIMENTOS CVC S.A.",
+            "cpf-cnpj": 7.554076000108E12
+        },
+        {
+            "id": 1366123437,
+            "name": "CHROMO INVESTIME",
+            "fullName": "CHROMO INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 1.936184500013E13
+        },
+        {
+            "id": 202401066,
+            "name": "CHUBB",
+            "fullName": "CHUBB DO BRASIL COMPANHIA DE SEGUROS",
+            "cpf-cnpj": 3.3170085000105E13
+        },
+        {
+            "id": 966141026,
+            "name": "CIA ENERG JARI",
+            "fullName": "COMPANHIA ENERGETICA DO JARI CEJA",
+            "cpf-cnpj": 3.581989000162E12
+        },
+        {
+            "id": 550917211,
+            "name": "CIBRASEC ADMINIS",
+            "fullName": "CIBRASEC ADMINISTRADORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.1682114000185E13
+        },
+        {
+            "id": 19812994,
+            "name": "CITI DTVM S/A",
+            "fullName": "CITIBANK DTVM S/A",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 4305784,
+            "name": "CITIBANK S/A",
+            "fullName": "BANCO CITIBANK S/A",
+            "cpf-cnpj": 3.347902300018E13
+        },
+        {
+            "id": 202435579,
+            "name": "CITIPREVI",
+            "fullName": "CITIPREVI ENTIDADE FECHADA DE PREVID",
+            "cpf-cnpj": 2.9415858000107E13
+        },
+        {
+            "id": 1379740847,
+            "name": "CITREUS",
+            "fullName": "CITREUS SERVICOS FIDUCIARIOS LTDA",
+            "cpf-cnpj": 1.9179087000134E13
+        },
+        {
+            "id": 1082026935,
+            "name": "CITRINO GEST REC",
+            "fullName": "CITRINO GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.8994332000102E13
+        },
+        {
+            "id": 84577466,
+            "name": "CLARITAS",
+            "fullName": "CLARITAS SERV. FINANCEIRO S/C LTDA",
+            "cpf-cnpj": 3.017279000104E12
+        },
+        {
+            "id": 328316950,
+            "name": "CLARITAS ADM.",
+            "fullName": "Claritas Administração de Recursos Ltda",
+            "cpf-cnpj": 3.9878910001E12
+        },
+        {
+            "id": 249992347,
+            "name": "CLARITAS SERV. F",
+            "fullName": "CLARITAS SERVIÇOS FINANCEIROS LTDA.",
+            "cpf-cnpj": 3.017279000104E12
+        },
+        {
+            "id": 1456380879,
+            "name": "CLAVE",
+            "fullName": "CLAVE GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.6421310000127E13
+        },
+        {
+            "id": 1412562608,
+            "name": "CLUBE DO VALOR",
+            "fullName": "CLUBE DO VALOR ADMINISTRAÇÃO DE CARTEIRA",
+            "cpf-cnpj": 2.5022196000146E13
+        },
+        {
+            "id": 15985068,
+            "name": "COINVALORES CCVM",
+            "fullName": "COINVALORES CCVM LTDA",
+            "cpf-cnpj": 3.3603600014E11
+        },
+        {
+            "id": 1351408850,
+            "name": "CONCEPT",
+            "fullName": "CONCEPT INVESTIMENTOS  CI LTDA",
+            "cpf-cnpj": 2.4537579000194E13
+        },
+        {
+            "id": 1029959143,
+            "name": "CONSORCIO MGT",
+            "fullName": "CONSORCIO MGT",
+            "cpf-cnpj": 1.610072700018E13
+        },
+        {
+            "id": 644095127,
+            "name": "CONSTANCIA INV",
+            "fullName": "CONSTANCIA INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.0626543000172E13
+        },
+        {
+            "id": 808327328,
+            "name": "COPEL DISTR S/A",
+            "fullName": "COPEL DISTRIBUICAO S/A",
+            "cpf-cnpj": 4.368898000106E12
+        },
+        {
+            "id": 29956211,
+            "name": "COPESUL",
+            "fullName": "COPESUL CIA PETROQUIMICA DO SUL",
+            "cpf-cnpj": 8.8948492000192E13
+        },
+        {
+            "id": 137654650,
+            "name": "CORP CONSULTORIA",
+            "fullName": "CORP CONSULTORIA FINANCEIRA LTDA.",
+            "cpf-cnpj": 7.050114000195E12
+        },
+        {
+            "id": 1130188038,
+            "name": "CR2 JD PARADISO",
+            "fullName": "CR2 JARDIM PARADISO EMPREENDIMENTOS LTDA",
+            "cpf-cnpj": 9.451431000149E12
+        },
+        {
+            "id": 288328953,
+            "name": "Credicard",
+            "fullName": "Credicard Adm. de Cartões de Crédito",
+            "cpf-cnpj": 1.719245100017E13
+        },
+        {
+            "id": 705958691,
+            "name": "CREDIT SUISSE DT",
+            "fullName": "CREDIT SUISSE BRASIL DTVM S.A.",
+            "cpf-cnpj": 3.0121792000113E13
+        },
+        {
+            "id": 389692465,
+            "name": "CSHG ASSET",
+            "fullName": "CREDIT SUISSE HEDGING GRIFFO ASSET MANAG",
+            "cpf-cnpj": 6.8328632000112E13
+        },
+        {
+            "id": 1410191147,
+            "name": "CTM INVESTI",
+            "fullName": "CTM INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.6492866000105E13
+        },
+        {
+            "id": 1329875132,
+            "name": "CULTINVEST ASSET",
+            "fullName": "CULTINVEST ASSET MANAGEMENT",
+            "cpf-cnpj": 1.2160857000158E13
+        },
+        {
+            "id": 1430809514,
+            "name": "CVPAR",
+            "fullName": "CVPAR INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.649242600014E13
+        },
+        {
+            "id": 1430981673,
+            "name": "CYPRESS",
+            "fullName": "CYPRESS ASSOCIATES GESTAO E PARTICIPACOE",
+            "cpf-cnpj": 1.1065164000113E13
+        },
+        {
+            "id": 447040849,
+            "name": "DARBY ADM",
+            "fullName": "DARBY ADM DE INVESTIMENTOS LTDA",
+            "cpf-cnpj": 5.977098000155E12
+        },
+        {
+            "id": 711458813,
+            "name": "DEB ESCRIT SUB",
+            "fullName": "DEBÊNTURES ESCRITURAL SUBORDINADA SIMPLE",
+            "cpf-cnpj": 1.1552047000184E13
+        },
+        {
+            "id": 711463512,
+            "name": "DEBENTURES",
+            "fullName": "DEBENTURES",
+            "cpf-cnpj": 9.2781335000102E13
+        },
+        {
+            "id": 1430628870,
+            "name": "DELTA ENER",
+            "fullName": "DELTA ENERGIA ADMINISTRAÇÃO DE RECURSOS",
+            "cpf-cnpj": 3.3267993000111E13
+        },
+        {
+            "id": 19901184,
+            "name": "DEUTSCHE DTVM",
+            "fullName": "DEUTSCHE BANK INV.  DTVM",
+            "cpf-cnpj": 1.721118000171E12
+        },
+        {
+            "id": 1334748509,
+            "name": "DEVANT ASSET INV",
+            "fullName": "DEVANT ASSET INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 2.8363263000184E13
+        },
+        {
+            "id": 1464259393,
+            "name": "DF PREVICOM",
+            "fullName": "DF PREVICOM",
+            "cpf-cnpj": 3.2169883000154E13
+        },
+        {
+            "id": 1292518451,
+            "name": "DGF INVEST.",
+            "fullName": "DGF INVEST. GESTAO DE FUNDOS LTDA",
+            "cpf-cnpj": 4.557602000103E12
+        },
+        {
+            "id": 164659269,
+            "name": "DIMARCO DTVM S/A",
+            "fullName": "DIMARCO DTVM S/A",
+            "cpf-cnpj": 2.8116887000105E13
+        },
+        {
+            "id": 741570907,
+            "name": "DLM INVISTA",
+            "fullName": "DLM INVISTA ASSET MANAGEMENT S.A.",
+            "cpf-cnpj": 5.585083000141E12
+        },
+        {
+            "id": 808327045,
+            "name": "DOCELAR",
+            "fullName": "DOCELAR ALIMENTOS E BEBIDAS S/A",
+            "cpf-cnpj": 1.893556000117E12
+        },
+        {
+            "id": 1444074932,
+            "name": "DOJO CAPITAL ADM",
+            "fullName": "DOJO CAPITAL ADMINISTRAÇÃO E GESTÃO DE C",
+            "cpf-cnpj": 3.818350900019E13
+        },
+        {
+            "id": 469640871,
+            "name": "DRACHMA INV",
+            "fullName": "DRACHMA INVESTIMENTOS S/A",
+            "cpf-cnpj": 1.0749030000159E13
+        },
+        {
+            "id": 1489479361,
+            "name": "DSK CAPITAL",
+            "fullName": "DSK CAPITAL GESTORA DE RECURSOS E CONSUL",
+            "cpf-cnpj": 4.1249846000147E13
+        },
+        {
+            "id": 711458664,
+            "name": "DUKE ENERGY",
+            "fullName": "DUKE ENERGY INTERNATIONAL GER.PARANAPANE",
+            "cpf-cnpj": 2.998301000181E12
+        },
+        {
+            "id": 389694347,
+            "name": "DUNA ASSET",
+            "fullName": "DUNA ASSET MANAGEMENT LTDA.",
+            "cpf-cnpj": 9.3600120001E12
+        },
+        {
+            "id": 1393071670,
+            "name": "ECO GESTÃO",
+            "fullName": "ECO GESTÃO DE ATIVOS LTDA",
+            "cpf-cnpj": 1.1695155000106E13
+        },
+        {
+            "id": 711464861,
+            "name": "ECO SECURIT DIR",
+            "fullName": "ECO SECURIT. DE DIREITOS CREDIT. AGRO",
+            "cpf-cnpj": 1.0753164000143E13
+        },
+        {
+            "id": 137668539,
+            "name": "ECONOMUS INST.",
+            "fullName": "ECONOMUS INSTITUTO DE SEGURIDADE SOCIAL",
+            "cpf-cnpj": 4.9320799000192E13
+        },
+        {
+            "id": 556806997,
+            "name": "EDGA",
+            "fullName": "EDGARD JULIUS B. ARP",
+            "cpf-cnpj": 4.37212734E13
+        },
+        {
+            "id": 996188792,
+            "name": "EDP",
+            "fullName": "EDP ENERGIAS DO BRASIL S.A.",
+            "cpf-cnpj": 9.04378200011E12
+        },
+        {
+            "id": 808327936,
+            "name": "ELEKTRO ELETRICI",
+            "fullName": "ELEKTRO ELETRICIDADE E SERVICOS S/A",
+            "cpf-cnpj": 2.328280000197E12
+        },
+        {
+            "id": 164050142,
+            "name": "ELETROS FUND.",
+            "fullName": "ELETROS FUND ELETROBRAS SEG SOCIAL",
+            "cpf-cnpj": 3.4268789000188E13
+        },
+        {
+            "id": 1430805844,
+            "name": "ELIF",
+            "fullName": "ELIF CAPITAL ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 4.636448000017E13
+        },
+        {
+            "id": 1430981672,
+            "name": "EMPIRICA",
+            "fullName": "EMPIRICA INVEST. GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0896871000199E13
+        },
+        {
+            "id": 520998996,
+            "name": "ENDURANCE CAP.",
+            "fullName": "ENDURANCE CAPITAL PARTNERS SA",
+            "cpf-cnpj": 8.3504930001E12
+        },
+        {
+            "id": 1064672487,
+            "name": "ENER C CALDEIRAO",
+            "fullName": "EMPRESA DE ENERGIA CACHOEIRA CALDEIRAO",
+            "cpf-cnpj": 1.7200920000156E13
+        },
+        {
+            "id": 1028850863,
+            "name": "Ener sao manoel",
+            "fullName": "EMPRESA DE ENERGIA SAO MANOEL S/A",
+            "cpf-cnpj": 1.849453700011E13
+        },
+        {
+            "id": 711458669,
+            "name": "ENERGISA M. GERA",
+            "fullName": "ENERGISA M. GERAIS DISTRIB. DE ENERGIA S",
+            "cpf-cnpj": 1.9527639000158E13
+        },
+        {
+            "id": 711459533,
+            "name": "ENERGISA PARAIBA",
+            "fullName": "ENERGISA PARAIBA DISTR. DE ENERGIA S/A",
+            "cpf-cnpj": 9.09518300014E12
+        },
+        {
+            "id": 711458787,
+            "name": "ENERGISA S/A",
+            "fullName": "ENERGISA S/A",
+            "cpf-cnpj": 8.64214000106E12
+        },
+        {
+            "id": 711458805,
+            "name": "ENERGISA SERGIPE",
+            "fullName": "ENERGISA SERGIPE  DIST.DE ENERGIA S/A",
+            "cpf-cnpj": 1.3017462000163E13
+        },
+        {
+            "id": 513516984,
+            "name": "ENERPREV",
+            "fullName": "ENERPREV PREVIDENCIA COMPL DO GRUPO ENER",
+            "cpf-cnpj": 8.710526000177E12
+        },
+        {
+            "id": 1506107502,
+            "name": "EQUITAS INVESTIM",
+            "fullName": "EQUITAS ADM FUNDOS DE INVESTIMENTOS LTDA",
+            "cpf-cnpj": 8.204817000193E12
+        },
+        {
+            "id": 367589467,
+            "name": "ESC. RUY LAGE SC",
+            "fullName": "ESC. RUY LAGE SOC. CORRETORA TÍT LTDA",
+            "cpf-cnpj": 1.7305319000128E13
+        },
+        {
+            "id": 1048841857,
+            "name": "ESCELSA",
+            "fullName": "ESPIRITO SANTO CENTRAIS ELETRICAS SOC AN",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 263591040,
+            "name": "ESCELSOS",
+            "fullName": "ESCELSOS    Fund. Escelsa de Seg. Social",
+            "cpf-cnpj": 3.1738040000169E13
+        },
+        {
+            "id": 1360437346,
+            "name": "ESH CAPITAL INVE",
+            "fullName": "ESH CAPITAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.200680600012E13
+        },
+        {
+            "id": 711448726,
+            "name": "ESPIRITO SANTO",
+            "fullName": "ESPIRITO SANTO CENTR. ELETR. S/A",
+            "cpf-cnpj": 2.8152650000171E13
+        },
+        {
+            "id": 1430812152,
+            "name": "EUROVEST",
+            "fullName": "EUROVEST ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 1.042366700015E13
+        },
+        {
+            "id": 1424581351,
+            "name": "EXES GESTORA",
+            "fullName": "EXES GESTORA DE RECURSOS LTDA.,",
+            "cpf-cnpj": 3.1960567000133E13
+        },
+        {
+            "id": 1389061546,
+            "name": "EXPLORA INVESTIM",
+            "fullName": "EXPLORA INVESTIMENTOS GESTAO DE RECURSOS",
+            "cpf-cnpj": 8.806258000191E12
+        },
+        {
+            "id": 1501420987,
+            "name": "EXT CAPITAL",
+            "fullName": "EXT CAPITAL LTDA.",
+            "cpf-cnpj": 4.8089509000189E13
+        },
+        {
+            "id": 24355972,
+            "name": "FAR FATOR",
+            "fullName": "FAR  FATOR ADM DE REC. LTDA",
+            "cpf-cnpj": 1.861016000151E12
+        },
+        {
+            "id": 1432099081,
+            "name": "FELIPE BATISTA",
+            "fullName": "FELIPE MENDES BATISTA",
+            "cpf-cnpj": 3.0910926824E10
+        },
+        {
+            "id": 1430817896,
+            "name": "FG/A GESTORA",
+            "fullName": "FG/A GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.1998171000178E13
+        },
+        {
+            "id": 4933793,
+            "name": "FIBRA DTVM LTDA",
+            "fullName": "FIBRA  D.T.V.M. LTDA",
+            "cpf-cnpj": 3.0711501000147E13
+        },
+        {
+            "id": 1333055140,
+            "name": "FIDD",
+            "fullName": "FIDD ADMINISTRAÇÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.258224700015E13
+        },
+        {
+            "id": 1380075961,
+            "name": "FINACAP",
+            "fullName": "Finacap Investimentos LTDA",
+            "cpf-cnpj": 1.294929000133E12
+        },
+        {
+            "id": 5781808,
+            "name": "FINASA CCVM",
+            "fullName": "FINASA CCVM S/A",
+            "cpf-cnpj": 6.212586900011E13
+        },
+        {
+            "id": 589878604,
+            "name": "FINVEST GESTAO",
+            "fullName": "FINVEST GESTAO DE ATIVOS LTDA",
+            "cpf-cnpj": 1.3703306000156E13
+        },
+        {
+            "id": 1291493317,
+            "name": "FIR CAP PART",
+            "fullName": "FIR CAPITAL PARTNERS  GESTÃO INVESTIM",
+            "cpf-cnpj": 3.406900000121E12
+        },
+        {
+            "id": 719219642,
+            "name": "FOCO DTVM",
+            "fullName": "FOCO DISTRIB. DE TIT. E VAL. MOBILIARIOS",
+            "cpf-cnpj": 3.29598000167E12
+        },
+        {
+            "id": 701962012,
+            "name": "FONDO DE INVERSI",
+            "fullName": "FONDO DE INVERSION PRIVADO SBA",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 808324491,
+            "name": "FORJAS TAURUS",
+            "fullName": "FORJAS TAURUS S/A",
+            "cpf-cnpj": 9.2781335000102E13
+        },
+        {
+            "id": 1423962555,
+            "name": "FORTUNE WEALTH",
+            "fullName": "FORTUNE WEALTH MANAG GEST LTDA..",
+            "cpf-cnpj": 3.564675900012E13
+        },
+        {
+            "id": 1503289639,
+            "name": "FRAM CAP GESTAO",
+            "fullName": "FRAM CAPITAL GESTÃO DE ATIVOS LTDA.",
+            "cpf-cnpj": 8.157028000149E12
+        },
+        {
+            "id": 1399352506,
+            "name": "FRAM CAPITAL DTV",
+            "fullName": "FRAM CAPITAL DTVM S.A",
+            "cpf-cnpj": 1.3673855000125E13
+        },
+        {
+            "id": 312398334,
+            "name": "FRANKLIN TEMPLET",
+            "fullName": "FRANKLIN TEMPLETON INVESTIMENTOS BR LTDA",
+            "cpf-cnpj": 4.205311000148E12
+        },
+        {
+            "id": 1354765598,
+            "name": "FRONTEIRA GEST",
+            "fullName": "FRONTEIRA  GESTAO DE INVESTIMENTOS",
+            "cpf-cnpj": 3.0342314000133E13
+        },
+        {
+            "id": 1362182844,
+            "name": "FRONTIER CAPITAL",
+            "fullName": "FRONTIER CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.8076466000136E13
+        },
+        {
+            "id": 126158871,
+            "name": "FUND. ATLANTICO",
+            "fullName": "FUNDAÇAO ATLANTICO",
+            "cpf-cnpj": 7.11021400016E12
+        },
+        {
+            "id": 51273904,
+            "name": "FUNDAÇÃO CELOS",
+            "fullName": "FUNDAÇÃO CELESC DE SEGURIDADE SOCIAL",
+            "cpf-cnpj": 8.2956996000178E13
+        },
+        {
+            "id": 24813459,
+            "name": "FUNDACAO CESP",
+            "fullName": "FUNDAÇÃO CESP",
+            "cpf-cnpj": 6.2465117000106E13
+        },
+        {
+            "id": 273262239,
+            "name": "FUNDAÇÃO ENERSUL",
+            "fullName": "FUNDAÇÃO ENERSUL",
+            "cpf-cnpj": 3.3122029000103E13
+        },
+        {
+            "id": 53263296,
+            "name": "FUNDAMBRÁS",
+            "fullName": "Fundambrás Soc. de Previdência Privada",
+            "cpf-cnpj": 4.4748564000182E13
+        },
+        {
+            "id": 711462934,
+            "name": "FYP EMPREEN IMOB",
+            "fullName": "FYP EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+            "cpf-cnpj": 1.2980585000132E13
+        },
+        {
+            "id": 1335606462,
+            "name": "G10 ADMINISTRADO",
+            "fullName": "G10 ADMINISTRADORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0936487000172E13
+        },
+        {
+            "id": 398001382,
+            "name": "G5 ADMINISTRADOR",
+            "fullName": "G5 ADMINISTRADORA DE RECURSOS LTDA",
+            "cpf-cnpj": 9.4461290001E12
+        },
+        {
+            "id": 1412125921,
+            "name": "GABRIEL F KOMATU",
+            "fullName": "GABRIEL FERREIRA KOMATU",
+            "cpf-cnpj": 4.537049987E10
+        },
+        {
+            "id": 1352559114,
+            "name": "GALAPAGOS CAPITA",
+            "fullName": "GALAPAGOS CAPITAL INVESTIMENTOS E PARTIC",
+            "cpf-cnpj": 3.2706879000188E13
+        },
+        {
+            "id": 1429585042,
+            "name": "GAMA",
+            "fullName": "GAMA INVESTIMENTOS LTDA",
+            "cpf-cnpj": 3.8304730000159E13
+        },
+        {
+            "id": 1430662788,
+            "name": "GAMA INVEST",
+            "fullName": "GAMA INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 8.885512000194E12
+        },
+        {
+            "id": 21659084,
+            "name": "GAP",
+            "fullName": "GAP ASSET MANAGEMENT",
+            "cpf-cnpj": 1.556450000128E12
+        },
+        {
+            "id": 197975703,
+            "name": "GAP GESTORA",
+            "fullName": "GAP GESTORA DE RECURSOS LTDA.",
+            "cpf-cnpj": 6.788911000101E12
+        },
+        {
+            "id": 633845666,
+            "name": "GAP PRUDENTIAL",
+            "fullName": "GAP PRUDENTIAL LT GESTÃO DE RECURSOS LTD",
+            "cpf-cnpj": 9.240891000128E12
+        },
+        {
+            "id": 1360525548,
+            "name": "GARIN INVESTIMEN",
+            "fullName": "GARIN INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.7516277000174E13
+        },
+        {
+            "id": 109003475,
+            "name": "GASIUS",
+            "fullName": "INST.DE SEG.SOCIAL DA CEG GASIUS",
+            "cpf-cnpj": 2.9364270000163E13
+        },
+        {
+            "id": 443843752,
+            "name": "Gavea Gestao",
+            "fullName": "Gavea Gestao de Patrimonio Ltda",
+            "cpf-cnpj": 6.116930000191E12
+        },
+        {
+            "id": 968759381,
+            "name": "GAVEA INVEST",
+            "fullName": "GAVEA INVESTIMENTOS LTDA",
+            "cpf-cnpj": 5.669128000166E12
+        },
+        {
+            "id": 1389061787,
+            "name": "GCB CAPITAL GEST",
+            "fullName": "GCB CAPITAL GESTAO DE RECURSOS DE VALORE",
+            "cpf-cnpj": 3.9720860000135E13
+        },
+        {
+            "id": 395971971,
+            "name": "GDX INVESTIMENTO",
+            "fullName": "GDX INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.1116499000113E13
+        },
+        {
+            "id": 106741498,
+            "name": "GEAP FUNDAÇAO",
+            "fullName": "GEAP FUNDACAO DE SEGURIDADE SOCIAL",
+            "cpf-cnpj": 3.658432000182E12
+        },
+        {
+            "id": 1315186123,
+            "name": "GEF BRASIL",
+            "fullName": "GEF BRASIL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.6712461000127E13
+        },
+        {
+            "id": 1282380681,
+            "name": "GENESYS LAB TEL",
+            "fullName": "GENESYS LAB. DE TELECOMUNICACOES LTDA",
+            "cpf-cnpj": 1.5237668000124E13
+        },
+        {
+            "id": 1324684559,
+            "name": "GENIAL CORRETORA",
+            "fullName": "GENIAL INVESTIMENTOS CORRETORA DE VALORE",
+            "cpf-cnpj": 2.7652684000162E13
+        },
+        {
+            "id": 1424762564,
+            "name": "GENIAL GESTAO",
+            "fullName": "GENIAL GESTAO LTDA",
+            "cpf-cnpj": 2.2119959000183E13
+        },
+        {
+            "id": 187325540,
+            "name": "GERACAO ADM.",
+            "fullName": "GERACAO ADM. DE REC. S/C LTDA.",
+            "cpf-cnpj": 2.290293000114E12
+        },
+        {
+            "id": 808327011,
+            "name": "GERADOR CIA",
+            "fullName": "GERADOR CIA SEC.CRED.FINANCEIROS",
+            "cpf-cnpj": 1.1552047000184E13
+        },
+        {
+            "id": 659101988,
+            "name": "GF GESTAO DE REC",
+            "fullName": "GF GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 9.630188000126E12
+        },
+        {
+            "id": 361967080,
+            "name": "GLOBAL CAP 2000",
+            "fullName": "GLOBAL CAPITAL 2000 ADM REC FIN S/A",
+            "cpf-cnpj": 7.816560000168E12
+        },
+        {
+            "id": 95699447,
+            "name": "GLOBAL EQUITYADM",
+            "fullName": "GLOBAL EQUITY ADMINISTRADORA DE RECURSOS",
+            "cpf-cnpj": 5.739207000104E12
+        },
+        {
+            "id": 78215738,
+            "name": "GLOBAL INVEST",
+            "fullName": "GLOBALVEST ASSET MANAGEMENT DO BRASIL SA",
+            "cpf-cnpj": 5.72483100012E12
+        },
+        {
+            "id": 312123361,
+            "name": "GOLDMAN CTVM S/A",
+            "fullName": "GOLDMAN SACHS DO BRASIL CTVM S/A",
+            "cpf-cnpj": 9.60558100016E12
+        },
+        {
+            "id": 202460656,
+            "name": "GOLDMAN SACHS",
+            "fullName": "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO",
+            "cpf-cnpj": 4.33228100013E12
+        },
+        {
+            "id": 363067709,
+            "name": "GOLDMAN SACHS AM",
+            "fullName": "GOLDMAN SACHS ASSET MANAGEMENT",
+            "cpf-cnpj": 9.352594000174E12
+        },
+        {
+            "id": 746551230,
+            "name": "GOLDMAN SACHS RE",
+            "fullName": "GOLDMAN SACHS REPRESENTACOES LTDA",
+            "cpf-cnpj": 3.0892178000155E13
+        },
+        {
+            "id": 1430690114,
+            "name": "GOOD KARMA",
+            "fullName": "GOOD KARMA VENTURES GESTORA DE RECURSOS",
+            "cpf-cnpj": 3.945438900018E13
+        },
+        {
+            "id": 158729589,
+            "name": "GP Adm. Recursos",
+            "fullName": "GP Administração de Recursos S/A",
+            "cpf-cnpj": 2.888152000106E12
+        },
+        {
+            "id": 21731044,
+            "name": "GP Bradesco",
+            "fullName": "GP ADIM DE ATIVOS S.A   Bradesco",
+            "cpf-cnpj": 2.7805985000189E13
+        },
+        {
+            "id": 359863337,
+            "name": "GPS PLANEJ FINAN",
+            "fullName": "GPS PLANEJAMENTO FINANCEIRO S/A.",
+            "cpf-cnpj": 3.356267000104E12
+        },
+        {
+            "id": 401877829,
+            "name": "GREEN CAPITAL",
+            "fullName": "GREEN CAPITAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 7.93700400014E12
+        },
+        {
+            "id": 1460908584,
+            "name": "GREENWICH",
+            "fullName": "GREENWICH GESTÃO DE RECURSOS LTDA.",
+            "cpf-cnpj": 1.6975442000193E13
+        },
+        {
+            "id": 1382540694,
+            "name": "GUARDIAN GESTORA",
+            "fullName": "GUARDIAN GESTORA S.A.",
+            "cpf-cnpj": 3.7414193000137E13
+        },
+        {
+            "id": 1346471345,
+            "name": "GUEPARDO INVESTI",
+            "fullName": "GUEPARDO INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 7.0781440001E12
+        },
+        {
+            "id": 1389063278,
+            "name": "GUIDE GESTAO DE",
+            "fullName": "GUIDE GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.1120589000188E13
+        },
+        {
+            "id": 15412359,
+            "name": "HAITONG SEC CCVM",
+            "fullName": "HAITONG SECURITIES DO BRASIL CCVM S/A",
+            "cpf-cnpj": 3.3894445000111E13
+        },
+        {
+            "id": 1430981688,
+            "name": "HARBOUR",
+            "fullName": "HARBOUR CAPITAL ADM CART. V. M. LTDA",
+            "cpf-cnpj": 3.60409000001E13
+        },
+        {
+            "id": 1430985720,
+            "name": "HASHDEX",
+            "fullName": "HASHDEX GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.0056796000165E13
+        },
+        {
+            "id": 4422659,
+            "name": "HEDGING GRIFFO",
+            "fullName": "HEDGING GRIFFO INVESTIMENTOS S.A.",
+            "cpf-cnpj": 7.995528000197E12
+        },
+        {
+            "id": 1334060960,
+            "name": "HIERON PATRIMONI",
+            "fullName": "HIERON PATRIMONIO FAMILIAR E INVESTIMENT",
+            "cpf-cnpj": 1.0464748000107E13
+        },
+        {
+            "id": 1431190319,
+            "name": "HIX INVEST",
+            "fullName": "HIX INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.4205023000147E13
+        },
+        {
+            "id": 1368849822,
+            "name": "HORIZONTE CAPITA",
+            "fullName": "HORIZONTE CAPITAL GESTÃO DE INVESTIMENTO",
+            "cpf-cnpj": 2.1409171000149E13
+        },
+        {
+            "id": 6013497,
+            "name": "HSBC BANK",
+            "fullName": "HSBC BANK BRASIL S.A. _ BANCO MULTIPLO",
+            "cpf-cnpj": 1.701201000189E12
+        },
+        {
+            "id": 6010588,
+            "name": "HSBC INVESTMENT",
+            "fullName": "HSBC INV BANK BRASIL S.A. BI",
+            "cpf-cnpj": 3.32543190001E13
+        },
+        {
+            "id": 191404193,
+            "name": "HSBC INVESTMENTS",
+            "fullName": "HSBC INVESTMENTS GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 6.0717260001E12
+        },
+        {
+            "id": 595784713,
+            "name": "HSI S.A.",
+            "fullName": "HSI HEMISFÉRIO SUL INVESTIMENTOS S.A.",
+            "cpf-cnpj": 3.539353000152E12
+        },
+        {
+            "id": 1468933719,
+            "name": "I.M.S.S.S BLUM",
+            "fullName": "I.M.S.S. S. DE BLUM",
+            "cpf-cnpj": 4.515660000166E12
+        },
+        {
+            "id": 1331884694,
+            "name": "I9 CAPITAL GESTÃ",
+            "fullName": "I9 CAPITAL GESTÃO DE RECURSOS FINANCEIRO",
+            "cpf-cnpj": 2.9158123000137E13
+        },
+        {
+            "id": 1384132662,
+            "name": "I9 CAPITAL LTDA",
+            "fullName": "I9 CAPITAL LTDA",
+            "cpf-cnpj": 2.4458101000683E13
+        },
+        {
+            "id": 333947965,
+            "name": "ICAP BR CTVM",
+            "fullName": "ICAP DO BRASIL CTVM LTDA",
+            "cpf-cnpj": 9.105360000122E12
+        },
+        {
+            "id": 155495377,
+            "name": "ICATU H. ADM",
+            "fullName": "ICATU HARTFORD ADM. DE RECURSOS LTDA.",
+            "cpf-cnpj": 6.862217400012E13
+        },
+        {
+            "id": 19907048,
+            "name": "ICATU LTDA",
+            "fullName": "ICATU INVESTIMENTOS DTVM LTDA",
+            "cpf-cnpj": 3.282508000118E12
+        },
+        {
+            "id": 659101980,
+            "name": "IESA OLEO",
+            "fullName": "IESA OLEO & GAS S.A.",
+            "cpf-cnpj": 7.248576000111E12
+        },
+        {
+            "id": 1378503172,
+            "name": "IGUANA INVESTIME",
+            "fullName": "IGUANA INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.0924308000187E13
+        },
+        {
+            "id": 701961997,
+            "name": "IMPLANT CAP LP",
+            "fullName": "IMPLANT CAPITAL LP",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 376439965,
+            "name": "INCENTIVO DTVM",
+            "fullName": "INCENTIVO S/A. DTVM",
+            "cpf-cnpj": 6.1757423000145E13
+        },
+        {
+            "id": 1430676533,
+            "name": "INDICATOR",
+            "fullName": "INDICATOR INVESTIMENTOS E SERVIÇOS DE G",
+            "cpf-cnpj": 4.853132000117E12
+        },
+        {
+            "id": 67514576,
+            "name": "Industrial",
+            "fullName": "INDUSTRIAL DO BRASIL DTVM LTDA",
+            "cpf-cnpj": 9.99403000196E12
+        },
+        {
+            "id": 101103968,
+            "name": "INFRAPREV",
+            "fullName": "INSTITUTO INFRAERO DE SEGURIDADE SOCIAL",
+            "cpf-cnpj": 2.7644368000149E13
+        },
+        {
+            "id": 1473797627,
+            "name": "INTEGRAL ACCESS",
+            "fullName": "INTEGRAL ACCESS DTVM LTDA",
+            "cpf-cnpj": 3.4978626000199E13
+        },
+        {
+            "id": 1389960950,
+            "name": "INTEGRAL INVESTI",
+            "fullName": "INTEGRAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 6.576569000186E12
+        },
+        {
+            "id": 1181638772,
+            "name": "INTER DTVM LTDA",
+            "fullName": "INTER DTVM LTDA",
+            "cpf-cnpj": 1.8945670000146E13
+        },
+        {
+            "id": 406315785,
+            "name": "INTERBOLSA CCTVM",
+            "fullName": "INTERBOLSA DO BRASIL CCTVM",
+            "cpf-cnpj": 8.950331000102E12
+        },
+        {
+            "id": 808327320,
+            "name": "INTERLIGACAO",
+            "fullName": "INTERLIGACAO ELE. GARANHUNS S/A",
+            "cpf-cnpj": 1.4432763000116E13
+        },
+        {
+            "id": 21731040,
+            "name": "INV PROF",
+            "fullName": "Investidor Profissional",
+            "cpf-cnpj": 3.2319907000104E13
+        },
+        {
+            "id": 1484668464,
+            "name": "Invest Tech",
+            "fullName": "Invest Tech Participacoes e Investimento",
+            "cpf-cnpj": 7.18955000014E12
+        },
+        {
+            "id": 1346472890,
+            "name": "INVESTCOOP ASSET",
+            "fullName": "INVESTCOOP ASSET MANAGEMENT LTDA.",
+            "cpf-cnpj": 3.1681693000159E13
+        },
+        {
+            "id": 1354812673,
+            "name": "INVEXA GESTAO DE",
+            "fullName": "INVEXA GESTAO DE INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 1.3333516000108E13
+        },
+        {
+            "id": 1396199990,
+            "name": "INVEXA S.A",
+            "fullName": "INVEXA S.A",
+            "cpf-cnpj": 4.1397045000129E13
+        },
+        {
+            "id": 1290282265,
+            "name": "INVISTO GEST",
+            "fullName": "INVISTO GESTAO DE INVESTIMENTOS S/A",
+            "cpf-cnpj": 9.375360000142E12
+        },
+        {
+            "id": 1417315117,
+            "name": "IPA",
+            "fullName": "IPA PLANEJAMENTO & GESTÃO LTDA",
+            "cpf-cnpj": 3.3411319000169E13
+        },
+        {
+            "id": 711464847,
+            "name": "IRACEMA TRANSMIS",
+            "fullName": "IRACEMA TRANSMISSORA DE ENERGIA S/A",
+            "cpf-cnpj": 9.25072900019E12
+        },
+        {
+            "id": 1430985722,
+            "name": "Iron",
+            "fullName": "Iron Capital Gestao de Recursos LTDA",
+            "cpf-cnpj": 1.9807499000171E13
+        },
+        {
+            "id": 592359775,
+            "name": "ISD CAPITAL",
+            "fullName": "ISD CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.374107400012E13
+        },
+        {
+            "id": 457240904,
+            "name": "ITACARÉ CAPITAL",
+            "fullName": "ITACARÉ CAPITAL CONSULT. ADM. DE VALORES",
+            "cpf-cnpj": 9.127326000159E12
+        },
+        {
+            "id": 4343225,
+            "name": "ITAU UNIBANCO",
+            "fullName": "ITAU UNIBANCO S/A",
+            "cpf-cnpj": 6.0701190000104E13
+        },
+        {
+            "id": 1430985723,
+            "name": "IVI",
+            "fullName": "IVI CAPITAL MANAGEMENT LTDA",
+            "cpf-cnpj": 4.315250200014E13
+        },
+        {
+            "id": 4346557,
+            "name": "J SAFRA CVC",
+            "fullName": "J SAFRA CVC LTDA",
+            "cpf-cnpj": 6.0783503000102E13
+        },
+        {
+            "id": 1427706958,
+            "name": "JATAI GESTAO",
+            "fullName": "JATAI GESTAO DE RECURSOS DE TER. LTDA.",
+            "cpf-cnpj": 3.035382700014E13
+        },
+        {
+            "id": 1431140718,
+            "name": "JERA CAPITAL",
+            "fullName": "JERA CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 9.146756000118E12
+        },
+        {
+            "id": 597455394,
+            "name": "JGP Gestão",
+            "fullName": "JGP Gestão de Crédito Ltda",
+            "cpf-cnpj": 1.3189882000127E13
+        },
+        {
+            "id": 1430811517,
+            "name": "JGP REAL ESTATE",
+            "fullName": "JGP REAL ESTATE GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.6640941000137E13
+        },
+        {
+            "id": 1420746435,
+            "name": "JIVE",
+            "fullName": "JIVE ASSET GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.3966641000147E13
+        },
+        {
+            "id": 1430985724,
+            "name": "João Lobo",
+            "fullName": "JOÃO DECIO BUFFARA LOBO",
+            "cpf-cnpj": 4.4197667949E10
+        },
+        {
+            "id": 1433355960,
+            "name": "JOSÉ LUIZ",
+            "fullName": "JOSÉ LUIZ  MONTANS ANACLETO JUNIOR",
+            "cpf-cnpj": 4.054769659E9
+        },
+        {
+            "id": 1418352204,
+            "name": "JOSE MAURO",
+            "fullName": "JOSE MAURO SILVEIRA PEIXOTO",
+            "cpf-cnpj": 6.444075815E9
+        },
+        {
+            "id": 338753238,
+            "name": "JOSE NEWTON",
+            "fullName": "JOSÉ NEWTON LOPES DE FREITAS",
+            "cpf-cnpj": 1.339818353E13
+        },
+        {
+            "id": 867371457,
+            "name": "JP MORGAN ADM C",
+            "fullName": "JP MORGAN ADM DE CARTEIRAS LTDA",
+            "cpf-cnpj": 1.3037786000163E13
+        },
+        {
+            "id": 4452361,
+            "name": "JP MORGAN CCVM",
+            "fullName": "J.P. MORGAN CCVM S.A.",
+            "cpf-cnpj": 3.2588139000194E13
+        },
+        {
+            "id": 1354733591,
+            "name": "JULIANO DE LARA",
+            "fullName": "JULIANO DE LARA FERNANDES",
+            "cpf-cnpj": 1.8819319861E10
+        },
+        {
+            "id": 1422667240,
+            "name": "KANASTRA",
+            "fullName": "KANASTRA GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 4.4870662000198E13
+        },
+        {
+            "id": 1388983157,
+            "name": "KARDINAL",
+            "fullName": "KARDINAL CONSULTORIA PATRIM. E GEST LTDA",
+            "cpf-cnpj": 3.5070686000171E13
+        },
+        {
+            "id": 1466765279,
+            "name": "KIJANI",
+            "fullName": "KIJANI GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 4.3125493000107E13
+        },
+        {
+            "id": 1498553205,
+            "name": "KILIMA GESTORA",
+            "fullName": "KILIMA GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.4877615000112E13
+        },
+        {
+            "id": 389692975,
+            "name": "KINEA INVEST",
+            "fullName": "KINEA INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 8.604187000144E12
+        },
+        {
+            "id": 1090625122,
+            "name": "KINEA PRIVATE EQ",
+            "fullName": "KINEA PRIVATE EQUITY INVESTIMENTOS S.A.",
+            "cpf-cnpj": 4.661817000161E12
+        },
+        {
+            "id": 1430985727,
+            "name": "KINITRO",
+            "fullName": "KINITRO CAPITAL GESTÃO DE REC. LTDA",
+            "cpf-cnpj": 6.293756000152E12
+        },
+        {
+            "id": 1416870890,
+            "name": "KOMATU",
+            "fullName": "KOMATU GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 4.512129900017E13
+        },
+        {
+            "id": 1363612811,
+            "name": "KPTL",
+            "fullName": "KPTL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.1233865000114E13
+        },
+        {
+            "id": 1417524405,
+            "name": "LAKEWOOD",
+            "fullName": "LAKEWOOD GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.2134302000195E13
+        },
+        {
+            "id": 1455107471,
+            "name": "LATACHE",
+            "fullName": "LATACHE GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.2461742000101E13
+        },
+        {
+            "id": 24649063,
+            "name": "LATIN AMERICAN",
+            "fullName": "LATIN AMERICAN INVESTMENT BANK BAHAMAS L",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 1503293066,
+            "name": "LCP GESTORA",
+            "fullName": "LCP GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 4.6382187000136E13
+        },
+        {
+            "id": 1299068933,
+            "name": "LEGAN",
+            "fullName": "LEGAN ADM RECURSOS LTDA",
+            "cpf-cnpj": 9.468079000154E12
+        },
+        {
+            "id": 1322856064,
+            "name": "LEGATUS",
+            "fullName": "LEGATUS GEST. DE RECURSOS LTDA",
+            "cpf-cnpj": 2.0445967000194E13
+        },
+        {
+            "id": 34453744,
+            "name": "LEME INV",
+            "fullName": "LEME INVESTIMENTOS LTDA",
+            "cpf-cnpj": 7.4198912000156E13
+        },
+        {
+            "id": 29930798,
+            "name": "LIBERTY P SEGURO",
+            "fullName": "LIBERTY PAULISTA SEGUROS",
+            "cpf-cnpj": 6.1550141000172E13
+        },
+        {
+            "id": 1430985728,
+            "name": "LIFE INVESTIMENT",
+            "fullName": "LIFE INVESTMENTS LTDA",
+            "cpf-cnpj": 4.2100907000172E13
+        },
+        {
+            "id": 1369851632,
+            "name": "LIFETIME GESTORA",
+            "fullName": "LIFETIME GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.6454342000175E13
+        },
+        {
+            "id": 808327332,
+            "name": "LINHARES GERACAO",
+            "fullName": "LINHARES GERACAO S/A",
+            "cpf-cnpj": 1.0472905000118E13
+        },
+        {
+            "id": 530554007,
+            "name": "LINKCORP",
+            "fullName": "LINKCORP CONSULTORIA FINANCEIRA LTDA",
+            "cpf-cnpj": 7.050114000195E12
+        },
+        {
+            "id": 711458655,
+            "name": "LOCALIZA RENT",
+            "fullName": "LOCALIZA RENT A CAR SA",
+            "cpf-cnpj": 1.6670085000155E13
+        },
+        {
+            "id": 1348122956,
+            "name": "LOGOS GESTAO DE",
+            "fullName": "LOGOS GESTAO DE RECURSOS LTDA.",
+            "cpf-cnpj": 3.0486755000109E13
+        },
+        {
+            "id": 240099440,
+            "name": "LOPEZ LEON DTVM",
+            "fullName": "LOPEZ LEON BROKER BR DTVM LTDA",
+            "cpf-cnpj": 4.14464000144E12
+        },
+        {
+            "id": 1380248499,
+            "name": "LOTUS INVESTIMEN",
+            "fullName": "LOTUS INVESTIMENTOS LTDA",
+            "cpf-cnpj": 9.500375000195E12
+        },
+        {
+            "id": 397782725,
+            "name": "LUIZ CLAUDIO",
+            "fullName": "LUIZ CLAUDIO GARCIA DE SOUZA",
+            "cpf-cnpj": 3.1623018749E13
+        },
+        {
+            "id": 1430727090,
+            "name": "M8 PARTNERS",
+            "fullName": "M8 PARTNERS GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.8038439000179E13
+        },
+        {
+            "id": 1487859982,
+            "name": "MAJORA CAPITAL",
+            "fullName": "Majora Capital Gestão de Recursos LTDA",
+            "cpf-cnpj": 2.8643208000148E13
+        },
+        {
+            "id": 1380810895,
+            "name": "MAKALU GESTORA D",
+            "fullName": "MAKALU GESTORA DE RECURSOS",
+            "cpf-cnpj": 3.7336862000108E13
+        },
+        {
+            "id": 1412752726,
+            "name": "MANATÍ CAPITAL",
+            "fullName": "MANATÍ CAPITAL MANAGEMENT LTDA",
+            "cpf-cnpj": 4.3960839000184E13
+        },
+        {
+            "id": 1358359339,
+            "name": "MANTIQ",
+            "fullName": "MANTIQ INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.3183720000181E13
+        },
+        {
+            "id": 1336719003,
+            "name": "MARAÚ GESTÃO DE",
+            "fullName": "MARAÚ GESTÃO DE PATRIMÔNIO LTDA.",
+            "cpf-cnpj": 1.5400216000111E13
+        },
+        {
+            "id": 1480128511,
+            "name": "Marc Sauerman",
+            "fullName": "Marc Sauerman",
+            "cpf-cnpj": 1.051430909E9
+        },
+        {
+            "id": 1350628799,
+            "name": "MARCELO CYRILLO",
+            "fullName": "MARCELO CYRILLO DE QUEIROZ TELLES",
+            "cpf-cnpj": 1.1814736832E10
+        },
+        {
+            "id": 1506107513,
+            "name": "MATERA RC",
+            "fullName": "MATERA RC GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0490029000152E13
+        },
+        {
+            "id": 1426635856,
+            "name": "MAV CAPITAL",
+            "fullName": "MAV CAPITAL GESTORA DE RECURSOS SS LTDA",
+            "cpf-cnpj": 4.3705850000106E13
+        },
+        {
+            "id": 4680405,
+            "name": "MAXIMA ASSET",
+            "fullName": "MAXIMA ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 3.566273000196E12
+        },
+        {
+            "id": 5908827,
+            "name": "MAXIMA DTVM",
+            "fullName": "MAXIMA S.A. DTVM",
+            "cpf-cnpj": 3.3886862000112E13
+        },
+        {
+            "id": 139798165,
+            "name": "MELLON SERVIÇOS",
+            "fullName": "BNY MELLON SERVIÇOS FINANCEIROS DTVM S/A",
+            "cpf-cnpj": 2.201501000161E12
+        },
+        {
+            "id": 442020505,
+            "name": "MERRILL LYNCH CT",
+            "fullName": "MERRILL LYNCH S/A CTVM",
+            "cpf-cnpj": 2.670590000195E12
+        },
+        {
+            "id": 1326133367,
+            "name": "META ASSET",
+            "fullName": "META ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 6.08890700013E12
+        },
+        {
+            "id": 701961175,
+            "name": "Metlife Seguros",
+            "fullName": "Metropolitan Life Seguros e Prev.Privada",
+            "cpf-cnpj": 2.102498000129E12
+        },
+        {
+            "id": 1047497374,
+            "name": "MICHELIN",
+            "fullName": "MICHELIN MONITOR DE ATIVOS  BRASIL LTDA",
+            "cpf-cnpj": 2.0758667000165E13
+        },
+        {
+            "id": 1432099086,
+            "name": "MILENIO",
+            "fullName": "MILENIO CAPITAL GESTAO DE INV. LTDA",
+            "cpf-cnpj": 1.680428000012E13
+        },
+        {
+            "id": 319290911,
+            "name": "MIRAE INVESTIMEN",
+            "fullName": "MIRAE GLOBAL INVESTIMENTOS",
+            "cpf-cnpj": 9.095455000102E12
+        },
+        {
+            "id": 1430985729,
+            "name": "MMZR",
+            "fullName": "MMZR GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.9667665000199E13
+        },
+        {
+            "id": 1412575999,
+            "name": "MOGNO",
+            "fullName": "MOGNO CAPITAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.7482086000139E13
+        },
+        {
+            "id": 701962014,
+            "name": "MOLAR CAPITAL IN",
+            "fullName": "MOLAR CAPITAL INVESTMENT LP",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 1475781791,
+            "name": "Monetiza",
+            "fullName": "Monetiza Investimentos LTDA",
+            "cpf-cnpj": 6.23855000012E12
+        },
+        {
+            "id": 1335384662,
+            "name": "MONETUS INVESTIM",
+            "fullName": "MONETUS INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 1.517158500018E13
+        },
+        {
+            "id": 1384251026,
+            "name": "MONTE CAPITAL",
+            "fullName": "MONTE CAPITAL MANAGEMENT GESTORA LTDA",
+            "cpf-cnpj": 3.926792100015E13
+        },
+        {
+            "id": 1471078911,
+            "name": "MORE INVEST",
+            "fullName": "MORE INVEST GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0556398000109E13
+        },
+        {
+            "id": 4575661,
+            "name": "MORGAN CTVM SA",
+            "fullName": "MORGAN STANLEY CTVM S/A",
+            "cpf-cnpj": 4.323351000194E12
+        },
+        {
+            "id": 165770685,
+            "name": "MORGAN STANLEY",
+            "fullName": "MORGAN STANLEY ADM. CARTEIRAS S.A.",
+            "cpf-cnpj": 1.710916000106E12
+        },
+        {
+            "id": 1466139325,
+            "name": "MOS",
+            "fullName": "MOS GESTÃO DE INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.328724000194E12
+        },
+        {
+            "id": 1402426833,
+            "name": "MSW CAPITAL",
+            "fullName": "MSW CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 8.208031000144E12
+        },
+        {
+            "id": 1322584887,
+            "name": "MULTINVEST",
+            "fullName": "MULTINVEST CAPITAL ADM DE REC LTDA",
+            "cpf-cnpj": 1.2564465000154E13
+        },
+        {
+            "id": 1430985731,
+            "name": "MULTIPLICA",
+            "fullName": "MULTIPLICA CAPITAL ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 7.252227000173E12
+        },
+        {
+            "id": 165801538,
+            "name": "MULTIPREV",
+            "fullName": "MULTIPREV FUNDO MULTIPLO DE PENSAO",
+            "cpf-cnpj": 6.7846188000164E13
+        },
+        {
+            "id": 1355197571,
+            "name": "MUNGER INVESTIME",
+            "fullName": "MUNGER INVESTIMENTOS GESTORA DE RECURSOS",
+            "cpf-cnpj": 2.6545595000154E13
+        },
+        {
+            "id": 701960916,
+            "name": "MURIK",
+            "fullName": "MURIK S.A.",
+            "cpf-cnpj": 8.786302000149E12
+        },
+        {
+            "id": 1438886146,
+            "name": "NAVI",
+            "fullName": "NAVI REAL ESTATE SEL. ADM. E G. R. LTDA",
+            "cpf-cnpj": 3.7658373000164E13
+        },
+        {
+            "id": 1354682509,
+            "name": "NECTON INVES",
+            "fullName": "NECTON INVEST SA CORRETORA VALORES IMOB",
+            "cpf-cnpj": 4.8906551000145E13
+        },
+        {
+            "id": 1358118972,
+            "name": "NEST INTERNATION",
+            "fullName": "NEST INTERNATIONAL ADM DE CARTEIRAS E VA",
+            "cpf-cnpj": 8.46613100017E12
+        },
+        {
+            "id": 1438651161,
+            "name": "NEW ASSET",
+            "fullName": "NEW ASSET GESTAO DE REC FINANCEIROS LTDA",
+            "cpf-cnpj": 4.3730865000116E13
+        },
+        {
+            "id": 491469639,
+            "name": "NOVA MILANO INV.",
+            "fullName": "NOVA MILANO INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.2263316000155E13
+        },
+        {
+            "id": 473086079,
+            "name": "NSG CAPITAL",
+            "fullName": "NSG CAPITAL DTVM S/A",
+            "cpf-cnpj": 1.0274584000147E13
+        },
+        {
+            "id": 285490986,
+            "name": "OBOÉ DTVM S/A",
+            "fullName": "OBOÉ DTVM S/A",
+            "cpf-cnpj": 1.581283000175E12
+        },
+        {
+            "id": 341640847,
+            "name": "OCTANTE",
+            "fullName": "OCTANTE GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0334074000118E13
+        },
+        {
+            "id": 1170890078,
+            "name": "ODEBRECHT AGRO",
+            "fullName": "ODEBRECHT AGROINDUSTRIAL PARTICIP S/A",
+            "cpf-cnpj": 8.842690000138E12
+        },
+        {
+            "id": 659106483,
+            "name": "OLIMPIA PARTNERS",
+            "fullName": "OLIMPIA PARTNERS GESTÃO DE RECURSOS S.A.",
+            "cpf-cnpj": 8.563319000137E12
+        },
+        {
+            "id": 392010837,
+            "name": "OLIV TRUST SERVI",
+            "fullName": "OLIVEIRA TRUST SERVICER SA",
+            "cpf-cnpj": 2.15045300012E12
+        },
+        {
+            "id": 170192175,
+            "name": "OLIVEIRA TRUST D",
+            "fullName": "OLIVEIRA TRUST DTVM S.A.",
+            "cpf-cnpj": 3.6113876000191E13
+        },
+        {
+            "id": 1430985732,
+            "name": "One",
+            "fullName": "One Gestão de Recursos LTDA",
+            "cpf-cnpj": 4.4391239000105E13
+        },
+        {
+            "id": 1407320896,
+            "name": "ONZE GESTORA DE",
+            "fullName": "ONZE GESTORA DE INVESTIMENTOS LTDA",
+            "cpf-cnpj": 3.4008311000119E13
+        },
+        {
+            "id": 1450071632,
+            "name": "OPEN CAPITAL",
+            "fullName": "OPEN CAPITAL GESTÃO DE ATIVOS LTDA",
+            "cpf-cnpj": 4.323139600019E13
+        },
+        {
+            "id": 421729320,
+            "name": "OPUS GESTAO",
+            "fullName": "OPUS GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 5.941244000192E12
+        },
+        {
+            "id": 1307738824,
+            "name": "ORAMA DISTR",
+            "fullName": "ORAMA DISTR. DE T. VALORES MOB",
+            "cpf-cnpj": 1.3293225000125E13
+        },
+        {
+            "id": 530554005,
+            "name": "OREY",
+            "fullName": "OREY FINANCIAL BRASIL LTDA.",
+            "cpf-cnpj": 6.201330000121E12
+        },
+        {
+            "id": 1325240168,
+            "name": "ORIA GESTAO",
+            "fullName": "ORIA GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.2067585000108E13
+        },
+        {
+            "id": 1456370037,
+            "name": "ORIZ",
+            "fullName": "Oriz Asset Management LTDA",
+            "cpf-cnpj": 3.1384260000131E13
+        },
+        {
+            "id": 1497738648,
+            "name": "ORRAM GESTORA",
+            "fullName": "ORRAM GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.3459864000125E13
+        },
+        {
+            "id": 1339800861,
+            "name": "OSHER",
+            "fullName": "OSHER GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.7094106000102E13
+        },
+        {
+            "id": 500367072,
+            "name": "OSWALDO GUERRA",
+            "fullName": "OSWALDO GUERRA DARRIAGA SCHMIDT",
+            "cpf-cnpj": 9.2631657772E13
+        },
+        {
+            "id": 1353426684,
+            "name": "OURO PRETO GESTA",
+            "fullName": "OURO PRETO GESTAO DE RECURSOS S.A.",
+            "cpf-cnpj": 1.1916849000126E13
+        },
+        {
+            "id": 398338560,
+            "name": "P2 GESTÃO",
+            "fullName": "P2 GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0413618000137E13
+        },
+        {
+            "id": 26877346,
+            "name": "PACTUAL ASSET EQ",
+            "fullName": "PACTUAL ASSET MANAGEMENT EQUITY SA.",
+            "cpf-cnpj": 3.705127000102E12
+        },
+        {
+            "id": 38980162,
+            "name": "PACTUAL ASSET FI",
+            "fullName": "PACTUAL ASSET MANAGEMENT F.I. S/A",
+            "cpf-cnpj": 3.715932000109E12
+        },
+        {
+            "id": 5334684,
+            "name": "PACTUAL CTVM SA",
+            "fullName": "PACTUAL CTVM S.A",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 1468473304,
+            "name": "PANAMBY CAPITAL",
+            "fullName": "PANAMBY GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0552066000148E13
+        },
+        {
+            "id": 700851167,
+            "name": "PÁTRIA INV LTDA",
+            "fullName": "PÁTRIA INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 1.2461756000117E13
+        },
+        {
+            "id": 404075685,
+            "name": "PÁTRIA INVEST.",
+            "fullName": "PÁTRIA INVESTIMENTOS S/A.",
+            "cpf-cnpj": 5.14564600018E12
+        },
+        {
+            "id": 135473367,
+            "name": "Pentágono DTVM",
+            "fullName": "Pentágono S.A. DTVM",
+            "cpf-cnpj": 1.7343682000138E13
+        },
+        {
+            "id": 1429512074,
+            "name": "PERSEVERA",
+            "fullName": "PERSEVERA GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.9608120000158E13
+        },
+        {
+            "id": 335393058,
+            "name": "PETRA P T CTVM",
+            "fullName": "PETRA PERSONAL TRADER CTVM S/A",
+            "cpf-cnpj": 3.317692000194E12
+        },
+        {
+            "id": 732857377,
+            "name": "PFIZER",
+            "fullName": "LABORATORIOS PFIZER LTDA",
+            "cpf-cnpj": 4.6070868000169E13
+        },
+        {
+            "id": 1434025834,
+            "name": "PHI GLOBAL",
+            "fullName": "PHI GLOBAL GESTÃO DE RECURSOS LTDA.",
+            "cpf-cnpj": 4.5768582000199E13
+        },
+        {
+            "id": 420579837,
+            "name": "Phronesis Invest",
+            "fullName": "Phronesis Investimentos Ltda",
+            "cpf-cnpj": 1.04795570001E13
+        },
+        {
+            "id": 498354088,
+            "name": "PINE INV. DTVM",
+            "fullName": "PINE INVESTIMENTOS DISTRIBUIDORA DE TÍTU",
+            "cpf-cnpj": 9.2236777000178E13
+        },
+        {
+            "id": 124146185,
+            "name": "PIP ADM RECURSOS",
+            "fullName": "PIP ADMINISTRACAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.913198000167E12
+        },
+        {
+            "id": 1404788658,
+            "name": "PIPO CAPITAL",
+            "fullName": "PIPO CAPITAL GESTAO DE INVESTIMENTOS",
+            "cpf-cnpj": 4.2330305000101E13
+        },
+        {
+            "id": 16114604,
+            "name": "PLANNER CV",
+            "fullName": "PLANNER CORRETORA DE VALORES S/A",
+            "cpf-cnpj": 8.06535000235E11
+        },
+        {
+            "id": 1430985733,
+            "name": "PLANTA CONSULTOR",
+            "fullName": "PLANTA CONSULTORIA IMOBILIARIA LTDA",
+            "cpf-cnpj": 3.7763953000111E13
+        },
+        {
+            "id": 1506107503,
+            "name": "POLÍGONO",
+            "fullName": "POLÍGONO CAPITAL LTDA",
+            "cpf-cnpj": 4.3241789000185E13
+        },
+        {
+            "id": 567694231,
+            "name": "POLO CAPITAL",
+            "fullName": "POLO CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 5.451668000179E12
+        },
+        {
+            "id": 1442502640,
+            "name": "PORTOFINO",
+            "fullName": "PORTOFINO GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.7590181000156E13
+        },
+        {
+            "id": 1352623235,
+            "name": "PRADO GESTAO DE",
+            "fullName": "PRADO GESTAO DE RECURSOS LTDA.",
+            "cpf-cnpj": 5.063437000198E12
+        },
+        {
+            "id": 466048566,
+            "name": "PRAGMA",
+            "fullName": "PRAGMA GESTÃO DE PATRIMÔNIO LTDA",
+            "cpf-cnpj": 4.920763000101E12
+        },
+        {
+            "id": 202649933,
+            "name": "Prev BANERJ",
+            "fullName": "CAIXA PREV DOS F DO S.BANERJ PREVI BANER",
+            "cpf-cnpj": 3.4054320000146E13
+        },
+        {
+            "id": 53263312,
+            "name": "PREVI GM",
+            "fullName": "PREVI GM",
+            "cpf-cnpj": 5.3710968000178E13
+        },
+        {
+            "id": 1460796870,
+            "name": "PRISMA",
+            "fullName": "PRISMA CAPITAL LTDA",
+            "cpf-cnpj": 2.74510280001E13
+        },
+        {
+            "id": 1324965715,
+            "name": "PROPRIO",
+            "fullName": "PROPRIO CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.3993865000148E13
+        },
+        {
+            "id": 973140476,
+            "name": "QBE BRASIL SEG",
+            "fullName": "QBE BRASIL SEGUROS S.A.",
+            "cpf-cnpj": 9.6348677000194E13
+        },
+        {
+            "id": 1341118277,
+            "name": "QI SCD",
+            "fullName": "QI SOCIEDADE DE CREDITO DIRETO SA",
+            "cpf-cnpj": 3.2402502000135E13
+        },
+        {
+            "id": 1430985734,
+            "name": "QR CAPITAL",
+            "fullName": "QR CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.2832649000165E13
+        },
+        {
+            "id": 1480086979,
+            "name": "Quadra Capital",
+            "fullName": "QUADRA GESTÃO DE RECURSOS S.A",
+            "cpf-cnpj": 1.7707098000114E13
+        },
+        {
+            "id": 1430985736,
+            "name": "QUARTER",
+            "fullName": "QUARTER INVESTIMENTOS ASSET M LTDA",
+            "cpf-cnpj": 1.1797258000187E13
+        },
+        {
+            "id": 1401457120,
+            "name": "QUARTZ GESTÃO",
+            "fullName": "QUARTZ GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 4.020223500018E13
+        },
+        {
+            "id": 592472910,
+            "name": "QUATÁ GESTÃO",
+            "fullName": "QUATÁ GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 9.456933000162E12
+        },
+        {
+            "id": 1421422517,
+            "name": "RAM",
+            "fullName": "RAM GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 4.16477880001E13
+        },
+        {
+            "id": 1335300931,
+            "name": "RAPIER INVESTIME",
+            "fullName": "RAPIER INVESTIMENTOS E GESTAO PATRIMONIA",
+            "cpf-cnpj": 5.119639000104E12
+        },
+        {
+            "id": 467099338,
+            "name": "RB CAPITAL AM",
+            "fullName": "RB CAPITAL ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 7.981934000109E12
+        },
+        {
+            "id": 362782946,
+            "name": "RCB PLAN FIN",
+            "fullName": "RCB PLANEJAMENTO FINANCEIRO LTDA",
+            "cpf-cnpj": 7.157689000101E12
+        },
+        {
+            "id": 1430985737,
+            "name": "REACH",
+            "fullName": "REACH CAPITAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.8928618000135E13
+        },
+        {
+            "id": 1346365397,
+            "name": "REAG DTVM SA",
+            "fullName": "REAG DTVM SA",
+            "cpf-cnpj": 3.4829992000186E13
+        },
+        {
+            "id": 1333676474,
+            "name": "REAG GESTORA DE",
+            "fullName": "REAG GESTORA DE RECURSOS S.A.,",
+            "cpf-cnpj": 1.8606232000153E13
+        },
+        {
+            "id": 106741512,
+            "name": "REAL GRANDEZA",
+            "fullName": "REAL GRANDEZA FUND PREV ASSIST SOCIAL",
+            "cpf-cnpj": 3.4269803000168E13
+        },
+        {
+            "id": 386190042,
+            "name": "REDEPREV",
+            "fullName": "REDEPREV",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 1485870653,
+            "name": "REIS GESTORA",
+            "fullName": "REIS GESTORA DE INVESTIMENTOS LTDA",
+            "cpf-cnpj": 4.3675872000162E13
+        },
+        {
+            "id": 370659461,
+            "name": "RELIANCE ASSET",
+            "fullName": "RELIANCE ASSET MANAGEMENT ADM.REC. LTDA",
+            "cpf-cnpj": 2.269237000106E12
+        },
+        {
+            "id": 370659784,
+            "name": "RELIANCE DTVM",
+            "fullName": "RELIANCE DTVM LTDA",
+            "cpf-cnpj": 4.215594000109E12
+        },
+        {
+            "id": 5780987,
+            "name": "RENASCENCA DTVM",
+            "fullName": "RENASCENCA DTVM LTDA",
+            "cpf-cnpj": 6.2287735000103E13
+        },
+        {
+            "id": 1340813073,
+            "name": "RENDA ASSET ADMI",
+            "fullName": "RENDA ASSET ADMINISTRADORA DE RECURSOS L",
+            "cpf-cnpj": 1.02536340001E13
+        },
+        {
+            "id": 1407912448,
+            "name": "RENOVA GESTORA",
+            "fullName": "RENOVA GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.3971519000169E13
+        },
+        {
+            "id": 142657937,
+            "name": "RIO BRAVO I DTVM",
+            "fullName": "RIO BRAVO INVESTIMENTOS S.A. DTVM",
+            "cpf-cnpj": 7.2600026000181E13
+        },
+        {
+            "id": 1415118479,
+            "name": "RIO BRAVO INVEST",
+            "fullName": "RIO BRAVO INVESTIMENTOS LTDA",
+            "cpf-cnpj": 3.864607000108E12
+        },
+        {
+            "id": 1430985738,
+            "name": "RIO DAS PEDRAS",
+            "fullName": "RIO DAS PEDRAS ADM E PART. LTDA",
+            "cpf-cnpj": 9.311153000124E12
+        },
+        {
+            "id": 1431143432,
+            "name": "RISE INVEST",
+            "fullName": "RISE INVESTMENT MANAGEMENT LTDA",
+            "cpf-cnpj": 4.156239000017E13
+        },
+        {
+            "id": 1371007925,
+            "name": "RJI Gestão e Inv",
+            "fullName": "RJI Gestão e Investimentos LTDA.",
+            "cpf-cnpj": 1.0995802000132E13
+        },
+        {
+            "id": 808327338,
+            "name": "RO PARTICIPACOES",
+            "fullName": "RO PARTICIPACOES S/A",
+            "cpf-cnpj": 1.432942000012E13
+        },
+        {
+            "id": 611173578,
+            "name": "ROBERTO GUTTMANN",
+            "fullName": "ROBERTO GUTTMANN SERWACZAK SLOWINSKI",
+            "cpf-cnpj": 3.47311989E13
+        },
+        {
+            "id": 417213955,
+            "name": "ROOT CAPITAL",
+            "fullName": "ROOT CAPITAL  Gestão de Recursos Ltda",
+            "cpf-cnpj": 1.1397040000135E13
+        },
+        {
+            "id": 1430985740,
+            "name": "RUBIK",
+            "fullName": "RUBIK CAPITAL ASSET MANAGEMENT LTDA",
+            "cpf-cnpj": 4.2177684000141E13
+        },
+        {
+            "id": 1430481790,
+            "name": "SABEMI INTERMEDI",
+            "fullName": "SABEMI INTERMEDIADORA DE NEGÓCIOS LTDA.",
+            "cpf-cnpj": 9.003268000151E12
+        },
+        {
+            "id": 126630173,
+            "name": "SAFRA INVESTIM",
+            "fullName": "BANCO SAFRA DE INVESTIMENTO S.A.",
+            "cpf-cnpj": 7.002898000186E12
+        },
+        {
+            "id": 1430985741,
+            "name": "SAKS",
+            "fullName": "SAKS GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 4.0105252000108E13
+        },
+        {
+            "id": 29956201,
+            "name": "SALOMON",
+            "fullName": "SALOMON S. BARNEY",
+            "cpf-cnpj": 3.386859700014E13
+        },
+        {
+            "id": 711464836,
+            "name": "SALUS EMPR LOG",
+            "fullName": "SALUS EMPREENDIMENTOS LOGISTICOS S A",
+            "cpf-cnpj": 9.426513000133E12
+        },
+        {
+            "id": 711458797,
+            "name": "SALUS EMPREENDIM",
+            "fullName": "SALUS EMPREENDIMENTOS LOGIST.II S/A",
+            "cpf-cnpj": 1.3015875000109E13
+        },
+        {
+            "id": 1326414246,
+            "name": "SAMBA INVESTIMEN",
+            "fullName": "SAMBA INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.200680600012E13
+        },
+        {
+            "id": 1328401701,
+            "name": "SANTA FÉ",
+            "fullName": "SANTA FÉ PORTFÓLIOS LTDA",
+            "cpf-cnpj": 3.4658702000189E13
+        },
+        {
+            "id": 1330445435,
+            "name": "SANTA FE AQUARIU",
+            "fullName": "SANTA FE AQUARIUS",
+            "cpf-cnpj": 4.621018000161E12
+        },
+        {
+            "id": 4346555,
+            "name": "SANTANDER",
+            "fullName": "BANCO SANTANDER S.A.",
+            "cpf-cnpj": 3.3517640000122E13
+        },
+        {
+            "id": 135177955,
+            "name": "SANTANDER ASSET",
+            "fullName": "Santander Banespa Asset Management Ltda.",
+            "cpf-cnpj": 7.3159642000101E13
+        },
+        {
+            "id": 633855042,
+            "name": "SANTANDER BR AM",
+            "fullName": "SANTANDER BRASIL ASSET MANAGEMENT DTVM S",
+            "cpf-cnpj": 1.0977742000125E13
+        },
+        {
+            "id": 1332287079,
+            "name": "SANTANDER BRASIL",
+            "fullName": "SANTANDER BRASIL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0231177000152E13
+        },
+        {
+            "id": 1325774677,
+            "name": "SANTANDER SEC",
+            "fullName": "SANTANDER SECURITIES SERVICES BRASIL DTV",
+            "cpf-cnpj": 6.2318407000119E13
+        },
+        {
+            "id": 1395529135,
+            "name": "SÃO PEDRO CAPITA",
+            "fullName": "SÃO PEDRO CAPITAL INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.8230876000143E13
+        },
+        {
+            "id": 23847530,
+            "name": "SÃO RAFAEL S P P",
+            "fullName": "São Rafael Sociedade de Previdência Priv",
+            "cpf-cnpj": 2.9213238000187E13
+        },
+        {
+            "id": 45508449,
+            "name": "SCHRODER I M BR",
+            "fullName": "SCHRODER INV MANAG BRASIL LTDA",
+            "cpf-cnpj": 9.2886662000129E13
+        },
+        {
+            "id": 556453428,
+            "name": "SCKM",
+            "fullName": "SOCIEDADE CIVIL K & M LTDA",
+            "cpf-cnpj": 9.7459853000128E13
+        },
+        {
+            "id": 1034129735,
+            "name": "SCOR RESSEGUROS",
+            "fullName": "SCOR BRASIL RESSEGUROS S/A",
+            "cpf-cnpj": 1.9851775000107E13
+        },
+        {
+            "id": 5487703,
+            "name": "SCOTIABANK BR",
+            "fullName": "SCOTIABANK BRASIL S.A. BANCO MULTIPLO",
+            "cpf-cnpj": 2.9030467000166E13
+        },
+        {
+            "id": 157170826,
+            "name": "SDA GESTAO",
+            "fullName": "SDA GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.718380000192E12
+        },
+        {
+            "id": 711464828,
+            "name": "SECURITAS GARANT",
+            "fullName": "SECURITAS GARANTIAS S/A",
+            "cpf-cnpj": 4.113052000125E12
+        },
+        {
+            "id": 1336827982,
+            "name": "SECURITY ADMINIS",
+            "fullName": "SECURITY ADMINISTRADORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.295841000107E12
+        },
+        {
+            "id": 1430985742,
+            "name": "SERGIO ATTIE",
+            "fullName": "SERGIO SARQUES ATTIE",
+            "cpf-cnpj": 7.5861429715E10
+        },
+        {
+            "id": 39728777,
+            "name": "SERPROS FDO MULT",
+            "fullName": "SERPROS FUNDO MULTIPATROCINADO",
+            "cpf-cnpj": 2.9738952000199E13
+        },
+        {
+            "id": 1010249978,
+            "name": "SETAH",
+            "fullName": "SETAH OPERACOES S.A.",
+            "cpf-cnpj": 1.95602820001E13
+        },
+        {
+            "id": 1387968949,
+            "name": "Seven Pounds",
+            "fullName": "Seven Pounds Asset Management Ltda.",
+            "cpf-cnpj": 3.9433649000131E13
+        },
+        {
+            "id": 1426743862,
+            "name": "SFG CAPITAL",
+            "fullName": "SFG CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.2769156000174E13
+        },
+        {
+            "id": 1473087630,
+            "name": "SFI INVESTIMENTO",
+            "fullName": "SFI INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 4.608141000142E12
+        },
+        {
+            "id": 1471093446,
+            "name": "SIGA GESTORA",
+            "fullName": "SIGA GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.4613511000147E13
+        },
+        {
+            "id": 502315497,
+            "name": "SILVERADO GESTÃO",
+            "fullName": "SILVERADO GESTÃO E INVESTIMENTO LTDA",
+            "cpf-cnpj": 1.0336248000181E13
+        },
+        {
+            "id": 1430985743,
+            "name": "SIMETRICA",
+            "fullName": "SIMETRICA CONSULTORIA EM INV E PART LTDA",
+            "cpf-cnpj": 3.666323000107E12
+        },
+        {
+            "id": 431161188,
+            "name": "SKOPOS ADM REC L",
+            "fullName": "SKOPOS ADMINISTRADORA DE RECURSOS LTDA",
+            "cpf-cnpj": 4.368986000108E12
+        },
+        {
+            "id": 576297066,
+            "name": "SKOPOS INVEST",
+            "fullName": "SKOPOS INVESTIMENTOS LTDA",
+            "cpf-cnpj": 8.749411000196E12
+        },
+        {
+            "id": 1453631833,
+            "name": "SOLE CAPITAL",
+            "fullName": "SOLE CAPITAL LTDA",
+            "cpf-cnpj": 2.1839257000101E13
+        },
+        {
+            "id": 192654174,
+            "name": "SOLIDUS CCVM",
+            "fullName": "SOLIDUS S/A CCVM",
+            "cpf-cnpj": 6.875768100017E13
+        },
+        {
+            "id": 1408184946,
+            "name": "SOLIS INVEST",
+            "fullName": "SOLIS INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.7254708000171E13
+        },
+        {
+            "id": 1327662904,
+            "name": "SOMMA INVESTIMEN",
+            "fullName": "SOMMA INVESTIMENTOS S/A",
+            "cpf-cnpj": 5.563299000106E12
+        },
+        {
+            "id": 392608210,
+            "name": "SOUTHERN CROSS",
+            "fullName": "SOUTHERN CROSS DO BRASIL ADMINISTRADORA",
+            "cpf-cnpj": 9.290333000177E12
+        },
+        {
+            "id": 1430720742,
+            "name": "SP VENTURES",
+            "fullName": "SP VENTURES GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 9.59475600018E12
+        },
+        {
+            "id": 1367054863,
+            "name": "SPARTA ADM DE RE",
+            "fullName": "SPARTA ADMINISTRADORA DE RECURSOS",
+            "cpf-cnpj": 7.274571400013E13
+        },
+        {
+            "id": 53182563,
+            "name": "SPC",
+            "fullName": "SPC",
+            "cpf-cnpj": 3.94528000435E12
+        },
+        {
+            "id": 1292535111,
+            "name": "SPECTRA INVEST.",
+            "fullName": "SPECTRA INVESTIMENTOS S/A",
+            "cpf-cnpj": 4.4011526000142E13
+        },
+        {
+            "id": 1368840314,
+            "name": "SPINNAKER INVEST",
+            "fullName": "SPINNAKER INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 3.5950923000199E13
+        },
+        {
+            "id": 1430985744,
+            "name": "SPM",
+            "fullName": "SUPERMARINE ADM DE CAR. V. M. LTDA",
+            "cpf-cnpj": 3.4118647000134E13
+        },
+        {
+            "id": 1395973996,
+            "name": "SPS CAPITAL GEST",
+            "fullName": "SPS CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.6954358000193E13
+        },
+        {
+            "id": 196985448,
+            "name": "STANDARD",
+            "fullName": "BANCO STANDARD DE INVESTIMENTO SA",
+            "cpf-cnpj": 4.866275000163E12
+        },
+        {
+            "id": 769827055,
+            "name": "STARR INTERNATIO",
+            "fullName": "STARR INTERNATIONAL BRASIL SEGURADORA S.",
+            "cpf-cnpj": 1.7341270000169E13
+        },
+        {
+            "id": 1360807055,
+            "name": "STIMA ENERGIA",
+            "fullName": "STIMA ENERGIA LTDA",
+            "cpf-cnpj": 2.5099255000184E13
+        },
+        {
+            "id": 1358560827,
+            "name": "STIMA GESTAO",
+            "fullName": "STIMA GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 3.4894757000198E13
+        },
+        {
+            "id": 1500505291,
+            "name": "Strata Capital",
+            "fullName": "STRATA CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 4.3179785000114E13
+        },
+        {
+            "id": 1406790487,
+            "name": "STRATEGIC PORTFO",
+            "fullName": "STRATEGIC PORTFOLIO ADVISORS GESTAO",
+            "cpf-cnpj": 1.8167206000176E13
+        },
+        {
+            "id": 447039053,
+            "name": "STRATUS GEST",
+            "fullName": "STRATUS GESTAO DE CARTEIRAS LTDA",
+            "cpf-cnpj": 9.238656000111E12
+        },
+        {
+            "id": 447037974,
+            "name": "STRATUS INV",
+            "fullName": "STRATUS INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.263285000189E12
+        },
+        {
+            "id": 1299874598,
+            "name": "SUMONE",
+            "fullName": "SUMONE SERV. DE TECNOLOGIA S.A",
+            "cpf-cnpj": 2.0005537000151E13
+        },
+        {
+            "id": 659106490,
+            "name": "SWISS PART",
+            "fullName": "SWISS RE PARTICIPAÇÕES LTDA",
+            "cpf-cnpj": 1.5047380000197E13
+        },
+        {
+            "id": 466544968,
+            "name": "TAG INVEST.",
+            "fullName": "TAG INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 1.591499000111E12
+        },
+        {
+            "id": 1165075033,
+            "name": "TANGARÁ ENERGIA",
+            "fullName": "TANGARÁ ENERGIA S.A.",
+            "cpf-cnpj": 3.573381000196E12
+        },
+        {
+            "id": 696567917,
+            "name": "TARPON GESTORA",
+            "fullName": "TARPON GESTORA DE RECURSOS S.A.",
+            "cpf-cnpj": 1.4841301000152E13
+        },
+        {
+            "id": 290311416,
+            "name": "TARPON INV",
+            "fullName": "TARPON INVESTIMENTOS S/A",
+            "cpf-cnpj": 5.341549000163E12
+        },
+        {
+            "id": 1430985745,
+            "name": "TATICA",
+            "fullName": "TATICA ASSET MANAGEMENT ADM DE REC LTDA",
+            "cpf-cnpj": 2.228585000127E12
+        },
+        {
+            "id": 29956220,
+            "name": "TELEMAR",
+            "fullName": "TELEMAR",
+            "cpf-cnpj": 4.9391600012E12
+        },
+        {
+            "id": 1471461426,
+            "name": "TERCON ASSET",
+            "fullName": "Tercon Investimentos LTDA",
+            "cpf-cnpj": 9.121454000195E12
+        },
+        {
+            "id": 966140934,
+            "name": "TERMELETRICA VIA",
+            "fullName": "TERMELETRICA VIANA S/A",
+            "cpf-cnpj": 9.04378200011E12
+        },
+        {
+            "id": 1440151475,
+            "name": "THIAGO DUVERNOY",
+            "fullName": "THIAGO DUVERNOY",
+            "cpf-cnpj": 8.94752000143E11
+        },
+        {
+            "id": 1386147174,
+            "name": "TITAN CAPITAL GE",
+            "fullName": "TITAN CAPITAL GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.0442603000105E13
+        },
+        {
+            "id": 1402197307,
+            "name": "TM3 CAPITAL",
+            "fullName": "TRIVELA M3 INVESTIMENTOS S.A.",
+            "cpf-cnpj": 2.1008402000102E13
+        },
+        {
+            "id": 1287101090,
+            "name": "TMF BRASIL",
+            "fullName": "TMF BRASIL SERVIÇOS DE ADMINISTRAÇÃO",
+            "cpf-cnpj": 1.831399600015E13
+        },
+        {
+            "id": 550919021,
+            "name": "TMG",
+            "fullName": "TMG SERVICOS DE GESTAO LTDA",
+            "cpf-cnpj": 9.13712900011E12
+        },
+        {
+            "id": 1350934414,
+            "name": "TPE GESTORA",
+            "fullName": "TPE GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.5098801000116E13
+        },
+        {
+            "id": 1251630417,
+            "name": "TRANS SUL BRA EN",
+            "fullName": "TRANSMISSORA SUL BRASILEIRA ENERGIA S/A",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 711458676,
+            "name": "TRANSMI ALIANÇA",
+            "fullName": "TRANSMISSORA ALIANÇA DE ENERGIA ELETRICA",
+            "cpf-cnpj": 7.85997100013E12
+        },
+        {
+            "id": 1343564985,
+            "name": "TRAVESSIA",
+            "fullName": "TRAVESSIA CAPITAL ASSET MANAG. LIMITADA",
+            "cpf-cnpj": 5.875277000181E12
+        },
+        {
+            "id": 1310895028,
+            "name": "TREECORP GEST",
+            "fullName": "TREECORP PARTNERS GESTORA LTDA",
+            "cpf-cnpj": 1.5300931000182E13
+        },
+        {
+            "id": 1281098793,
+            "name": "TRES CORACOES",
+            "fullName": "CAFE TRES CORACOES S/A",
+            "cpf-cnpj": 1.7467515000107E13
+        },
+        {
+            "id": 1430811515,
+            "name": "TRESOR",
+            "fullName": "TRESOR INVESTIMENTOS LTDA",
+            "cpf-cnpj": 2.6093429000164E13
+        },
+        {
+            "id": 1431190320,
+            "name": "TRIGGER",
+            "fullName": "TRIGGER GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 3.2274480000175E13
+        },
+        {
+            "id": 1334327531,
+            "name": "TRÍGONO CAPITAL",
+            "fullName": "TRÍGONO CAPITAL LTDA.",
+            "cpf-cnpj": 2.8925400000127E13
+        },
+        {
+            "id": 509913272,
+            "name": "TRIVELLA INVEST.",
+            "fullName": "TRIVÈLLA INVESTIMENTOS S.A.",
+            "cpf-cnpj": 3.553662000187E12
+        },
+        {
+            "id": 723822855,
+            "name": "TRX GEST DE REC",
+            "fullName": "TRX GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.3362610000187E13
+        },
+        {
+            "id": 1381162978,
+            "name": "TS GESTÃO",
+            "fullName": "TS GESTÃO E CONSULTORIA IMOBILIÁRIA LTDA",
+            "cpf-cnpj": 1.0262910000104E13
+        },
+        {
+            "id": 1130467801,
+            "name": "TSL TECNOLOGIA",
+            "fullName": "TSL TECNOLOGIA SIST LEGISLACAO LTDA",
+            "cpf-cnpj": 9.10509000171E12
+        },
+        {
+            "id": 1460791901,
+            "name": "TYR",
+            "fullName": "TYR GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.6707841000173E13
+        },
+        {
+            "id": 313471014,
+            "name": "UAM ASSESSORIA G",
+            "fullName": "UAM ASSESSORIA GESTAO INVESTIMENTOS LTDA",
+            "cpf-cnpj": 5.9608174000184E13
+        },
+        {
+            "id": 493181668,
+            "name": "UBF SEGUROS S/A",
+            "fullName": "UBF SEGUROS S/A",
+            "cpf-cnpj": 7.2145931000199E13
+        },
+        {
+            "id": 148950537,
+            "name": "UBS BRASIL CCTVM",
+            "fullName": "UBS BRASIL CCTVM",
+            "cpf-cnpj": 2.819125000173E12
+        },
+        {
+            "id": 30455618,
+            "name": "UBS PACTUAL A.M.",
+            "fullName": "UBS PACTUAL ASSET MANAGEMENT S/A DTVM",
+            "cpf-cnpj": 2.96500820001E13
+        },
+        {
+            "id": 19906986,
+            "name": "UNIBANCO ASSET",
+            "fullName": "UNIBANCO ASSET MANAGEMENT S/A DTVM",
+            "cpf-cnpj": 3.3829292000129E13
+        },
+        {
+            "id": 4346545,
+            "name": "UNIBANCO CVM",
+            "fullName": "UNIBANCO INV. CVM E CAMBIO S/A",
+            "cpf-cnpj": 8.9560460000188E13
+        },
+        {
+            "id": 19906984,
+            "name": "UNIBANCO S/A",
+            "fullName": "UNIBANCO UNIÃO DE BANCOS BRASILEIROS SA",
+            "cpf-cnpj": 3.370039400014E13
+        },
+        {
+            "id": 966141037,
+            "name": "UNIDAS S/A",
+            "fullName": "UNIDAS S/A",
+            "cpf-cnpj": 4.43753400013E12
+        },
+        {
+            "id": 53264252,
+            "name": "UNILEVERPREV",
+            "fullName": "UNILEVERPREV SOC. DE PREV. PRIVADA",
+            "cpf-cnpj": 4.832322400016E13
+        },
+        {
+            "id": 520979108,
+            "name": "UNIMED RIO",
+            "fullName": "UNIMED RIO",
+            "cpf-cnpj": 4.2163881000101E13
+        },
+        {
+            "id": 53265023,
+            "name": "USIMINAS",
+            "fullName": "Caixa dos Empregados da Usiminas",
+            "cpf-cnpj": 1.661948800017E13
+        },
+        {
+            "id": 323911569,
+            "name": "UV Gestora",
+            "fullName": "UV Gestora de Ativos Financeiros Ltda",
+            "cpf-cnpj": 7.213252000148E12
+        },
+        {
+            "id": 1338791837,
+            "name": "V8 CAPITAL GESTÃ",
+            "fullName": "V8 CAPITAL GESTÃO DE INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 3.6771057000131E13
+        },
+        {
+            "id": 1379740848,
+            "name": "VALETEC",
+            "fullName": "VALETEC CAPITAL INVESTIMENTOS LTDA.",
+            "cpf-cnpj": 8.157495000179E12
+        },
+        {
+            "id": 84861999,
+            "name": "VALIA",
+            "fullName": "FUNDACAO VALE DO RIO DOCE DE SEG. SOCIAL",
+            "cpf-cnpj": 4.2271429000163E13
+        },
+        {
+            "id": 1339801553,
+            "name": "VALORA GESTÃO",
+            "fullName": "VALORA INVESTIMENTOS",
+            "cpf-cnpj": 7.559989000117E12
+        },
+        {
+            "id": 760683952,
+            "name": "VBI REAL ESTATE",
+            "fullName": "VBI REAL ESTATE GESTAO DE CARTEIRAS LTDA",
+            "cpf-cnpj": 1.1274775000171E13
+        },
+        {
+            "id": 1430811514,
+            "name": "VECTIS",
+            "fullName": "VECTIS GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.2620044000101E13
+        },
+        {
+            "id": 460960044,
+            "name": "VELUM CREDIT",
+            "fullName": "VELUM CREDIT",
+            "cpf-cnpj": 9.662882000125E12
+        },
+        {
+            "id": 1251630433,
+            "name": "VENTOS S. T. H",
+            "fullName": "VENTOS DE SAO TITO HOLDING S/A",
+            "cpf-cnpj": 1.7875156000119E13
+        },
+        {
+            "id": 1097049666,
+            "name": "VERDE ASSET MANA",
+            "fullName": "VERDE ASSET MANAGEMENT S/A",
+            "cpf-cnpj": 1.9749539000176E13
+        },
+        {
+            "id": 1498592674,
+            "name": "VERSAL GESTORA",
+            "fullName": "Versal Finance Gestão de Recursos LTDA",
+            "cpf-cnpj": 3.3488831000103E13
+        },
+        {
+            "id": 1340931492,
+            "name": "VERTRA CAPITAL G",
+            "fullName": "VERTRA CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 1.8076466000136E13
+        },
+        {
+            "id": 1340931494,
+            "name": "VERTRA INSTITUCI",
+            "fullName": "VERTRA INSTITUCIONAL",
+            "cpf-cnpj": 1.8832869000168E13
+        },
+        {
+            "id": 1506107504,
+            "name": "VESTED",
+            "fullName": "Vested Capital Ltda",
+            "cpf-cnpj": 4.4848824000191E13
+        },
+        {
+            "id": 1114571804,
+            "name": "VIC 01 SOB EMPRE",
+            "fullName": "VIC 01 SOB EMPREENDIMENTOS LTDA",
+            "cpf-cnpj": 1.3035227000114E13
+        },
+        {
+            "id": 711461411,
+            "name": "VICTORIA REAL ST",
+            "fullName": "VICTORIA REAL STATE PART. S.A",
+            "cpf-cnpj": 1.1376335000125E13
+        },
+        {
+            "id": 137799835,
+            "name": "VIDA",
+            "fullName": "VIDA SEGURADORA S/A.",
+            "cpf-cnpj": 2.23823900012E12
+        },
+        {
+            "id": 1251630428,
+            "name": "VIDEOLAR",
+            "fullName": "VIDEOLAR S/A",
+            "cpf-cnpj": 0.0
+        },
+        {
+            "id": 471072429,
+            "name": "VINCI CAPITAL",
+            "fullName": "VINCI CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 1.1079478000175E13
+        },
+        {
+            "id": 1351262073,
+            "name": "VINCI GESTAO",
+            "fullName": "VINCI GESTAO DE PATRIMONIO LTDA",
+            "cpf-cnpj": 1.3421810000163E13
+        },
+        {
+            "id": 996176954,
+            "name": "VIRACOPOS",
+            "fullName": "AEROPORTOS BRASIL VIRACOPOS S.A.",
+            "cpf-cnpj": 1.4522178000107E13
+        },
+        {
+            "id": 348531105,
+            "name": "VITÓRIA ASSET",
+            "fullName": "VITÓRIA ASSET MANAGEMENT S/A",
+            "cpf-cnpj": 4.330895000183E12
+        },
+        {
+            "id": 1360564284,
+            "name": "VITREO",
+            "fullName": "VITREO DIST. TIT. VAL. MOB. S/A",
+            "cpf-cnpj": 3.4711571000156E13
+        },
+        {
+            "id": 1430687110,
+            "name": "VITREO GESTÃO",
+            "fullName": "VITREO GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 6.195084000142E12
+        },
+        {
+            "id": 816391914,
+            "name": "VL RICA CAPITAL",
+            "fullName": "VILA RICA CAPITAL GESTORA RECURSOS LTDA",
+            "cpf-cnpj": 1.4751574000106E13
+        },
+        {
+            "id": 1325296378,
+            "name": "VOLT PARTNERS",
+            "fullName": "VOLT PARTNERS INVESTIMENTOS LTDA",
+            "cpf-cnpj": 1.1774290000147E13
+        },
+        {
+            "id": 1309721594,
+            "name": "VOX CAPITAL",
+            "fullName": "Vox Capital Consultoria e Assessoria Ltd",
+            "cpf-cnpj": 1.0814751000103E13
+        },
+        {
+            "id": 1381584369,
+            "name": "WARREN BRASIL GE",
+            "fullName": "WARREN BRASIL GESTÃO E ADMINISTRAÇÃO DE",
+            "cpf-cnpj": 2.4176946000171E13
+        },
+        {
+            "id": 797940227,
+            "name": "WARREN CORRETORA",
+            "fullName": "WARREN CVMC LTDA",
+            "cpf-cnpj": 9.2875780000131E13
+        },
+        {
+            "id": 1368830806,
+            "name": "WARREN FAMILY OF",
+            "fullName": "WARREN FAMILY OFFICE GESTÃO DE RECURSOS",
+            "cpf-cnpj": 2.6737584000176E13
+        },
+        {
+            "id": 143023799,
+            "name": "WESTERN ASSET",
+            "fullName": "WESTERN ASSET MANAGEMENT CO. DTVM LTDA",
+            "cpf-cnpj": 7.437241000141E12
+        },
+        {
+            "id": 461091607,
+            "name": "WESTERN UNION",
+            "fullName": "WESTERN UNION",
+            "cpf-cnpj": 1.236756700018E13
+        },
+        {
+            "id": 1340577098,
+            "name": "WIT GESTÃO DE RE",
+            "fullName": "WIT GESTÃO DE RECURSOS LTDA.",
+            "cpf-cnpj": 2.80936420001E13
+        },
+        {
+            "id": 1506106241,
+            "name": "WIZ CAPITAL",
+            "fullName": "Wiz Capital Gestora de Recursos Ltda",
+            "cpf-cnpj": 9.031993000133E12
+        },
+        {
+            "id": 1305771360,
+            "name": "WMR CAPITAL",
+            "fullName": "WMR CAPITAL GESTORA DE RECURSOS LTDA",
+            "cpf-cnpj": 2.6203121000124E13
+        },
+        {
+            "id": 867369957,
+            "name": "XL RESSEGUROS BR",
+            "fullName": "XL RESSEGUROS BRASIL S.A.",
+            "cpf-cnpj": 1.0356741000163E13
+        },
+        {
+            "id": 862352076,
+            "name": "XL SEGUROS BR SA",
+            "fullName": "XL SEGUROS BRASIL SA",
+            "cpf-cnpj": 1.4448493000131E13
+        },
+        {
+            "id": 996176449,
+            "name": "XNICE",
+            "fullName": "XNICE PARTICIPACOES S/A",
+            "cpf-cnpj": 1.7426229000195E13
+        },
+        {
+            "id": 385338782,
+            "name": "XP GESTAO",
+            "fullName": "XP GESTAO DE RECURSOS LTDA",
+            "cpf-cnpj": 7.625200000189E12
+        },
+        {
+            "id": 1333057359,
+            "name": "YAGUARA",
+            "fullName": "YAGUARA CAPITAL GESTÃO DE RECURSOS LTDA",
+            "cpf-cnpj": 2.8038617000115E13
+        },
+        {
+            "id": 1379653828,
+            "name": "ZEMA SEGUROS S/A",
+            "fullName": "ZEMA SEGUROS S/A",
+            "cpf-cnpj": 4.155349200012E13
+        },
+        {
+            "id": 1456330667,
+            "name": "ZERO CINCO UM",
+            "fullName": "ZERO CINCO UM CAPITAL GESTÃO DE REC LTDA",
+            "cpf-cnpj": 3.0193705000133E13
+        }
+    ]
+}

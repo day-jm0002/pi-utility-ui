@@ -1,0 +1,13 @@
+{
+  "nome": "Marco Junior",
+  "email": {
+    "endereco": "marco.goncalves@bancodaycoval123.com.br"
+  },
+  "documento": {
+    "numero": "67861626067"
+  },
+  "login": "marco.goncalves@bancodaycoval123.com.br",
+  "codTipoUsuario": 6,
+  "serialToken": "BRSC00382582",
+  "cpfCnpjCliente": "16492866000105"
+}

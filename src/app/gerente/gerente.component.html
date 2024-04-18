@@ -1,0 +1,53 @@
+<app-loader></app-loader>
+<div class="container">
+  <h2>Pesquisar</h2>
+<form class="row g-3" [formGroup]="formulario">
+  <div class="col-sm-3">
+    <input formControlName="pesquisa" type="text" class="form-control" id="inputPassword2" placeholder="Encontrar o gestor">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" (click)="Filtrar()" [disabled]="!formulario.valid" >Pesquisar</button>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-danger mb-3" (click)="Limpar()">Limpar</button>
+  </div>
+</form>
+</div>
+
+<div *ngIf="exibirMensagem">
+  <app-mensagem mensagem="Sua consulta não retornou resultado" ></app-mensagem>
+</div>
+
+<div *ngIf="listaApi.length > 0">
+  <section>
+  <div style="text-align: center;">
+    <hr>
+    <h2>Gerentes</h2>
+    <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
+    <hr>
+  </div>
+  </section>
+  <section class="tabela">
+    <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Codigo Externo</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Tipo Gerente</th>
+          <th scope="col">Email</th>
+          <th scope="col">Centro de Custo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listaApi">
+          <td>{{item.codExterno}}</td>
+          <td>{{item.nome}}</td>
+          <td>{{item.tipoGerente}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.codcCusto}}</td>
+        </tr>
+      </tbody>
+    </table> 
+    </div>
+  </section>

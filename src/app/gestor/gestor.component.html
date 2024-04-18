@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>Pesquisar</h2>
+<form class="row g-3" [formGroup]="formulario">
+  <div class="col-sm-3">
+    <input formControlName="cnpj" type="text" class="form-control" id="inputPassword2" placeholder="Encontre o gestor">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" (click)="Filtrar()" [disabled]="!formulario.valid" >Pesquisar</button>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-danger mb-3" (click)="Limpar()">Limpar</button>
+  </div>
+</form>
+</div>
+
+<app-loader></app-loader>
+
+<div class="container">
+  <hr>
+  <h2 style="text-align: center;">Gestores da Drive</h2>
+  <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
+  <hr>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Codigo do Gestor</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Nome Completo</th>
+        <th scope="col">CNPJ do Gestor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listaApi">
+        <th><a  style="color:black" src="" routerLink="/fundos/{{item.idGestor}}//{{item.nome}}/">{{item.idGestor}}</a></th>
+        <td>{{item.nome}}</td>
+        <td>{{item.nomeCompleto}}</td>
+        <td>{{item.cpfCNPJ}}</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>

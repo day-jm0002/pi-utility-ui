@@ -1,0 +1,114 @@
+<div class="container box">
+  <div style="margin-top: 10px;">
+    <div class="container">
+    <p>Consulta de posição via login sso</p>
+    <form class="row g-3" [formGroup]="formularioPosicaoSSO">
+      <div class="col-sm-3">
+        <input type="text" formControlName="CodigoCliente" maxlength="9" class="form-control" id="inputPassword2" placeholder="Codigo do Cliente" >
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary"[disabled]="!this.formularioPosicaoSSO.valid"  (click)="ObterUrl()">Consultar</button> 
+      </div>
+    </form>      
+    </div>
+  <div *ngIf="ExibirPosicaoSSo">
+  <iframe [src]="url" width="100%" height="500px"></iframe>
+  </div>
+</div>
+</div>
+
+<div class="container box" >
+<form [formGroup]="form">
+    <div class="row">
+        <h3>Formulário de Integração SSO</h3>   
+        <div class="col">
+          <label>Nome</label>
+          <input formControlName="Nome"  class="form-control">
+      </div>
+      <div class="col">
+        <label>E-mail</label>
+        <input formControlName="Email"  class="form-control" placeholder="email@email.com.br">
+      </div>
+      <div class="col">
+        <label>CPF</label>
+        <input formControlName="Documento"  class="form-control" placeholder="00000000000" maxlength="11">
+      </div>
+      <div class="col">
+        <label>Login</label>
+        <input formControlName="Login" class="form-control" placeholder="email@email.com.br">
+      </div>
+    </div>
+    <div class="row">
+          <div class="col-sm-3">
+            <label>Tipo Autenticacão</label>
+            <select formControlName="TipoAutenticacao" class="form-select" aria-label="Default select example">
+              <option value="0">Selecione uma opção</option>
+              <option selected value="1">Agente</option>
+              <option value="2">Gerente Agente</option>
+              <option value="3">Gerente Daycoval</option>
+              <option value="4">Operador de Fundos</option>
+              <option value="5">Gestor de Fundos</option>
+              <option value="6">Consultor</option>
+              <option value="7">Gestor de Carteira</option>
+            </select>
+          </div>  
+        <div class="col-sm-2">
+          <label>Serial Token</label>
+          <input  formControlName="SerialToken" class="form-control" placeholder="BRSC0000000" maxlength="12">
+        </div>
+        <div class="col-sm-2">
+          <label>Cnpj Cliente</label>
+          <input  formControlName="CnpjCliente" class="form-control" placeholder="00000000000000" maxlength="14">
+        </div>       
+      </div>
+      <div class="acao">
+        <button class="btn btn-primary" [disabled]="!this.form.valid"  (click)="cadastroSSO()">Cadastrar</button>
+     </div>
+</form>
+</div>
+<div class="container">
+    <div class="mensagem">
+        <app-alert></app-alert>
+    </div>
+</div>
+<div class="container">
+  <hr>
+</div>
+<div class="container">
+  <h2>Pesquisar Token</h2>
+<form class="row g-3" [formGroup]="formularioToken">
+  <div class="col-sm-3">
+    <input formControlName="serialToken" type="text" class="form-control" id="inputPassword2" placeholder="Informe o Serial Token">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" (click)="Filtrar()" >Pesquisar</button>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-danger mb-3" (click)="Limpar()" >Limpar</button>
+  </div>
+</form>
+<div *ngIf="listaApi.length > 0">
+  <section class="tabela">
+    <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Serial Token</th>
+          <th scope="col">Login</th>
+          <th scope="col">Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listaApi">
+          <td>{{item.serialToken}}</td>
+          <td>{{item.login}}</td>
+          <td>{{item.nome}}</td>
+        </tr>
+      </tbody>
+    </table> 
+    </div>
+  </section>
+  </div>
+</div>
+<app-loader></app-loader>
+

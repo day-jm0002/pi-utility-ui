@@ -1,0 +1,37 @@
+.container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }
+
+    div.container {
+        height: 10em;
+        position: relative }
+    div.container {
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+
+.menu
+{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card{
+    margin-bottom: 15px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

@@ -1,0 +1,61 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+
+import { FundosComponent } from './fundos/fundos.component';
+import { HomeComponent } from './home/home.component';
+import { MonitorComponent } from './monitor/monitor.component';
+import { LoaderComponent } from './shared/loader/loader.component';
+import { AlertComponent } from './shared/alert/alert.component';
+import { AmbienteComponent } from './ambiente/ambiente.component';
+import { UsuarioComponent } from './usuario/listar/usuario.component';
+import { EditarUsuarioComponent } from './usuario/editar/editar-usuario.component';
+import { GerenteComponent } from './gerente/gerente.component';
+import { MensagemComponent } from './shared/mensagem/mensagem.component';
+import { LoginSSOComponent } from './login-sso/login-sso.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { GestorComponent } from './gestor/gestor.component';
+import { DashboardService } from './dashboard/service/dashboard.service';
+import { SuitabilityComponent } from './suitability/suitability.component';
+import { StatusComponentComponent } from './ambiente/shared/components/status-component/status-component.component';
+@NgModule({
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    NavbarComponent,
+    GestorComponent,
+    FundosComponent,
+    HomeComponent,
+    MonitorComponent,
+    LoaderComponent,
+    AlertComponent,
+    AmbienteComponent,
+    UsuarioComponent,
+    EditarUsuarioComponent,
+    GerenteComponent,
+    MensagemComponent,
+    LoginSSOComponent,
+    SuitabilityComponent,
+    StatusComponentComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule
+  ],
+  providers: [
+    DashboardService
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

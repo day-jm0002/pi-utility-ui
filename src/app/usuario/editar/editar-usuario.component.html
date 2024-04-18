@@ -1,0 +1,96 @@
+<app-loader></app-loader>
+<div *ngIf="ExibirFormulario">
+  <div class="container" style="margin-top:25px">
+  <div class="usuario">
+    <h2>{{usuario.nome}}</h2>
+  </div>
+<div class="acesso" style="background: whitesmoke;">
+<form [formGroup]="form">
+<div class="row">
+  <h3>Informações de Acesso</h3>  
+  <div class="col">
+    <label>Tipo Autenticação</label>
+    <select formControlName="TipoAutenticacao" class="form-control disabled-select">
+      <option >Selecione uma opção</option>
+      <option  *ngFor="let item of tipoAutenticacao" [value]="item.codTipoAutenticacao">{{item.nome}}</option>
+    </select>
+  </div>
+  <div class="col">
+    <label>Tipo Usuario</label>
+  <select formControlName="TipoUsuario" class="form-control disabled-select">
+    <option >Selecione uma opção</option>
+    <option *ngFor="let item of tipoUsuario" [value]="item.codTipoUsuario">{{item.nome}}</option>
+  </select>
+</div>
+  <div class="col">
+    <label>Tipo Role</label>
+    <select formControlName="TipoRole" class="form-control disabled-select" disabled>
+      <option>Selecione uma opção</option>
+      <option *ngFor="let item of tipoRole" [value]="item.codigoRole">{{item.nome}}</option>
+    </select>
+  </div> 
+</div>
+<hr>
+  <div class="row">
+    <h3>Informações do Usuário</h3>   
+    <div class="col-sm-2">
+      <label>Código do usuário</label>
+      <input formControlName="CodigoUsuario"  class="form-control disabled-select">
+  </div>
+  <div class="col">
+    <label>Nome</label>
+    <input formControlName="Nome"  class="form-control disabled-select">
+  </div>
+  <div class="col-sm-2">
+    <label>CPF</label>
+    <input formControlName="Cpf"  class="form-control disabled-select">
+  </div>
+  <div class="col">
+    <label>Login</label>
+    <input formControlName="Login" class="form-control disabled-select">
+  </div>
+  <div class="col-sm-1">
+    <label>Ativo</label>
+    <select formControlName="Ativo" class="form-control disabled-select">
+      <option value="">Selecione uma opção</option>
+      <option *ngFor="let item of statusUsuario" [value]="item.CodStatus">{{item.Label}}</option>
+    </select>
+  </div>
+</div>
+<div *ngIf="exibirInformacoesGerente">
+<hr>
+<div class="row">
+  <h3>Informações do Gerente</h3>      
+    <div class="col-sm-2">
+      <label>Código Externo</label>
+      <select  (change)="atualizarCampo($event.target.value)" formControlName="Gestores" class="form-control">
+        <option value="">Selecione uma opção</option>
+        <option   *ngFor="let item of gerentes" [value]="item.codExterno">{{item.codExterno}}</option>
+      </select>
+    </div>  
+  <div class="col">
+    <label>Nome</label>
+    <input  formControlName="NomeGerente" class="form-control disabled-select" >
+  </div>
+  <div class="col-sm-2">
+    <label>Tipo Gerente</label>
+    <input  formControlName="TipoGerente" class="form-control disabled-select" >
+  </div>
+  <div class="col">
+    <label>E-mail</label>
+    <input  formControlName="Email" class="form-control disabled-select">
+  </div>
+</div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12" style="display: flex;justify-content: end;">
+    <button  type="button" class="btn btn-warning salvar" (click)="Voltar()" >Voltar</button>
+    <button  type="button" class="btn btn-primary salvar" (click)="Editar()" >Editar</button>
+</div>
+</div>
+</form>
+</div>
+<app-alert></app-alert>
+</div>
+</div>

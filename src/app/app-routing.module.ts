@@ -1,0 +1,91 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { GestorComponent } from './gestor/gestor.component';
+import { FundosComponent } from './fundos/fundos.component';
+import { MonitorComponent } from './monitor/monitor.component';
+import { UsuarioComponent } from './usuario/listar/usuario.component';
+import { EditarUsuarioComponent } from './usuario/editar/editar-usuario.component';
+import { GerenteComponent } from './gerente/gerente.component';
+import { LoginSSOComponent } from './login-sso/login-sso.component';
+import { AmbienteComponent } from './ambiente/ambiente.component';
+import { SuitabilityComponent } from './suitability/suitability.component';
+
+const routes: Routes = [
+  {
+    path:"home",
+    component:HomeComponent
+  }
+  ,
+  {
+    path:"dashboard",
+    component:DashboardComponent
+  }
+  ,
+  {
+    path:"gestor",
+    component:GestorComponent
+  }
+  ,
+  {
+    path:"fundos",
+    component:FundosComponent
+  }
+  ,
+  {
+    path:"monitor",
+    component:MonitorComponent
+  }
+  ,
+  {
+    path:"fundos/:IdGestor/:NomeGestor",
+    component:FundosComponent
+  }
+  ,
+  {
+    path:"usuario",
+    component:UsuarioComponent
+  }
+  ,
+  {
+    path:"usuario/editar/:Ambiente/:CodUsuario",
+    component:EditarUsuarioComponent
+  },
+  {
+    path:"gerente",
+    component:GerenteComponent
+  }
+  ,
+  {
+    path:"Login-sso",
+    component:LoginSSOComponent
+  }
+  ,
+  {
+    path:"ambiente",
+    component:AmbienteComponent
+  }
+  ,
+  {
+    path:"suitability",
+    component:SuitabilityComponent
+  }
+  ,
+  { path: '', 
+  redirectTo: 'home',
+  pathMatch: 'full' 
+  }
+  ,
+  { 
+    path: '**', 
+    redirectTo: 'home' 
+  },
+
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

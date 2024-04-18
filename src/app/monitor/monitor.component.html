@@ -1,0 +1,141 @@
+<div class="container">
+  <hr>
+  <h2 style="text-align: center;">Monitoramento de Integrações</h2>
+  <hr>
+  <div class="menu">
+<div class="card" style="width: 18rem;">
+  <div *ngIf="status_drive == 'consulta'" style="text-align: center;">
+    <div class="alert alert-secondary" role="alert">
+      Validando Comunicação
+    </div>
+  </div>
+    <div *ngIf="status_drive == 'sucesso'" style="text-align: center;">
+      <div class="alert alert-success" role="alert">
+        <p>DriveAMnet OK</p>
+      </div>
+    </div>
+    <div *ngIf="status_drive == 'erro'" style="text-align: center;">
+      <div class="alert alert-danger" role="alert">
+        <p>DriveAMnet com Falha</p>
+      </div>
+    </div> 
+  <img class="card-img-top" src="../../assets/ambiente/sinquia.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">DriveAmNet</h5>
+    <p class="card-text">Status da DriveAMnet - {{driveDto.message}}</p>    
+    <div style="text-align: center;">
+      <button class="btn btn-primary" type="button" (click)="AtualizarStatusDrive()" >Refresh</button>
+  </div>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div *ngIf="status_sinacor == 'consulta'" style="text-align: center;">
+    <div class="alert alert-secondary" role="alert">
+      Validando Comunicação
+    </div>
+  </div>
+    <div *ngIf="status_sinacor == 'sucesso'" style="text-align: center;">
+      <div class="alert alert-success" role="alert">
+        <p>Sinacor OK</p>
+      </div>
+    </div>
+    <div *ngIf="status_sinacor == 'erro'" style="text-align: center;">
+      <div class="alert alert-danger" role="alert">
+        <p>Sinacor com Falha</p>
+      </div>
+    </div> 
+  <img class="card-img-top" src="../../assets/ambiente/sinacor.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Sinacor</h5>
+    <p class="card-text">Status do Sinacor - {{sinacorDto.text}}</p>    
+    <div style="text-align: center;">
+      <button class="btn btn-primary" type="button" (click)="AtualizarStatusSinacor()" >Refresh</button>
+  </div>
+</div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <div *ngIf="status_smart_brain == 'consulta'" style="text-align: center;">
+    <div class="alert alert-secondary" role="alert">
+      Validando Comunicação
+    </div>
+  </div>
+    <div *ngIf="status_smart_brain == 'sucesso'" style="text-align: center;">
+      <div class="alert alert-success" role="alert">
+        <p>SmartBrain OK</p>
+      </div>
+    </div>
+    <div *ngIf="status_smart_brain == 'erro'" style="text-align: center;">
+      <div class="alert alert-danger" role="alert">
+        <p>SmartBrain com Falha</p>
+      </div>
+    </div> 
+  <img class="card-img-top" src="../../assets/ambiente/previdencia.jfif" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">SmartBrain</h5>
+    <p class="card-text">Status do SmartBrain - {{smartBrainDto.text}} </p>    
+    <div style="text-align: center;">
+      <button class="btn btn-primary" type="button" (click)="AtualizarStatusSmartBrasin()" >Refresh</button>
+  </div>
+</div>
+</div>
+</div>
+<hr>
+
+<div class="menu">
+  <div class="card" style="width: 18rem;">
+    <div *ngIf="status_infotreasure == 'consulta'" style="text-align: center;">
+      <div class="alert alert-secondary" role="alert">
+        Validando Comunicação
+      </div>
+    </div>
+      <div *ngIf="status_infotreasure == 'sucesso'" style="text-align: center;">
+        <div class="alert alert-success" role="alert">
+          <p style="margin-bottom: 0px;">Infotreasury OK</p>
+          <p style="margin-bottom: 0px;">{{infotreasureDto.DataGiro}}</p>
+        </div>
+      </div>
+      <div *ngIf="status_infotreasure == 'erro'" style="text-align: center;">
+        <div class="alert alert-danger" role="alert">
+          <p>Infotreasury com Falha</p>
+        </div>
+      </div> 
+    <img class="card-img-top" style="height: 157px" src="../../assets/ambiente/infotreasury.jfif" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">INFOTREASURY</h5>
+      <p class="card-text" > Status Infotreasure - {{infotreasureDto.message}} </p>    
+      <div style="text-align: center;margin-top: 40px;">
+        <button class="btn btn-primary" type="button" (click)="AtualizarStatusInfotreasure()" >Refresh</button>
+    </div>
+  </div>
+  </div>
+
+   <div class="card" style="width: 18rem;">
+      <div *ngIf="status_sisfinance == 'consulta'" style="text-align: center;">
+        <div class="alert alert-secondary" role="alert">
+          Validando Comunicação
+        </div>
+      </div>
+        <div *ngIf="status_sisfinance == 'sucesso'" style="text-align: center;">
+          <div class="alert alert-success" role="alert">
+            <p>Sisfinance OK</p>
+          </div>
+        </div>
+        <div *ngIf="status_sisfinance == 'erro'" style="text-align: center;">
+          <div class="alert alert-danger" role="alert">
+            <p>Sisfinance com Falha</p>
+          </div>
+        </div> 
+      <img class="card-img-top" src="../../assets/ambiente/sisfinance.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Sisfinance</h5>
+        <p class="card-text">Status Sisfinance - {{sisfinanceDto.text}} </p>    
+        <div style="text-align: center;margin-top: 70px">
+          <button class="btn btn-primary" type="button" (click)="AtualizarStatusSisfinance()" >Refresh</button>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>Pesquisar</h2>
+<form class="row g-3" [formGroup]="formulario">
+  <div class="col-sm-3">
+    <input formControlName="idFundo" type="text" class="form-control" id="inputPassword2" placeholder="Encontre o fundo">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" (click)="Filtrar()" [disabled]="!formulario.valid" >Pesquisar</button>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-danger mb-3" (click)="Limpar()">Limpar</button>
+  </div>
+</form>
+</div>
+
+<app-loader></app-loader>
+<div class="container"> 
+  <hr>
+  <a  style="color:black" src="" href="" routerLink="/gestor">Voltar para Gestores</a>
+  <hr>
+  <h2 style="text-align: center;">Fundos do Gestor - {{nomeGestor}}</h2>
+  <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id do Fundo</th>
+        <th scope="col">Nome do Fundo</th>
+        <th scope="col">Nome Completo</th>
+        <th scope="col">Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listaApi">
+        <td>{{item.idFundo}}</td>
+        <td>{{item.nome}}</td>
+        <td>{{item.nomeCompleto}}</td>
+        <td>{{item.tipoNome}}</td>
+      </tr>
+    </tbody>
+  </table>  
+  <app-alert></app-alert>
+</div>

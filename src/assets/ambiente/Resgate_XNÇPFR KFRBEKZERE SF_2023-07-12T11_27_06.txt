@@ -1,0 +1,1 @@
+{"SerializedObject":"{}","ErrorMessage":["Ocorreu um erro interno na API"],"IsResponseOk":false,"StatusCode":200}
