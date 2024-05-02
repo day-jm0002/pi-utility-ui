@@ -75,19 +75,14 @@ export class EditarUsuarioComponent implements OnInit{
         this.usuario = res       
         this.ExibirFormulario = true;
 
-        console.log(this.usuario)
-
         this.usuarioService.ObterTipoAutenticacao().subscribe(x =>{
           this.tipoAutenticacao = x
-          console.log(this.tipoAutenticacao)
         })
         this.usuarioService.ObterTipoUsuario().subscribe(x =>{
           this.tipoUsuario = x;
-          console.log(this.tipoUsuario)
         })
         this.usuarioService.ObterTipoRole().subscribe(x =>{
           this.tipoRole = x;
-          console.log(this.tipoRole)
         })      
 
         this.usuarioService.ObterTipoStatus().subscribe(x =>{

@@ -61,7 +61,6 @@ export class DashboardComponent implements OnInit {
     this.botaoAmbiente3 = true;
 
     this.dashboardService.AutenticarStageOctopus().pipe(delay(1000)).subscribe(x =>{
-      console.log(x);
    if(x.length > 0){
         this.stageOctopus = true;
         this.stage_octopus_status = "sucesso"
@@ -75,7 +74,6 @@ export class DashboardComponent implements OnInit {
     });
 
     this.dashboardService.AutenticarStage1().pipe(delay(1500)).subscribe(x =>{
-      console.log(x);
       if(x.length > 0){
         this.stage1 = true;
         this.stage1_status = "sucesso"
@@ -88,7 +86,6 @@ export class DashboardComponent implements OnInit {
     });
     
     this.dashboardService.AutenticarStage2().pipe(delay(2000)).subscribe(x =>{
-      console.log(x);
       if(x.length > 0){
         this.stage2 = true;
         this.stage2_status = "sucesso"
@@ -101,7 +98,6 @@ export class DashboardComponent implements OnInit {
     });;
     
     this.dashboardService.AutenticarStage3().pipe(delay(1500)).subscribe(x =>{
-      console.log(x);
       if(x.length > 0){
         this.stage3 = true;
         this.stage3_status = "sucesso"

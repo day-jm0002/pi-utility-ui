@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AmbienteDto } from '../../model/ambientesDto';
-import { AmbienteSignature, AmbienteSignatureQa } from '../../model/signature/ambienteSignature';
+import { AmbienteChamadoSignature, AmbienteSignature, AmbienteSignatureQa } from '../../model/signature/ambienteSignature';
 import { PacoteQa } from '../../model/PacoteQaDto';
 import { LimparCacheSignature } from '../../model/signature/limparCacheSignature';
 import { LimparCacheResult } from '../../model/limparCacheResult';
@@ -44,10 +44,11 @@ export class AmbienteService {
   ulrApiPacoteProdutoQa: string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/ObterPacoteQa";
   urlApiAmbienteProdutoAtualizar : string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarAmbientesQa";
 
-  urlTesteNovoAmbiente : string = "https://localhost:44326/api/Ambiente/AtualizarAmbientesQa"
+  urlTesteNovoAmbiente : string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarAmbientesQa"
+  urlTesteNovoChamadoAmbiente : string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarChamadoAmbientesQa"
+
 
   obterFundosGestores = `${this.ulrApi}Fundos/ObterFundosGestores`;
-
   urlProdObterSituacao : string = "http://sdaysp06d005/LimparCacheApi/ObterStatusSituacao";
 
 
@@ -75,7 +76,7 @@ export class AmbienteService {
 
   public ObterPacoteQa():Observable<PacoteQa>
   {
-    return this.http.get<any>(this.ulrApiPacoteQa);
+    return this.http.get<PacoteQa>(this.ulrApiPacoteProdutoQa);
   }
 
 
@@ -92,6 +93,11 @@ export class AmbienteService {
   public LimparCache(signature: LimparCacheSignature):Observable<LimparCacheResult>
   {
     return this.http.post<any>(this.limparCacheUrl,signature);
+  }
+
+  public AtualizarChamadoAmbienteQa(signature : AmbienteChamadoSignature):Observable<any>
+  {
+    return this.http.post<any>(this.urlTesteNovoChamadoAmbiente,signature);
   }
 
 }

@@ -14,6 +14,12 @@ import { SuitabilityComponent } from './suitability/suitability.component';
 
 const routes: Routes = [
   {
+    path:"",
+    component:HomeComponent
+
+  }
+  ,
+  {
     path:"home",
     component:HomeComponent
   }
@@ -71,17 +77,7 @@ const routes: Routes = [
     path:"suitability",
     component:SuitabilityComponent
   }
-  ,
-  { path: '', 
-  redirectTo: 'home',
-  pathMatch: 'full' 
-  }
-  ,
-  { 
-    path: '**', 
-    redirectTo: 'home' 
-  },
-
+   
 ];
 
 @NgModule({

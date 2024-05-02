@@ -3,7 +3,7 @@ import { Desenvolvedor } from '../model/desenvolvedor';
 import { AmbienteService } from './service/ambiente.service';
 import { AmbienteDto } from '../model/ambientesDto';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { AmbienteSignature, AmbienteSignatureQa } from '../model/signature/ambienteSignature';
+import { AmbienteChamadoSignature, AmbienteSignature, AmbienteSignatureQa } from '../model/signature/ambienteSignature';
 import { Negocio } from '../model/negocio';
 import { LoaderService } from '../dashboard/service/loader.service';
 import { Pacote, PacoteQa } from '../model/PacoteQaDto';
@@ -20,12 +20,14 @@ export class AmbienteComponent implements OnInit {
   ambiente : number;
 
   form : any;
+  formChamadoQa : any;
   modalEditar:any;
   modalLiberar:any;
 
   formQa : any;
   modalEditaQa:any;
   modalLiberarQa:any;
+  modalChamadoQa:any;
 
   modalLimparCache:any;
 
@@ -85,6 +87,11 @@ export class AmbienteComponent implements OnInit {
       document.getElementById('myLimparCacheModal')
     )
 
+    this.modalChamadoQa = new window.bootstrap.Modal(
+      document.getElementById('myEditarModalChamadosQa')      
+    );
+
+
     this.form = new FormGroup({
       AmbienteId : new FormControl(),
       Nome : new FormControl(),
@@ -108,6 +115,11 @@ export class AmbienteComponent implements OnInit {
       responsavelNegQaTeste : new FormControl(),
       statusTeste: new FormControl()
     }); 
+
+    this.formChamadoQa = new FormGroup({
+      ChamadoResponsavelNeg : new FormControl(),
+      ChamadoStatus : new FormControl()
+    })
     
   }
 
@@ -134,7 +146,6 @@ export class AmbienteComponent implements OnInit {
   obterAmbientes(){
     this.ambienteService.ObterAmbientes().subscribe(result => {
       this.listAmbiente = result;  
-      console.log(this.listAmbiente)
       this.loader.fecharLoader();
     });    
   }
@@ -142,7 +153,6 @@ export class AmbienteComponent implements OnInit {
   obterAmbienteQa(){
     this.ambienteService.ObterPacoteQa().subscribe(result => {
       this.listPacoteQa = result;
-      console.log(this.listPacoteQa);
     });    
   }
 
@@ -243,8 +253,6 @@ export class AmbienteComponent implements OnInit {
     pacote.chamadoId = 0;
     this.listaPacote.push(pacote);
 
-    console.log(this.listaPacote);
-
     const ambienteID = this.formQa.get('branch') as FormControl;
     ambienteID.setValue('');
   }
@@ -255,7 +263,7 @@ export class AmbienteComponent implements OnInit {
 
   removerItem(indice : number)
   {
-    this.listaPacote.splice(indice,1);
+    this.listaPacote[indice].apagar = true
   }
 
   EditarAmbienteQa()
@@ -268,8 +276,6 @@ export class AmbienteComponent implements OnInit {
     editarAmbienteQa.devId = Number(this.formQa.get('responsavelDevQa').value);
     editarAmbienteQa.negId = Number(this.formQa.get('responsavelNegQa').value);
     editarAmbienteQa.dataImplantacao = this.formQa.get('dataImplantacao').value;
-
-    console.log(editarAmbienteQa)
 
     this.ambienteService.AtualizarAmbienteQa(editarAmbienteQa).subscribe(x => {
 
@@ -303,11 +309,8 @@ export class AmbienteComponent implements OnInit {
     this.formQa.get('responsavelNegQaTeste').setValue('1')
     this.formQa.get('statusTeste').setValue('1')
 
-
     this.listaPacote = new Array<Pacote>();
     this.listPacoteQa.pacote.forEach(x => this.listaPacote.push(x));
-
-    console.log(this.listPacoteQa.pacote);
     
   }
 
@@ -440,7 +443,6 @@ export class AmbienteComponent implements OnInit {
       }, this.tempoStatus);
     },error => {
 
-      console.log(error);
       this.carteiraDeGerentes = "danger";
       this.mensagemCarteiraDeGerentes = "Não foi possível realizar a limpeza de cache";
 
@@ -475,6 +477,43 @@ export class AmbienteComponent implements OnInit {
     this.cache.nome = "qa";
     this.NomeStage = "QA";
     this.modalLimparCache.show();
+  }
+
+
+  nomeChamadoQa : string = "";
+  ambienteChamadoSignature= new  AmbienteChamadoSignature();
+
+  AbrirModalStatusChamadoQa(pacote : any){    
+
+    this.nomeChamadoQa = pacote.branch;
+    this.ambienteChamadoSignature.chamadoId = pacote.chamadoId;
+
+    const ChamadoResponsavelNeg = this.formChamadoQa.get('ChamadoResponsavelNeg') as FormControl;
+    ChamadoResponsavelNeg.setValue(pacote.negocioTesteId);
+
+    const ChamadoStatus = this.formChamadoQa.get('ChamadoStatus') as FormControl;
+    ChamadoStatus.setValue(pacote.situacaoId);
+
+    this.modalChamadoQa.show();
+  }
+
+  EditarChamadoQa(){
+
+    const ChamadoResponsavelNeg = this.formChamadoQa.get('ChamadoResponsavelNeg') as FormControl;
+    const ChamadoStatus = this.formChamadoQa.get('ChamadoStatus') as FormControl;
+
+    this.ambienteChamadoSignature.negocioTesteId = Number(ChamadoResponsavelNeg.value);
+    this.ambienteChamadoSignature.situacaoId = Number(ChamadoStatus.value);
+
+    this.ambienteService.AtualizarChamadoAmbienteQa(this.ambienteChamadoSignature).subscribe(x => {
+
+      if(x)
+      {
+        this.obterAmbienteQa();
+        this.modalChamadoQa.hide();
+      }
+
+    })
   }
   
 }

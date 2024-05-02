@@ -349,14 +349,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let pacote of listaPacote; let i=index">
-          <td>{{pacote.branch}}</td>
-          <td>{{pacote.negocioTeste}}</td>
-          <td>
+        <tr *ngFor="let pacote of listaPacote; let i=index" >
+          <td *ngIf="pacote.apagar == false" >{{pacote.branch}}</td>
+          <td *ngIf="pacote.apagar == false">{{pacote.negocioTeste}}</td>
+          <td *ngIf="pacote.apagar == false">
             <app-status-component [codigo]="pacote.situacaoId" [situacao]="pacote.situacao">
             </app-status-component>
             </td>
-            <td>
+            <td *ngIf="pacote.apagar == false">
               <button type="button" class="btn btn-outline-danger btn-sm" (click)="removerItem(i)"> Apagar </button>   
             </td>
         </tr>
@@ -442,8 +442,7 @@
           </app-status-component>
         </td>    
         <td>
-          <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-
+          <button type="button" class="btn btn-primary btn-sm" (click)="AbrirModalStatusChamadoQa(pacote)">Editar</button>
         </td>    
       </tr>
     <tbody>
@@ -541,5 +540,73 @@
   </div>
 </div>
 </div>
+
+
+<div class="modal fade" id="myEditarModalChamadosQa"  tabindex="-1"  aria-labelledby="exampleModalLabelChamadoQa"  aria-hidden="true">
+  <div class="modal-dialog" style="padding: 0px;">
+    <div class="modal-content">
+      <form [formGroup]="formChamadoQa">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelChamadoQa">
+          Situação do Chamado : {{nomeChamadoQa}}</h5>       
+      </div>
+      <div class="modal-body">        
+        <div class="row">
+          <div class="col">
+            <label>
+              <strong>
+              Responsavel - Negocio
+            </strong>
+            </label>
+            <select class="form-select"
+            formControlName="ChamadoResponsavelNeg">
+              <option *ngFor="let neg of listNegocio" [value]="neg.id" >
+              {{neg.nome}}
+            </option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label>
+              <strong>
+              Situação do Chamado
+            </strong>
+            </label>
+            <select class="form-select"
+            formControlName="ChamadoStatus">
+              <option *ngFor="let sit of listSituacao" [value]="sit.id" >
+              {{sit.descricao}}
+            </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button 
+        type="button" 
+        class="btn btn-secondary" 
+        data-bs-dismiss="modal" 
+        arial-label="Close" 
+        (click)="FecharModal()">
+          Fechar
+        </button>
+        <button 
+        type="button" 
+        class="btn btn-primary" 
+        (click)="EditarChamadoQa()">
+          Salvar
+        </button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 

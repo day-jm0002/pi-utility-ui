@@ -23,3 +23,11 @@ export class AmbienteSignature {
     public negTesteId : number;
     public situacaoId : number;
   }
+
+  export class AmbienteChamadoSignature{
+
+    public chamadoId : number;
+    public negocioTesteId : number;
+    public situacaoId: number;
+
+  }

@@ -85,8 +85,6 @@ export class UsuarioComponent implements OnInit {
     const dev = this.formulario.get('dev') as FormControl;
     if(dev.value){ambiente = "dev"}
 
-    console.log(dev.value,qa.value,ambiente);
-
     this.router.navigateByUrl('/usuario/editar/'+ambiente+"/"+CodUsuario)
   }
 
@@ -95,12 +93,10 @@ export class UsuarioComponent implements OnInit {
     if(ambiente == 'dev')
     {
       this.SelecionarAmbienteDev();
-      console.log('consultar ambiente de dev')
     }
     else
     {
       this.SelecionarAmbienteQa();
-      console.log('consultar ambiente de qa')
     }
   }
 

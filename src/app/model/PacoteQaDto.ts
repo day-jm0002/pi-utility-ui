@@ -15,6 +15,10 @@ export class PacoteQa{
 }
 
 export class Pacote{
+    constructor()
+    {
+        this.apagar = false;
+    }
     releaseId!: number;
     branch!: string;
     negocioTesteId?: number;
