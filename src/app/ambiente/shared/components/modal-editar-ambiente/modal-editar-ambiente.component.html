@@ -1,0 +1,125 @@
+
+<div class="modal fade" id="myEditarModal"  tabindex="-1"  aria-labelledby="exampleModalLabel"  aria-hidden="true">
+    <form [formGroup]="form">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Ambiente</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>              
+                Branch
+              </strong>
+                </label>
+                <input 
+                formControlName="Branch"
+                 type="text" 
+                 class="form-control" 
+                 placeholder="Nº da Branch" 
+                 aria-label="Last name" >
+            </div>
+            <div class="col">
+              <label>
+                <strong>
+                  Nº Chamado
+                </strong>
+              </label>
+              <input  
+              formControlName="NumeroChamado"
+              type="text" 
+              class="form-control" 
+              placeholder="Nº do Chamado" 
+              aria-label="Last name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>
+                Descrição
+              </strong>
+              </label>
+              <input 
+              formControlName="Descricao"
+              type="text" 
+              class="form-control" 
+              placeholder="Descrição" 
+              aria-label="First name" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>
+                Responsavel - Dev
+              </strong>
+              </label>
+              <select class="form-select"
+              formControlName="ResponsavelDev">
+                <option *ngFor="let dev of listDesenvolvedores" [value]="dev.id" >
+                {{dev.nome}}
+              </option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>
+                Responsavel - Negocio
+              </strong>
+              </label>
+              <select class="form-select"
+              formControlName="ResponsavelNeg">
+                <option *ngFor="let neg of listNegocio" [value]="neg.id" >
+                {{neg.nome}}
+              </option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>
+                Situação do Chamado
+              </strong>
+              </label>
+              <select class="form-select"
+              formControlName="Status">
+                <option *ngFor="let sit of listSituacao" [value]="sit.id" >
+                {{sit.descricao}}
+              </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button 
+          type="button" 
+          class="btn btn-secondary" 
+          data-bs-dismiss="modal" 
+          arial-label="Close" 
+          (click)="FecharModal()">
+            Fechar
+          </button>
+          <button 
+          type="button" 
+          class="btn btn-primary" 
+          (click)="EditarAmbiente()">
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+  

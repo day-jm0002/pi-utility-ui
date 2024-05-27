@@ -25,6 +25,14 @@ import { GestorComponent } from './gestor/gestor.component';
 import { DashboardService } from './dashboard/service/dashboard.service';
 import { SuitabilityComponent } from './suitability/suitability.component';
 import { StatusComponentComponent } from './ambiente/shared/components/status-component/status-component.component';
+import { ModalEditarAmbienteComponent } from './ambiente/shared/components/modal-editar-ambiente/modal-editar-ambiente.component';
+import { ModalEmmiterComponent } from './ambiente/emmiter/modal-emmiter/modal-emmiter.component';
+import { TabelaAmbientesComponent } from './ambiente/shared/components/tabela-ambientes/tabela-ambientes.component';
+import { TabelaAmbienteQaComponent } from './ambiente/shared/components/tabela-ambiente-qa/tabela-ambiente-qa.component';
+import { TabelaTestesQaComponent } from './ambiente/shared/components/tabela-testes-qa/tabela-testes-qa.component';
+import { ModalEditarAmbienteQaComponent } from './ambiente/shared/components/modal-editar-ambiente-qa/modal-editar-ambiente-qa.component';
+import { ModalLiberarAmbienteComponent } from './ambiente/shared/components/modal-liberar-ambiente/modal-liberar-ambiente.component';
+import { ModalTesteQaComponent } from './ambiente/shared/components/modal-teste-qa/modal-teste-qa.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +51,15 @@ import { StatusComponentComponent } from './ambiente/shared/components/status-co
     MensagemComponent,
     LoginSSOComponent,
     SuitabilityComponent,
-    StatusComponentComponent
+    StatusComponentComponent,
+    ModalEditarAmbienteComponent,
+    ModalEmmiterComponent,
+    TabelaAmbientesComponent,
+    TabelaAmbienteQaComponent,
+    TabelaTestesQaComponent,
+    ModalEditarAmbienteQaComponent,
+    ModalLiberarAmbienteComponent,
+    ModalTesteQaComponent
   ],
   imports: [
     BrowserModule,

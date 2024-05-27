@@ -1,4 +1,24 @@
 export class AmbienteDto {
+
+
+  /**
+   *
+   */
+  constructor() {
+      this.id = 0;
+      this.nome = "";
+      this.branch = "";
+      this.numeroChamado = "";
+      this.descricao = "";
+      this.devId =1;
+      this.desenvolvedor = "";
+      this.negocio = "";
+      this.negId = 0;
+      this.link = ""; 
+      this.situacao = "";
+      this.situacaoId = 0;  
+  }
+
     public id: number;
     public nome: string;
     public branch: string;

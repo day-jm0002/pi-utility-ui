@@ -17,12 +17,13 @@ export class AmbienteService {
       'Content-Type': 'application/json'
     }
   }
-
-
+  
   constructor(private http : HttpClient) { }
 
-  urlApiPI : string = "http://sdaysp06d006/PortalInvestimentosApi/"
-  ulrApi : string = "https://localhost:44326/api/Desenvolvedor/ObterTodosDev";
+  localhost  = "https://localhost:5001"
+
+  urlApiPI : string = `${this.localhost}/PortalInvestimentosApi/`
+  ulrApi : string = this.localhost+"/api/Desenvolvedor/ObterTodosDev";
   urlDevNegocio = "https://localhost:44326/api/Negocios/ObterTodosNegocio";
   ulrApiAmbiente : string = "https://localhost:44326/api/Ambiente/ObterAmbientes";
   ulrApiPacoteQa: string = "https://localhost:44326/api/Ambiente/ObterPacoteQa";
@@ -33,23 +34,23 @@ export class AmbienteService {
 
   limparCacheUrl :string = "http://sdaysp06d005/LimparCacheApi/LimparCacheStage";
 
-  urlProdDesenvolvedores = "http://sdaysp06d005/LimparCacheApi/api/Desenvolvedor/ObterTodosDev";
-  urlProdNegocio = "http://sdaysp06d005/LimparCacheApi/api/Negocios/ObterTodosNegocio";
-  urlProdObterAmbientes = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/ObterAmbientes";
-  urlProdAtualizarAmbientes = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarAmbientes"
-  urlProdAtualizarAmbientesQa = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarAmbientesQa"
+  urlProdDesenvolvedores = this.localhost+"/api/Desenvolvedor/ObterTodosDev";
+  urlProdNegocio = this.localhost+"/api/Negocios/ObterTodosNegocio";
+  urlProdObterAmbientes = this.localhost+"/api/Ambiente/ObterAmbientes";
+  urlProdAtualizarAmbientes = this.localhost+"/api/Ambiente/AtualizarAmbientes"
+  urlProdAtualizarAmbientesQa = this.localhost+"/api/Ambiente/AtualizarAmbientesQa"
 
-  ulrApiPacoteProduto: string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/ObterPacoteQa";
+  ulrApiPacoteProduto: string = this.localhost+"/api/Ambiente/ObterPacoteQa";
 
-  ulrApiPacoteProdutoQa: string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/ObterPacoteQa";
-  urlApiAmbienteProdutoAtualizar : string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarAmbientesQa";
+  ulrApiPacoteProdutoQa: string = this.localhost+"/api/Ambiente/ObterPacoteQa";
+  urlApiAmbienteProdutoAtualizar : string = this.localhost+"/api/Ambiente/AtualizarAmbientesQa";
 
-  urlTesteNovoAmbiente : string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarAmbientesQa"
-  urlTesteNovoChamadoAmbiente : string = "http://sdaysp06d005/LimparCacheApi/api/Ambiente/AtualizarChamadoAmbientesQa"
+  urlTesteNovoAmbiente : string = this.localhost+"/api/Ambiente/AtualizarAmbientesQa"
+  urlTesteNovoChamadoAmbiente : string = this.localhost+"/api/Ambiente/AtualizarChamadoAmbientesQa"
 
 
   obterFundosGestores = `${this.ulrApi}Fundos/ObterFundosGestores`;
-  urlProdObterSituacao : string = "http://sdaysp06d005/LimparCacheApi/ObterStatusSituacao";
+  urlProdObterSituacao : string = this.localhost+"/ObterStatusSituacao";
 
 
 

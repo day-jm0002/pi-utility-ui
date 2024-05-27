@@ -1,0 +1,50 @@
+
+<h2 style="text-align: center;margin: 15px 15px;">
+  Ambiente de Desenvolvimento  
+</h2>
+
+<section class="tabela" >
+    <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Ambiente</th>
+          <th scope="col">Branch</th>
+          <th scope="col">Nº Chamado</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Desenvolvedor</th>
+          <th scope="col">Negocio</th>
+          <th scope="col">Situação</th>
+          <th colspan=2 style="text-align: center;" >Ação</th>   
+          <th scope="col" style="text-align: center;">Cache</th>     
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ambiente of listAmbiente">
+          <td>
+            <a href="{{ambiente.link}}" target="_blank">{{ambiente.nome}}</a>
+          </td>
+          <td>
+            <a href="https://bitbucket.daycoval.dev.br/projects/PI/repos/portalinvestimentos/browse?at=refs%2Fheads%2F{{ambiente.branch}}" target="_blank">{{ambiente.branch}}</a>
+          </td>
+          <td>{{ambiente.numeroChamado}}</td>
+          <td>{{ambiente.descricao}}</td>
+          <td>{{ambiente.desenvolvedor}}</td>
+          <td>{{ambiente.negocio}}</td>
+          <td>
+            <app-status-component [codigo]="ambiente.situacaoId" [situacao]="ambiente.situacao" ></app-status-component>
+          </td>
+          <td style="text-align: center;vertical-align: middle;">
+            <button style="margin-right: 0px;" type="button" class="btn btn-primary btn-sm" (click)="openEditarModal(ambiente)">Editar</button>   
+            </td>
+            <td style="text-align: center;vertical-align: middle;">               
+            <button style="margin-right: 0px;" type="button" class="btn btn-danger btn-sm" (click)="openLiberarModal(ambiente.id , ambiente.nome)">Liberar</button>
+          </td>
+          <td style="text-align: center;vertical-align: middle;">
+            <button type="button" class="btn btn-warning btn-sm" [disabled]="habilitarBotao" (click)="LimparStage(ambiente)">Limpar</button>
+          </td>
+        </tr>     
+      </tbody>
+    </table>
+  </div>
+  </section>

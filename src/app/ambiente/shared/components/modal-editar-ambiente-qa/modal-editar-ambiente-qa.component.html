@@ -1,0 +1,172 @@
+<div class="modal fade modal-xl" id="myEditarModalQa"  tabindex="-1"  aria-labelledby="exampleModalQaLabel"  aria-hidden="true">
+    <form [formGroup]="formQa">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalQaLabel">Editar Ambiente - Qa</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body gap-2 d-flex flex-column">
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>              
+                Release
+              </strong>
+                </label>
+                <input 
+                formControlName="nome"
+                 type="text" 
+                 class="form-control" 
+                 placeholder="Nº da Release" 
+                 aria-label="Last name" >
+            </div>
+            <div class="col">
+              <label>
+                <strong>
+                  Requisição GMUD
+                </strong>
+              </label>
+              <input  
+              formControlName="requisicao"
+              type="text" 
+              class="form-control" 
+              placeholder="Nº da Requisição" 
+              aria-label="Last name">
+            </div>
+          </div>
+  <div class="row">  
+    <div class="col">
+      <label>
+        <strong>
+         Adicionar conteudo ao Pacote
+        </strong>
+      </label>
+    <input 
+    formControlName="branch"
+     type="text" 
+     class="form-control" 
+     placeholder="Nº da branch para ser associada" 
+     aria-label="Last name" >
+    </div>
+     <div class="col">
+      <label><strong>Responsavel - Negocio</strong></label>
+      <select class="form-select"
+      formControlName="responsavelNegQaTeste">
+        <option *ngFor="let neg of listNegocio" [value]="neg.id" >
+        {{neg.nome}}
+      </option>
+      </select>
+    </div>
+    <div class="col">
+      <label>
+        <strong>
+        Situação do Chamado
+      </strong>
+      </label>
+      <select class="form-select"
+      formControlName="statusTeste">
+        <option *ngFor="let sit of listSituacao" [value]="sit.id" >
+        {{sit.descricao}}
+      </option>
+      </select>
+    </div>
+    <div class="col mt-4">
+      <button 
+      [disabled]="isButtonDisabled()"
+      type="button" 
+      class="btn btn-primary" 
+      (click)="AssociarChamadoQa()">
+        Associar
+      </button>
+    </div>
+  </div>
+                    
+  <div class="row" >
+    <label>Chamados associados</label>
+   
+    <div class="container" *ngIf="listaPacote.length">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Chamado</th>
+            <th scope="col">Responsavel</th>
+            <th scope="col">Situação</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pacote of listaPacote; let i=index" >
+            <td *ngIf="pacote.apagar == false" >{{pacote.branch}}</td>
+            <td *ngIf="pacote.apagar == false">{{pacote.negocioTeste}}</td>
+            <td *ngIf="pacote.apagar == false">
+              <app-status-component ambiente [situacao]="pacote.situacao">
+              </app-status-component>
+              </td>
+              <td *ngIf="pacote.apagar == false">
+                <button type="button" class="btn btn-outline-danger btn-sm" (click)="removerItem(i)"> Apagar </button>   
+              </td>
+          </tr>
+          <!-- Add more <tr> elements here for more rows -->
+        </tbody>
+      </table>
+    </div>  
+  </div>
+          <div class="row">
+            <div class="col">
+              <label><strong>Responsavel - Dev</strong></label>
+              <select class="form-select"
+              formControlName="responsavelDevQa">
+                <option *ngFor="let dev of listDesenvolvedores" [value]="dev.id" >
+                {{dev.nome}}
+              </option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label><strong>Responsavel - Negocio</strong></label>
+              <select class="form-select"
+              formControlName="responsavelNegQa">
+                <option *ngFor="let neg of listNegocio" [value]="neg.id" >
+                {{neg.nome}}
+              </option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label><strong>Data de Implantação</strong></label>
+              <input
+               formControlName="dataImplantacao"
+               class="form-control" 
+               type="datetime-local"              
+               >
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button 
+          type="button" 
+          class="btn btn-secondary" 
+          data-bs-dismiss="modal" 
+          arial-label="Close" 
+          (click)="FecharModal()">
+            Fechar
+          </button>
+          <button 
+          type="button" 
+          class="btn btn-primary" 
+          (click)="EditarAmbienteQa()">
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
