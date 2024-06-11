@@ -1,0 +1,12 @@
+<div *ngIf="ExibirStatus" class="status-container">
+    <div class="alert alert-{{CarteiraDeGerentes}}" role="danger">
+      <p>Limpeza de cache - Carteira de Gerentes - {{StageCache}} - {{MensagemCarteiraDeGerentes}}</p>
+    </div>
+    <div class="alert alert-{{FundosRelacao}}" role="danger">
+      <p>Limpeza de cache - Fundos Relação - {{StageCache}} - {{MensagemFundosRelacao}}</p>
+    </div>
+    <div class="alert alert-{{ListaDeProdutos}}" role="danger">
+      <p>Limpeza de cache - Lista de Produtos - {{StageCache}} - {{MensagemListaDeProdutos}}</p>
+    </div>  
+  </div>
+  

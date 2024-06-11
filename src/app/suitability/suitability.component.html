@@ -2,6 +2,11 @@
 <app-loader></app-loader>
 </div>
 <div class="container">
+  <div style="text-align:center">
+    <hr>
+    <h2>Perfil do Cliente - Suitability</h2>
+    <hr>
+  </div>
     <h2>Pesquisar</h2>
   <form class="row g-3" [formGroup]="formulario">
     <div class="col-sm-3">
@@ -14,39 +19,44 @@
       <button type="submit" class="btn btn-danger mb-3" (click)="Limpar()">Limpar</button>
     </div>
  </form>
-  <div>
-
-    <section>
-        <div style="text-align: center;">
-          <hr>
-          <h2>Perfil do Cliente - Suitability</h2>
-          <hr>
-        </div>
-        </section>
-        <section class="tabela" *ngIf="exibir">
-          <div class="table-responsive">
+        <section class="tabela" >
+          <div class="table-responsive" *ngIf="exibir">
           <table class="table table-striped table-hover">
             <thead class="table-dark">
               <tr>
-                <th scope="col">Documento</th>
-                <th scope="col">Codigo Cliente</th>
-                <th scope="col">Codigo Perfil</th>
-                <th scope="col">Data Atualização</th>
-                <th scope="col">Perfil Vencido</th>
-                <th scope="col">Codigo ClassGeral</th>
-                <th scope="col">Origem</th>
+                <th scope="col" rowspan="2">Cod. Cliente</th>
+                <th scope="col" rowspan="2">Documento</th>
+                <th scope="col" rowspan="2">Nome</th>
+                <th scope="col" rowspan="2">Perfil Vencido</th>
+                <th scope="col" rowspan="2">Data Atualização</th>  
+                <th scope="col" colspan="3" style="text-align: center;">Perfil</th>
+                <th scope="col" colspan="3" style="text-align: center;">Categoria</th>
+              </tr>
+              <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Base</th>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Base</th>
               </tr>
             </thead>
             <tbody>
-                <td>{{suitabilitDto.documento}}</td>
                 <td>{{suitabilitDto.codCliente}}</td>
-                <td>{{suitabilitDto.codPerfil}}</td>
-                <td>{{suitabilitDto.dataAtualizacao}}</td>
+                <td>{{suitabilitDto.documento}}</td>
+                <td>{{suitabilitDto.nome}}</td>
                 <td>{{suitabilitDto.perfilVencido}}</td>
-                <td>{{suitabilitDto.codGerencial}}</td>
-                <td>{{suitabilitDto.base}}</td>
+                <td>{{suitabilitDto.dataAtualizacao}}</td>
+                <td >{{suitabilitDto.codPerfil}}</td>
+                <td>{{suitabilitDto.nomePerfil}}</td>
+                <td>{{suitabilitDto.basePerfil}}</td>
+                <td>{{suitabilitDto.codCategoria}}</td>
+                <td>{{suitabilitDto.nomeCategoria}}</td>
+                <td>{{suitabilitDto.baseCategoria}}</td>
             </tbody>
           </table> 
           </div>          
+          <app-alert></app-alert>
         </section>
-        <app-alert></app-alert>
+      </div>
+

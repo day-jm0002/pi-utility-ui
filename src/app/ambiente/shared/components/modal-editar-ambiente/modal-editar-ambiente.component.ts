@@ -29,7 +29,7 @@ listNegocio:Negocio[]=[];
 
  constructor(private ambienteService : AmbienteService , private comunicacaoExterna : InformacoesAmbienteService) {
 
-    this.comunicacaoExterna.informacoesAmbiente
+  this.comunicacaoExterna.informacoesAmbiente
     .pipe(takeUntil(this.unsubscribe$))
     .subscribe((x => {
       this.modalEditar.show();
@@ -85,7 +85,6 @@ listNegocio:Negocio[]=[];
 
     if(this.ambienteDto)
   {
-    console.log(this.ambienteDto);
     const ambienteID = this.form.get('AmbienteId') as FormControl;
     ambienteID.setValue(this.ambienteDto.id);
 

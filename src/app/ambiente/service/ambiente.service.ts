@@ -20,7 +20,7 @@ export class AmbienteService {
   
   constructor(private http : HttpClient) { }
 
-  localhost  = "https://localhost:5001"
+  localhost  = "http://sdaysp06d005/LimparCacheApi"
 
   urlApiPI : string = `${this.localhost}/PortalInvestimentosApi/`
   ulrApi : string = this.localhost+"/api/Desenvolvedor/ObterTodosDev";

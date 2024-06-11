@@ -35,7 +35,7 @@ export class ModalTesteQaComponent implements OnInit , OnDestroy{
       if(x)
       {
       this.pacote = x;
-      this.Metodo();
+      this.ObterDadosModal();
       this.modalChamadoQa.show();
       }
     })
@@ -74,6 +74,7 @@ export class ModalTesteQaComponent implements OnInit , OnDestroy{
 
       if(x)
       {
+        this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
 //        this.obterAmbienteQa();
         this.modalChamadoQa.hide();
       }
@@ -81,7 +82,7 @@ export class ModalTesteQaComponent implements OnInit , OnDestroy{
     })
   }
 
-  Metodo()
+  ObterDadosModal()
   {
     this.ambienteChamadoSignature.chamadoId = this.pacote.chamadoId;
 

@@ -1,8 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AmbienteDto } from '../../../../model/ambientesDto';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
+import { LimparCache } from '../../../../model/signature/LimparCache';
+import { LimparCacheSignature } from '../../../../model/signature/limparCacheSignature';
+import { Modal } from '../../../../model/signature/ModalLimparCache';
+import { LoaderService } from '../../../../shared/loader/loader.component';
 
 @Component({
   selector: 'app-tabela-ambientes',
@@ -13,10 +17,118 @@ export class TabelaAmbientesComponent {
 
   @Input() listAmbiente : AmbienteDto[]=[];
 
-  constructor(private ambienteService : AmbienteService , private comunicacaoExterna : InformacoesAmbienteService) {  
+  loader : boolean = true; 
+  NomeStage:string="";
+
+  carteiraDeGerentes : string = "secondary";
+  mensagemCarteiraDeGerentes : string;
+  
+  fundosRelacao : string = "secondary";
+  mensagemFundosRelacao: string;  
+  listaDeProdutos : string = "secondary";
+
+  mensagemListaDeProdutos : string;
+  exibirStatus = false;
+  stageCache : string ="";
+  tempoStatus: number;
+  habilitarBotao = false;
+
+
+  constructor(private ambienteService : AmbienteService, 
+              private comunicacaoExterna : InformacoesAmbienteService) {  
+    
+    this.comunicacaoExterna.limparCache.subscribe(x =>{
+        this.exibirStatus = true;
+        this.Confirmar(x.Stage,x.Ambiente);
+    })
 
   }
 
+  Confirmar(stage : string , ambiente :string)
+  {
+    this.habilitarBotao = true;
+    this.tempoStatus = 10000;
+
+    var signature = new LimparCacheSignature();
+    signature.Ambiente =  ambiente ;//this.cache  == "qa" ? "qa" : "dev";
+    signature.Stage = this.removerEspacosNoMeio(stage);
+    this.stageCache = signature.Stage;
+
+    //criar o evento para fechar o modal
+    let modal = new Modal();
+    modal.Modal = false;
+    this.comunicacaoExterna.modalLimparCache.emit(modal);
+
+    this.exibirStatus = true;
+
+    this.carteiraDeGerentes = "warning"; 
+    this.fundosRelacao = "warning";
+    this.listaDeProdutos = "warning";
+
+    this.mensagemCarteiraDeGerentes = "Em andamento";
+    this.mensagemFundosRelacao = "Em andamento";
+    this.mensagemListaDeProdutos = "Em andamento";
+
+    this.ambienteService.LimparCache(signature).subscribe(x => {
+      if(x.carteiraDeGerente == 200)
+      {
+        this.carteiraDeGerentes = "success";
+        this.mensagemCarteiraDeGerentes = "Realizado com sucesso";
+      }else
+      {
+        this.carteiraDeGerentes = "danger";
+        this.mensagemCarteiraDeGerentes = "Não foi possível realizar a limpeza de cache";
+      }
+
+      if(x.fundosRelacao == 200)
+      {
+        this.fundosRelacao = "success";
+        this.mensagemFundosRelacao = "Realizado com sucesso";
+      }
+      else{
+        this.fundosRelacao = "danger";
+        this.mensagemFundosRelacao = "Não foi possível realizar a limpeza de cache";
+      }
+
+      if(x.listaDeProdutos == 200)
+      {
+        this.listaDeProdutos = "success";
+        this.mensagemListaDeProdutos = "Realizado com sucesso";
+      }      
+      else{
+        this.listaDeProdutos = "danger";
+        this.mensagemListaDeProdutos = "Não foi possível realizar a limpeza de cache";
+      }
+
+      setTimeout(() => {
+        this.exibirStatus = false;
+        this.habilitarBotao = false;
+      }, this.tempoStatus);
+    },error => {
+
+      this.carteiraDeGerentes = "danger";
+      this.mensagemCarteiraDeGerentes = "Não foi possível realizar a limpeza de cache";
+
+      this.fundosRelacao = "danger";
+      this.mensagemFundosRelacao = "Não foi possível realizar a limpeza de cache";
+
+      this.listaDeProdutos = "danger";
+      this.mensagemListaDeProdutos = "Não foi possível realizar a limpeza de cache";
+
+      setTimeout(() => {
+        this.exibirStatus = false;
+        this.habilitarBotao = false;
+      }, this.tempoStatus);
+    })
+
+  }
+
+  removerEspacosNoMeio(str: string): string {
+    return str.replace(/\s/g, '');
+  }
+
+
+  
   openEditarModal(ambiente : AmbienteDto)
   {
     this.comunicacaoExterna.informacoesAmbiente.emit(ambiente);
@@ -31,8 +143,12 @@ export class TabelaAmbientesComponent {
     this.comunicacaoExterna.liberarAmbiente.emit(liberarAmbiente);
   }
 
-  LimparStage()
+  LimparStage(ambiente : AmbienteDto)
   {
-
+    let modal = new Modal();
+    modal.Ambiente = "dev";
+    modal.Stage = ambiente.nome;
+    modal.Modal = true;
+    this.comunicacaoExterna.modalLimparCache.emit(modal);
   }
 }

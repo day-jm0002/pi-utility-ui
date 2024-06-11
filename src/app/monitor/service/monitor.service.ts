@@ -17,7 +17,7 @@ export class MonitorService {
   driveAMnet : string = `${this.ulrApi}Monitor/StatusDriveAMnet`;
   sinacor : string =  `${this.ulrApi}Monitor/StatusSinacor`;
   smartBrain : string = `${this.ulrApi}Monitor/StatusSmartBrain`;
-  sisfinance : string = `${this.ulrApi}Monitor/StatusSmartBrain`;
+  sisfinance : string = `${this.ulrApi}Monitor/StatusSisfinance`;
   infotreasurey : string = "http://sdaysp06d005/LimparCacheApi/ObterStatusInfotreasury";
 
 

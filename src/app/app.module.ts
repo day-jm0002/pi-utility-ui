@@ -33,6 +33,9 @@ import { TabelaTestesQaComponent } from './ambiente/shared/components/tabela-tes
 import { ModalEditarAmbienteQaComponent } from './ambiente/shared/components/modal-editar-ambiente-qa/modal-editar-ambiente-qa.component';
 import { ModalLiberarAmbienteComponent } from './ambiente/shared/components/modal-liberar-ambiente/modal-liberar-ambiente.component';
 import { ModalTesteQaComponent } from './ambiente/shared/components/modal-teste-qa/modal-teste-qa.component';
+import { ModalLimparCacheComponent } from './ambiente/shared/components/modal-limpar-cache/modal-limpar-cache.component';
+import { StatusCacheComponent } from './ambiente/shared/components/status-cache/status-cache.component';
+import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +62,10 @@ import { ModalTesteQaComponent } from './ambiente/shared/components/modal-teste-
     TabelaTestesQaComponent,
     ModalEditarAmbienteQaComponent,
     ModalLiberarAmbienteComponent,
-    ModalTesteQaComponent
+    ModalTesteQaComponent,
+    ModalLimparCacheComponent,
+    StatusCacheComponent,
+    NewLoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 export class LoaderService {
 
   public appLoader: EventEmitter<boolean> = new EventEmitter();
+  public appNewLoader: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }
 

@@ -1,21 +1,29 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { Pacote, PacoteQa } from '../../../../model/PacoteQaDto';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
+import { LoaderService } from '../../../../dashboard/service/loader.service';
 
 @Component({
   selector: 'app-tabela-ambiente-qa',
   templateUrl: './tabela-ambiente-qa.component.html',
   styleUrl: './tabela-ambiente-qa.component.scss'
 })
-export class TabelaAmbienteQaComponent {
+export class TabelaAmbienteQaComponent implements OnInit {
 
   @Input() listAmbienteQa : PacoteQa;
   habilitarBotao = false;
+  loader : boolean = true; 
 
-  constructor(private comunicacaoExterna :InformacoesAmbienteService) {
+  constructor(private comunicacaoExterna :InformacoesAmbienteService, private loaderService : LoaderService) {
   }
+
+  ngOnInit(): void {
+
+  }
+
+
 
   openEditarModalQa(listPacoteQa : PacoteQa)
   {

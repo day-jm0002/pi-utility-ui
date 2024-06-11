@@ -1,4 +1,5 @@
-export class LimparCacheSignature{
-    public Ambiente:string;
-    public Stage:string;
+import { LimparCache } from "./LimparCache";
+
+export class LimparCacheSignature extends LimparCache{
 }
+

@@ -1,4 +1,22 @@
+<app-new-loader></app-new-loader>
 
+<app-status-cache 
+[CarteiraDeGerentes]="carteiraDeGerentes" 
+[MensagemCarteiraDeGerentes]="mensagemCarteiraDeGerentes" 
+
+
+[FundosRelacao]="fundosRelacao" 
+[MensagemFundosRelacao]="mensagemFundosRelacao" 
+
+[ListaDeProdutos]="listaDeProdutos" 
+[MensagemListaDeProdutos]="mensagemListaDeProdutos" 
+
+[StageCache]="stageCache"
+[ExibirStatus]="exibirStatus">
+
+</app-status-cache>
+
+<div>
 <h2 style="text-align: center;margin: 15px 15px;">
   Ambiente de Desenvolvimento  
 </h2>
@@ -41,10 +59,11 @@
             <button style="margin-right: 0px;" type="button" class="btn btn-danger btn-sm" (click)="openLiberarModal(ambiente.id , ambiente.nome)">Liberar</button>
           </td>
           <td style="text-align: center;vertical-align: middle;">
-            <button type="button" class="btn btn-warning btn-sm" [disabled]="habilitarBotao" (click)="LimparStage(ambiente)">Limpar</button>
+            <button type="button" class="btn btn-warning btn-sm" (click)="LimparStage(ambiente)">Limpar</button>
           </td>
         </tr>     
       </tbody>
     </table>
   </div>
   </section>
+</div>

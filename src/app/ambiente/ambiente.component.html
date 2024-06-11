@@ -1,54 +1,18 @@
+<app-new-loader [exibirLoader]="loaderDev" [mensagem]="'Ambiente de Dev'" ></app-new-loader>
+<app-tabela-ambientes *ngIf="!loaderDev"   [listAmbiente] = 'listaDev'></app-tabela-ambientes>
 
+<app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Ambiente de Qa'"></app-new-loader>
+<app-tabela-ambiente-qa *ngIf="!loaderQa"  [listAmbienteQa] = 'listaQa' ></app-tabela-ambiente-qa>
 
-<div *ngIf="exibirStatus" class="status-container">
-  <div class="alert alert-{{carteiraDeGerentes}}" role="danger">
-    <p>Limpeza de cache - Carteira de Gerentes - {{stageCache}} - {{mensagemCarteiraDeGerentes}}</p>
-  </div>
-  <div class="alert alert-{{fundosRelacao}}" role="danger">
-    <p>Limpeza de cache - Fundos Relação - {{stageCache}} - {{mensagemFundosRelacao}}</p>
-  </div>
-  <div class="alert alert-{{listaDeProdutos}}" role="danger">
-    <p>Limpeza de cache - Lista de Produtos - {{stageCache}} - {{mensagemListaDeProdutos}}</p>
-  </div>  
-</div>
-
-<app-tabela-ambientes *ngIf="listaDev" [listAmbiente] = 'listaDev'></app-tabela-ambientes>
-<app-tabela-ambiente-qa *ngIf="listaQa" [listAmbienteQa] = 'listaQa' ></app-tabela-ambiente-qa>
-<app-tabela-testes-qa *ngIf="listaQa" [pacotes] = 'listaQa.pacote' ></app-tabela-testes-qa>
+<app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Pacote de Qa'"></app-new-loader>
+<app-tabela-testes-qa *ngIf="!loaderQa"  [pacotes] = 'listaQa.pacote' ></app-tabela-testes-qa>
 
 <app-modal-editar-ambiente></app-modal-editar-ambiente>
 <app-modal-editar-ambiente-qa></app-modal-editar-ambiente-qa>        
 <app-modal-liberar-ambiente></app-modal-liberar-ambiente>
 <app-modal-teste-qa></app-modal-teste-qa>
+<app-modal-limpar-cache></app-modal-limpar-cache>
 
-<div class="modal fade" id="myLimparCacheModal"  tabindex="-1"  aria-labelledby="exampleModalLabelQa"  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabelQa">Limpar Cache </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-       <div class="titulo">
-        <h3>Deseja Limpar o Cache do {{NomeStage}}</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" arial-label="Close">
-          Não
-        </button>
-        <button type="button" class="btn btn-primary" (click)="Confirmar()">
-          Sim
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
 
 
