@@ -22,12 +22,11 @@
   <section>
   <div style="text-align: center;">
     <hr>
-    <h2>Gerentes</h2>
     <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
     <hr>
   </div>
   </section>
-  <section class="tabela">
+    <section class="tabela">
     <div class="table-responsive">
     <table class="table table-striped table-hover">
       <thead class="table-dark">
@@ -40,14 +39,34 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of listaApi">
+        @for (item of listaPage; track $index) {
+        <tr>
           <td>{{item.codExterno}}</td>
           <td>{{item.nome}}</td>
           <td>{{item.tipoGerente}}</td>
           <td>{{item.email}}</td>
           <td>{{item.codcCusto}}</td>
         </tr>
+      }
       </tbody>
     </table> 
+    <div class="d-flex justify-content-between p-2">
+      <ngb-pagination
+        [collectionSize]="listaApi.length"
+        [(page)]="page"
+        [(pageSize)]="pageSize"
+        [maxSize]="5"
+        (pageChange)="refresh()"
+        [rotate]="true"
+        [ellipses]="false"
+        [boundaryLinks]="true"
+      >
+      </ngb-pagination>
+      <select class="form-select" style="width:auto;height: 45px;" [(ngModel)]="pageSize" (ngModelChange)="refresh()">
+        <option [ngValue]="10">10 items por pagina</option>
+        <option [ngValue]="20">20 items por pagina</option>
+        <option [ngValue]="30">30 items por pagina</option>
+      </select>
+    </div>    
     </div>
   </section>

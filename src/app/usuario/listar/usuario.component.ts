@@ -12,8 +12,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class UsuarioComponent implements OnInit {
 
+  page = 0;
+	pageSize = 10;
+
   formulario : any;
   public listaApi : UsuarioPiDto[]=[];
+  public listaPage : UsuarioPiDto[];
   public listaAuxiliar : UsuarioPiDto[]=[];
   exibirMensagem : boolean =false;
 
@@ -22,7 +26,17 @@ export class UsuarioComponent implements OnInit {
     { id: 2, label: 'Qa' , selected : false}
   ];
 
-  constructor(private usuarioService: UsuarioService,private router:Router,private loader : LoaderService) { }
+  constructor(private usuarioService: UsuarioService,private router:Router,private loader : LoaderService) { 
+    this.refreshUsuario();
+  }
+
+  refreshUsuario() {
+		this.listaPage = this.listaApi.map((country, i) => ({ id: i + 1, ...country })).slice(
+			(this.page - 1) * this.pageSize,
+			(this.page - 1) * this.pageSize + this.pageSize,
+		);
+	}
+
 
   ngOnInit() {
    this.formulario = new FormGroup({
@@ -39,8 +53,8 @@ export class UsuarioComponent implements OnInit {
 
    Filtrar(){
      let pesquisa : string =this.formulario.controls.pesquisa.value;
-     this.listaApi = this.listaAuxiliar;
-     this.listaApi = this.listaApi
+     this.listaPage = this.listaAuxiliar;
+     this.listaPage = this.listaPage
                     .filter(x => x.codExterno.toString() == pesquisa || 
                             x.cpf.indexOf(pesquisa.toUpperCase()) !==  -1 ||
                             
@@ -55,11 +69,15 @@ export class UsuarioComponent implements OnInit {
                             x.nome.indexOf(pesquisa.toLowerCase()) !== -1 ||
                             x.nome.indexOf(pesquisa.toUpperCase()) !== -1 );
                             this.Mensagem();
+                            this.page = 1;
+                            this.pageSize = 1;
    }
 
-
    Limpar(){
-    this.listaApi = this.listaAuxiliar;
+    this.listaPage = this.listaAuxiliar;
+    this.page = 0;
+    this.pageSize = 10;
+
  
     const qa = this.formulario.get('pesquisa') as FormControl;
     qa.setValue("");

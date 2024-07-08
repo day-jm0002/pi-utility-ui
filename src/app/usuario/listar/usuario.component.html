@@ -1,6 +1,7 @@
 <app-loader></app-loader>
 <div class="container">
   <h2>Pesquisar</h2>
+
 <form class="row g-3" [formGroup]="formulario">
   <div class="col-sm-3">
     <input formControlName="pesquisa" type="text" class="form-control" id="inputPassword2" placeholder="Encontrar o usuario">
@@ -36,9 +37,9 @@
 
 <div *ngIf="listaApi.length > 0">
 <section>
+  
 <div style="text-align: center;">
   <hr>
-  <h2>Usuarios do Portal de Investimentos</h2>
   <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
   <hr>
 </div>
@@ -58,7 +59,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of listaApi">
+      @for (item of listaPage; track $index) {
+      <tr>
         <td>{{item.codUsuario}}</td>
         <td>{{item.nome}}</td>
         <td>{{item.cpf}}</td>
@@ -69,8 +71,27 @@
           <button type="button" class="btn btn-primary btn-sm" (click)="Editar(item.codUsuario)">Detalhes</button>
         </td>
       </tr>
+    }
     </tbody>
-  </table> 
+  </table>
+  <div class="d-flex justify-content-between p-2">
+    <ngb-pagination
+      [collectionSize]="listaApi.length"
+      [(page)]="page"
+      [(pageSize)]="pageSize"
+      [maxSize]="5"
+      (pageChange)="refreshUsuario()"
+      [rotate]="true"
+      [ellipses]="false"
+      [boundaryLinks]="true"
+    >
+    </ngb-pagination>
+    <select class="form-select" style="width:auto;height: 45px;" [(ngModel)]="pageSize" (ngModelChange)="refreshUsuario()">
+      <option [ngValue]="10">10 items por pagina</option>
+      <option [ngValue]="20">20 items por pagina</option>
+      <option [ngValue]="30">30 items por pagina</option>
+    </select>
+  </div>
   </div>
 </section>
 </div>

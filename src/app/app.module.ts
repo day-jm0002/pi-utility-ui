@@ -36,6 +36,7 @@ import { ModalTesteQaComponent } from './ambiente/shared/components/modal-teste-
 import { ModalLimparCacheComponent } from './ambiente/shared/components/modal-limpar-cache/modal-limpar-cache.component';
 import { StatusCacheComponent } from './ambiente/shared/components/status-cache/status-cache.component';
 import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,7 +74,8 @@ import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    NgbModule
   ],
   providers: [
     DashboardService

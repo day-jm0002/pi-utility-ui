@@ -12,7 +12,14 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class GerenteComponent implements OnInit {
 
-  constructor(private gerenteService : GerenteService , private loader : LoaderService) { }
+  constructor(private gerenteService : GerenteService , private loader : LoaderService) { 
+    this.refresh()
+  }
+
+  page = 0
+  pageSize = 10
+  public listaPage : GerenteDto[];
+
 
   formulario : FormGroup;
   listaApi : GerenteDto[]=[];
@@ -27,6 +34,7 @@ export class GerenteComponent implements OnInit {
     this.gerenteService.ObterListaGerente().subscribe(x =>{
       this.listaApi = x
       this.listaAuxiliar = x
+      this.refresh();
       this.loader.fecharLoader();
     },error => {
       this.loader.fecharLoader();
@@ -62,5 +70,15 @@ export class GerenteComponent implements OnInit {
     })
     this.exibirMensagem = false;
    }
+
+   refresh(){
+
+    this.listaPage = this.listaApi.map((country, i) => ({ id: i + 1, ...country })).slice(
+			(this.page - 1) * this.pageSize,
+			(this.page - 1) * this.pageSize + this.pageSize,
+		);
+  }
+
+
 
 }

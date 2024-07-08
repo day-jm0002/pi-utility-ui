@@ -30,12 +30,34 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of listaApi">
+      @for (item of listaPage; track $index) {
+      <tr>
         <th><a  style="color:black" src="" routerLink="/fundos/{{item.idGestor}}//{{item.nome}}/">{{item.idGestor}}</a></th>
         <td>{{item.nome}}</td>
         <td>{{item.nomeCompleto}}</td>
         <td>{{item.cpfCNPJ}}</td>
       </tr>
+    }
     </tbody>
-  </table>  
+  </table>   
+  <div class="d-flex justify-content-between p-2">
+    <ngb-pagination
+      [collectionSize]="listaApi.length"
+      [(page)]="page"
+      [(pageSize)]="pageSize"
+      [maxSize]="5"
+      (pageChange)="refreshGestor()"
+      [rotate]="true"
+      [ellipses]="false"
+      [boundaryLinks]="true"
+    >
+    </ngb-pagination>
+    <select class="form-select" style="width:auto;height: 45px;" [(ngModel)]="pageSize" (ngModelChange)="refreshGestor()">
+      <option [ngValue]="10">10 items por pagina</option>
+      <option [ngValue]="20">20 items por pagina</option>
+      <option [ngValue]="30">30 items por pagina</option>
+    </select>
+  </div>
+  
+
 </div>

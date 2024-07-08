@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { UrlHelper } from '../../helper/UlrHelper';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,6 @@ import { Observable } from 'rxjs';
 export class MonitorService {
 
   constructor(private http : HttpClient) { }
-
-  urlTeste : string = "https://localhost:44326/api/Monitor/StatusSisfinance"
 
   urlApiPI : string = "http://sdaysp06d006/PortalInvestimentosApi/"
   ulrApi : string = "http://sdaysp06d005/LimparCacheApi/api/";
@@ -23,27 +22,27 @@ export class MonitorService {
 
   public ObterStatusSisfinance():Observable<any>
   {
-    return this.http.get<any>(this.sisfinance);
+    return this.http.get<any>(UrlHelper.Monitoramento.Sisfinance);
   }
 
   public ObterStatusDriveAMnet():Observable<any>
   {
-    return this.http.get<any>(this.driveAMnet);
+    return this.http.get<any>(UrlHelper.Monitoramento.DriveAMnet);
   }
 
   public ObterStatusSinacor():Observable<any>
   {
-    return this.http.get<any>(this.sinacor);
+    return this.http.get<any>(UrlHelper.Monitoramento.Sinacor);
   }
 
   public ObterStatusSmartBrain():Observable<any>
   {
-    return this.http.get<any>(this.smartBrain);
+    return this.http.get<any>(UrlHelper.Monitoramento.SmartBrain);
   }
 
   public ObterStatusInfotreasury():Observable<any>
   {
-    return this.http.get<any>(this.infotreasurey);
+    return this.http.get<any>(UrlHelper.Monitoramento.Infotreasury);
   }
 
 }
