@@ -13,7 +13,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class GerenteComponent implements OnInit {
 
   constructor(private gerenteService : GerenteService , private loader : LoaderService) { 
-    this.refresh()
+//    this.refresh()
   }
 
   page = 0
@@ -34,7 +34,7 @@ export class GerenteComponent implements OnInit {
     this.gerenteService.ObterListaGerente().subscribe(x =>{
       this.listaApi = x
       this.listaAuxiliar = x
-      this.refresh();
+//      this.refresh();
       this.loader.fecharLoader();
     },error => {
       this.loader.fecharLoader();

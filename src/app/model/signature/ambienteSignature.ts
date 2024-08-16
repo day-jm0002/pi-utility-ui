@@ -9,6 +9,7 @@ export class AmbienteSignature {
     public devId : number;
     public negId : number;
     public sitId : number;
+    public dependencia : string;
   }
 
   export class AmbienteSignatureQa {

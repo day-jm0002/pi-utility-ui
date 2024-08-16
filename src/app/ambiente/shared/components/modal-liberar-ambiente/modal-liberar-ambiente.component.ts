@@ -57,6 +57,7 @@ export class ModalLiberarAmbienteComponent implements OnInit , OnDestroy {
     editarAmbiente.devId = 1
     editarAmbiente.negId = 1
     editarAmbiente.sitId = 1
+    editarAmbiente.dependencia = ""
 
     this.ambienteService.AtualizarAmbiente(editarAmbiente).subscribe(x => {  
      if(x)

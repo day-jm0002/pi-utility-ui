@@ -16,10 +16,6 @@
 <app-loader></app-loader>
 
 <div class="container">
-  <hr>
-  <h2 style="text-align: center;">Gestores da Drive</h2>
-  <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
-  <hr>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -40,7 +36,7 @@
     }
     </tbody>
   </table>   
-  <div class="d-flex justify-content-between p-2">
+  <div class="d-flex justify-content-between p-2" *ngIf="mostrarPaginacao">
     <ngb-pagination
       [collectionSize]="listaApi.length"
       [(page)]="page"

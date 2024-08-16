@@ -20,6 +20,8 @@ export class UsuarioComponent implements OnInit {
   public listaPage : UsuarioPiDto[];
   public listaAuxiliar : UsuarioPiDto[]=[];
   exibirMensagem : boolean =false;
+  mostrarPaginacao : boolean;
+
 
   options = [
     { id: 1, label: 'Dev', selected : false},
@@ -39,6 +41,7 @@ export class UsuarioComponent implements OnInit {
 
 
   ngOnInit() {
+    this.mostrarPaginacao = true;
    this.formulario = new FormGroup({
     pesquisa : new FormControl("", [Validators.required,Validators.minLength(1)]),
     dev : new FormControl(true),
@@ -54,6 +57,7 @@ export class UsuarioComponent implements OnInit {
    Filtrar(){
      let pesquisa : string =this.formulario.controls.pesquisa.value;
      this.listaPage = this.listaAuxiliar;
+     this.mostrarPaginacao = false;
      this.listaPage = this.listaPage
                     .filter(x => x.codExterno.toString() == pesquisa || 
                             x.cpf.indexOf(pesquisa.toUpperCase()) !==  -1 ||
@@ -83,6 +87,7 @@ export class UsuarioComponent implements OnInit {
     qa.setValue("");
  
     this.exibirMensagem = false;
+    this.mostrarPaginacao = true;
   }
 
   Mensagem(){

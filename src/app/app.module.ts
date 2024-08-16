@@ -37,6 +37,7 @@ import { ModalLimparCacheComponent } from './ambiente/shared/components/modal-li
 import { StatusCacheComponent } from './ambiente/shared/components/status-cache/status-cache.component';
 import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,10 +76,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     FormsModule,
     CommonModule,
-    NgbModule
+    NgbModule,
+    NgxMaskDirective
   ],
   providers: [
-    DashboardService
+    DashboardService,
+    provideNgxMask({})
   ],
   bootstrap: [AppComponent]
 })

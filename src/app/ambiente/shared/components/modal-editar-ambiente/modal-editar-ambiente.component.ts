@@ -45,7 +45,8 @@ listNegocio:Negocio[]=[];
       Descricao : new FormControl(),
       ResponsavelDev : new FormControl(),     
       ResponsavelNeg : new FormControl(),
-      Status : new FormControl()
+      Status : new FormControl(),
+      Dependencia : new FormControl(),
     }); 
 
     
@@ -108,6 +109,9 @@ listNegocio:Negocio[]=[];
 
     const situacaoId = this.form.get('Status') as FormControl;
     situacaoId.setValue(this.ambienteDto.situacaoId);
+
+    const dependencia = this.form.get('Dependencia') as FormControl;
+    dependencia.setValue(this.ambienteDto.dependencia);
     }
   }
   
@@ -121,6 +125,7 @@ listNegocio:Negocio[]=[];
     editarAmbiente.devId = Number(this.form.get('ResponsavelDev').value);
     editarAmbiente.negId = Number(this.form.get('ResponsavelNeg').value);
     editarAmbiente.sitId = Number(this.form.get('Status').value);
+    editarAmbiente.dependencia = this.form.get('Dependencia').value;    
 
     this.ambienteService.AtualizarAmbiente(editarAmbiente).subscribe(x => {   
       if(x)

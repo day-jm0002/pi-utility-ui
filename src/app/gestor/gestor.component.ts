@@ -20,12 +20,14 @@ export class GestorComponent implements OnInit{
   public listaAuxiliar : Gestor[];
   public lista  : Gestor[];
   public listaApi : Gestor[]=[];
+  mostrarPaginacao : boolean;
 
   constructor(private gestorService:GestorService,private loader : LoaderService) 
   { 
   }
 
   ngOnInit() {
+    this.mostrarPaginacao = true;
     this.formulario = new FormGroup({
       cnpj : new FormControl("", [Validators.required,Validators.minLength(1)])
     })
@@ -50,6 +52,7 @@ export class GestorComponent implements OnInit{
 
                           this.page = 0
                           this.pageSize = 1
+                          this.mostrarPaginacao = false;
                         
   }
 
@@ -61,6 +64,7 @@ export class GestorComponent implements OnInit{
     this.formulario = new FormGroup({
       cnpj : new FormControl("", [Validators.required,Validators.minLength(1)])
     })
+    this.mostrarPaginacao = true;
   }
 
 

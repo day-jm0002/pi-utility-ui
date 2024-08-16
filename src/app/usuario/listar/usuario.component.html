@@ -36,14 +36,7 @@
 </div>
 
 <div *ngIf="listaApi.length > 0">
-<section>
   
-<div style="text-align: center;">
-  <hr>
-  <h3 style="text-align: center;">Quantidade {{listaApi.length}}</h3>
-  <hr>
-</div>
-</section>
 <section class="tabela">
   <div class="table-responsive">
   <table class="table table-striped table-hover">
@@ -74,7 +67,7 @@
     }
     </tbody>
   </table>
-  <div class="d-flex justify-content-between p-2">
+  <div class="d-flex justify-content-between p-2" *ngIf="mostrarPaginacao">
     <ngb-pagination
       [collectionSize]="listaApi.length"
       [(page)]="page"
