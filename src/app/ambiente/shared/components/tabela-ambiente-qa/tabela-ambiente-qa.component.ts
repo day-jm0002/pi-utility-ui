@@ -34,19 +34,11 @@ export class TabelaAmbienteQaComponent implements OnInit {
   {
     let liberarAmbiente = new LiberarAmbiente();
     liberarAmbiente.titulo = `Deseja liberar o ambiente de Qa` ;
-    liberarAmbiente.ambiente = TipoAmbiente.dev;
+    liberarAmbiente.ambiente = TipoAmbiente.qa;
     liberarAmbiente.stage = 1;
     this.comunicacaoExterna.liberarAmbienteQa.emit(liberarAmbiente);
 
 
   }
 
-  LimparStageQa()
-  {
-
-  }
-
-  
-
-  
 }

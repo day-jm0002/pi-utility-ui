@@ -38,6 +38,8 @@ import { StatusCacheComponent } from './ambiente/shared/components/status-cache/
 import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+import { FormatChamadoPipe } from './shared/pipes/format-chamado.pipe';
+import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +69,9 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
     ModalTesteQaComponent,
     ModalLimparCacheComponent,
     StatusCacheComponent,
-    NewLoaderComponent
+    NewLoaderComponent,
+    FormatChamadoPipe,
+    CenarioComponent
   ],
   imports: [
     BrowserModule,

@@ -151,4 +151,12 @@ export class TabelaAmbientesComponent {
     modal.Modal = true;
     this.comunicacaoExterna.modalLimparCache.emit(modal);
   }
+
+  habilitarbotao(id : any){
+
+    if(id == 3 || id == 5 ){
+      return false;
+    }
+  return true;
+  }
 }

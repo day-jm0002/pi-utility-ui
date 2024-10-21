@@ -34,7 +34,7 @@
           <th scope="col">Desenvolvedor</th>
           <th scope="col">Negocio</th>
           <th scope="col">Situação</th>
-          <th colspan=2 style="text-align: center;" >Ação</th>   
+          <th colspan=3 style="text-align: center;" >Ação</th>   
         </tr>
       </thead>
       <tbody>
@@ -47,7 +47,7 @@
           </td>
           <td>{{ambiente.numeroChamado}}</td>
           <td>{{ambiente.descricao}}</td>
-          <td>{{ambiente.dependencia}}</td>
+          <td>{{ambiente.dependencia | formatChamado }}  </td>
           <td>{{ambiente.desenvolvedor}}</td>
           <td>{{ambiente.negocio}}</td>
           <td>
@@ -59,6 +59,14 @@
             <td style="text-align: center;vertical-align: middle;">               
             <button style="margin-right: 0px;" type="button" class="btn btn-danger btn-sm" (click)="openLiberarModal(ambiente.id , ambiente.nome)">Liberar</button>
           </td>
+          <!-- <td>
+            <button  
+            style="margin-right: 0px;" 
+            type="button" 
+            class="btn btn-primary btn-sm" 
+            (click)="openEditarModal(ambiente)"
+            >Cenário</button>   
+          </td> -->
         </tr>     
       </tbody>
     </table>

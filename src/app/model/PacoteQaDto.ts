@@ -27,4 +27,5 @@ export class Pacote{
     situacao?:string;
     chamadoId!:number;
     apagar:boolean;
+    dependencia:string;
 }

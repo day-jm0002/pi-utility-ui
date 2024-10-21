@@ -1,0 +1,66 @@
+<div style="text-align: center;">
+    <hr>
+        <p style="font-size: larger;">
+            Validação do chamado - <strong>feature/R24_05_15571_Inclusao_Cnpj_Do_Fundo_v1</strong>
+        </p>
+        <hr>
+</div>
+<div class="conatiner box">
+<form>
+    <div class="row" style="margin-left: 15px;margin-right: 15px;margin-top: 15px;">
+        <h3>Adicionar Cenário</h3>   
+        <div class="col-7" style="text-align: left;">
+          <label>Descrição do cenário</label>
+          <textarea formControlName="descricao"  class="form-control" placeholder="descreva o cenário"></textarea>
+      </div>
+      <div class="col-2" style="text-align: left;">
+        <label>Analista de Negocio</label>
+        <select class="form-select"
+        formControlName="ChamadoResponsavelNeg">
+          <option *ngFor="let neg of listNegocio">
+          {{neg.nome}}
+        </option>
+        </select>
+      </div>
+      <div class="col-2" style="text-align: left;">
+        <label>Situação</label>        
+        <select class="form-select"
+        formControlName="ChamadoResponsavelNeg">
+          <option *ngFor="let sit of listSituacao">
+          {{sit.descricao}}
+        </option>
+        </select>
+      </div>
+      <div class="col-1 acao">        
+        <button type="submit" class="btn btn-primary mb-3"(click)="AdicionarCenario()" >Adicionar</button>
+      </div>
+    </div>
+</form>
+</div>
+
+<section class="tabela" >
+    <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Nº</th>
+          <th scope="col">Descrição do Cenário</th>
+          <th scope="col" >Analista de Negocio</th>
+          <th scope="col">Situação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="width: 20px;">
+                1
+            </td>
+            <td style="width: 200px;">Ao clicar na tela o usuario não consegui validar as informações do ambientesasdfasdfasdfasdfasdfasdfdddddddddddddddddddddddddddddddddddddddddddddddddddd
+                Ao clicar na tela o usuario não consegui validar as informações do ambientesasdfasdfasdfasdfasdfasdfdddddddddddddddddddddddddddddddddddddddddddddddddddd                Ao clicar na tela o usuario não consegui validar as informações do ambientesasdfasdfasdfasdfasdfasdfdddddddddddddddddddddddddddddddddddddddddddddddddddd                 Ao clicar na tela o usuario não consegui validar as informações do ambientesasdfasdfasdfasdfasdfasdfdddddddddddddddddddddddddddddddddddddddddddddddddddd
+            </td>
+            <td style="width: 70px;">Marcia</td>         
+            <td style="width: 70px;">Em analise</td>            
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</section>

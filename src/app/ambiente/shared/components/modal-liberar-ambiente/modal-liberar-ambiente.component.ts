@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AmbienteSignature } from '../../../../model/signature/ambienteSignature';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
-import { LiberarAmbiente } from '../../../../model/LiberarAmbiente';
+import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
 import { Subject, takeUntil } from 'rxjs';
 declare var window : any;
 
@@ -49,6 +49,8 @@ export class ModalLiberarAmbienteComponent implements OnInit , OnDestroy {
 
   LiberarAmbiente(ambienteId : number)
   {
+    if(this.liberarAmbiente.ambiente == TipoAmbiente.dev)
+    {
     let editarAmbiente = new AmbienteSignature();
     editarAmbiente.id = ambienteId;
     editarAmbiente.branch =""
@@ -65,7 +67,17 @@ export class ModalLiberarAmbienteComponent implements OnInit , OnDestroy {
       this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
       this.modalLiberar.hide();
      }
-    })  
+    })
+    }
+    else{
+      this.ambienteService.LiberarChamadoAmbientesQa().subscribe(x => {  
+        if(x)
+        {
+         this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
+         this.modalLiberar.hide();
+        }
+       })
+    }  
   }
 
 

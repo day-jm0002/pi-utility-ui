@@ -11,6 +11,7 @@ import { GerenteComponent } from './gerente/gerente.component';
 import { LoginSSOComponent } from './login-sso/login-sso.component';
 import { AmbienteComponent } from './ambiente/ambiente.component';
 import { SuitabilityComponent } from './suitability/suitability.component';
+import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
 
 const routes: Routes = [
   {
@@ -76,6 +77,11 @@ const routes: Routes = [
   {
     path:"suitability",
     component:SuitabilityComponent
+  }
+  ,
+  {
+    path:"cenario",
+    component:CenarioComponent
   }
    
 ];

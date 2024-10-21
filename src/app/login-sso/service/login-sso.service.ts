@@ -26,7 +26,7 @@ export class LoginSSOService {
 
   public obterTicketPorCodigoClienteSSO(posicaoSSoSignature:PosicaoSsoSignature):Observable<SsoDto>
   {
-    return this.httpClient.post<SsoDto>(this.urlSSo,posicaoSSoSignature);
+    return this.httpClient.post<SsoDto>(this.urlTokenLocal,posicaoSSoSignature);
   }
 
   public integracaoSSO(ssoSignature : SSOsignature):Observable<SerializedObject>{

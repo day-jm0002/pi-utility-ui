@@ -70,13 +70,12 @@ ngOnDestroy(): void {
       responsavelNegQa : new FormControl(),
       dataImplantacao : new FormControl(),
       responsavelNegQaTeste : new FormControl('1'),
-      statusTeste: new FormControl('1')
+      statusTeste: new FormControl('1'),
+      dependencia : new FormControl()
     }); 
   }
 
   InformacoesPacoteQa(pacote : PacoteQa){
-
-    console.log(pacote);
 
     const releaseId = this.formQa.get('releaseId') as FormControl;
     releaseId.setValue(pacote.releaseId);
@@ -142,7 +141,9 @@ ngOnDestroy(): void {
     pacote.situacaoId = this.listSituacao.find(item => item.id == this.formQa.get('statusTeste').value)?.id;
     pacote.negocioTeste = this.listNegocio.find(item => item.id == this.formQa.get('responsavelNegQaTeste').value)?.nome;
     pacote.situacao = this.listSituacao.find(item => item.id == this.formQa.get('statusTeste').value)?.descricao;
+    pacote.dependencia = this.formQa.get('dependencia').value;
     pacote.chamadoId = 0;
+  
     this.listaPacote.push(pacote);
 
     const ambienteID = this.formQa.get('branch') as FormControl;

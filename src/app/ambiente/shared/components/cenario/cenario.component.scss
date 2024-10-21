@@ -1,0 +1,39 @@
+.tabela{
+    margin:0 40px;
+}
+.titulo{
+
+    h2{
+    font-size: 26px;
+    margin-left: 10px;
+    }
+}
+   .status-container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        margin-right: 25px;
+        margin-left:  35px;
+      }
+      .alert {
+        /* Adicione estilos adicionais conforme necessário */
+        margin-right: 10px; /* Adicione margem entre as divs */
+      }
+
+      .acao{
+        margin-top: 25px;
+        text-align: left;
+    }
+    
+    .box{
+        background: whitesmoke;
+        margin-top: 15px;
+        border: solid gray 1px;
+        border-radius: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    

@@ -45,4 +45,9 @@ export class MonitorService {
     return this.http.get<any>(UrlHelper.Monitoramento.Infotreasury);
   }
 
+  public ObterStatusIcatu():Observable<any>
+  {
+    return this.http.get<any>(UrlHelper.Monitoramento.Icatu)
+  }
+
 }

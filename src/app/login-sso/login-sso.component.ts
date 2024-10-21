@@ -20,9 +20,6 @@ export class LoginSSOComponent implements OnInit {
   formularioToken: any;
   formularioPosicaoSSO: any;
   loading : boolean = false;
-  rota : string = "http://sdaysp06d006:8083/loginSso?ticketSso=";
-  rotaLocal : string  = "https://localhost:4200/loginSso?ticketSso=";
-  rotaSSo : string =""
   sanitizer: DomSanitizer;
   url: SafeResourceUrl;
   showIframe: boolean = false;
@@ -121,6 +118,8 @@ export class LoginSSOComponent implements OnInit {
     this.ssoService.obterTicketPorCodigoClienteSSO(posicaoSso).subscribe(x =>{
       this.ExibirPosicaoSSo = true;
       this.url = this.sanitize.bypassSecurityTrustResourceUrl(x.ticket)
+    },error => {
+      this.alert.abrirAlertError("Erro ao realizar o SSO com o Portal de Investimentos");
     })
 
   }

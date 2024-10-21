@@ -1,6 +1,7 @@
 export class UrlHelper {
 
-    public static BASE_URL = 'http://sdaysp06d005/LimparCacheApi';
+//    public static BASE_URL = 'https://localhost:44326'
+   public static BASE_URL = 'http://sdaysp06d005/LimparCacheApi';
     private static readonly LIMPAR_CACHE_API = "http://sdaysp06d005/LimparCacheApi/api/";
 
 
@@ -9,6 +10,7 @@ export class UrlHelper {
         AtualizarAmbientes: `${UrlHelper.BASE_URL}/api/Ambiente/AtualizarAmbientes`,
         AtualizarAmbientesQa: `${UrlHelper.BASE_URL}/api/Ambiente/AtualizarAmbientesQa`,
         AtualizarChamadoAmbientesQa: `${UrlHelper.BASE_URL}/api/Ambiente/AtualizarChamadoAmbientesQa`,
+        LiberarChamadoAmbientesQa: `${UrlHelper.BASE_URL}/api/Ambiente/LiberarChamadoAmbientesQa`,
         ObterPacoteQa: `${UrlHelper.BASE_URL}/api/Ambiente/ObterPacoteQa`,
     };
 
@@ -49,11 +51,12 @@ export class UrlHelper {
     };  
     
     public static Monitoramento = {
-        DriveAMnet: `${UrlHelper.LIMPAR_CACHE_API}Monitor/StatusDriveAMnet`,
-        Sinacor: `${UrlHelper.LIMPAR_CACHE_API}Monitor/StatusSinacor`,
-        SmartBrain: `${UrlHelper.LIMPAR_CACHE_API}Monitor/StatusSmartBrain`,
-        Sisfinance: `${UrlHelper.LIMPAR_CACHE_API}Monitor/StatusSisfinance`,
-        Infotreasury: "http://sdaysp06d005/LimparCacheApi/ObterStatusInfotreasury",
+        DriveAMnet: `${UrlHelper.BASE_URL}/api/Monitor/StatusDriveAMnet`,
+        Sinacor: `${UrlHelper.BASE_URL}/api/Monitor/StatusSinacor`,
+        SmartBrain: `${UrlHelper.BASE_URL}/api/Monitor/StatusSmartBrain`,
+        Sisfinance: `${UrlHelper.BASE_URL}/api/Monitor/StatusSisfinance`,
+        Infotreasury: `${UrlHelper.BASE_URL}/api/Monitor/ObterStatusInfotreasury` ,
+        Icatu:`${UrlHelper.BASE_URL}/api/Monitor/StatusIcatu`
     };
 
     public static GestoresDeFundos = {

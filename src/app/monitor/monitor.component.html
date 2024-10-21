@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-bottom: 10px;">
   <hr>
   <h2 style="text-align: center;">Monitoramento de Integrações</h2>
   <hr>
@@ -106,7 +106,7 @@
     <div class="card-body">
       <h5 class="card-title">INFOTREASURY</h5>
       <p class="card-text" > Status Infotreasure - {{infotreasureDto.message}} </p>    
-      <div style="text-align: center;margin-top: 40px;">
+      <div style="text-align: center">
         <button class="btn btn-primary" type="button" (click)="AtualizarStatusInfotreasure()" >Refresh</button>
     </div>
   </div>
@@ -132,10 +132,39 @@
       <div class="card-body">
         <h5 class="card-title">Sisfinance</h5>
         <p class="card-text">Status Sisfinance - {{sisfinanceDto.text}} </p>    
-        <div style="text-align: center;margin-top: 70px">
+        <div style="text-align: center">
           <button class="btn btn-primary" type="button" (click)="AtualizarStatusSisfinance()" >Refresh</button>
         </div>
     </div>
     </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <div *ngIf="status_icatu == 'consulta'" style="text-align: center;">
+        <div class="alert alert-secondary" role="alert">
+          Validando Comunicação
+        </div>
+      </div>
+        <div *ngIf="status_icatu == 'sucesso'" style="text-align: center;">
+          <div class="alert alert-success" role="alert">
+            <p>ICATU OK</p>
+          </div>
+        </div>
+        <div *ngIf="status_icatu == 'erro'" style="text-align: center;">
+          <div class="alert alert-danger" role="alert">
+            <p>ICATU com Falha</p>
+          </div>
+        </div> 
+      <img class="card-img-top" src="../../assets/ambiente/icatu.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ICATU</h5>
+        <p class="card-text">Status ICATU - {{icatuDto.mensagem}} </p>    
+        <div style="text-align: center">
+          <button class="btn btn-primary" type="button" (click)="AtualizarStatusIcatu()" >Refresh</button>
+        </div>
+    </div>
+    </div>
   </div>
+  <hr>
 </div>

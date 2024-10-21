@@ -15,7 +15,6 @@
           <th scope="col">Negocio</th>
           <th scope="col">Data Implantação</th>
           <th scope="col" style="text-align: center;" >Ação</th>    
-          <th scope="col" style="text-align: center;" >Cache</th>    
         </tr>
       </thead>
       <tbody>
@@ -36,10 +35,7 @@
         <td style="text-align: center;vertical-align: middle;">
           <button style="margin-right: 15px;"  type="button" class="btn btn-outline-primary btn-sm"  (click)="openEditarModalQa(listAmbienteQa)" >Editar</button>                  
           <button type="button" class="btn btn-outline-danger btn-sm" (click)="openLiberarModalQa()">Liberar</button>
-        </td>
-        <td style="text-align: center;vertical-align: middle;">
-          <button type="button" class="btn btn-outline-warning btn-sm" [disabled]="habilitarBotao" (click)="LimparStageQa()">Limpar</button>
-        </td>
+        </td>        
       </tr>
       </tbody>
       </table>

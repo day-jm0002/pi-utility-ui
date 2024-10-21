@@ -4,7 +4,8 @@
         <table class="table table-striped table-hover table-bordered">
         <thead class="table-dark">
           <tr>
-            <th scope="col">Chamado</th>                  
+            <th scope="col">Chamado</th>    
+            <th scope="col">Dependencia</th>              
             <th scope="col">Responsável</th>
             <th>Situação</th>
             <th>Ação</th>
@@ -14,6 +15,9 @@
         <tr *ngFor="let pacote of pacotes; let i=index" style="margin-left: 20px;">
           <td >
             {{pacote.branch}}
+          </td>
+          <td>
+            {{pacote.dependencia | formatChamado}}
           </td>
           <td> {{pacote.negocioTeste}}</td>
           <td> 

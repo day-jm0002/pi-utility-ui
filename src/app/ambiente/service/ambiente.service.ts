@@ -68,4 +68,10 @@ export class AmbienteService {
     return this.http.post<any>(UrlHelper.Ambiente.AtualizarChamadoAmbientesQa,signature);
   }
 
+  public LiberarChamadoAmbientesQa():Observable<any>
+  {
+    return this.http.post<any>(UrlHelper.Ambiente.LiberarChamadoAmbientesQa,'');
+  }
+
+
 }

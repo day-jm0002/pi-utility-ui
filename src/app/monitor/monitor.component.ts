@@ -5,6 +5,7 @@ import { MonitorService } from './service/monitor.service';
 import { SmartBrainDto } from '../model/smartBrainDto';
 import { InfotreasuryDto } from '../model/infotreasuryDto';
 import { SisfinanceDto } from '../model/sisfinanceDto';
+import { IcatuDto } from '../model/icatuDto';
 
 @Component({
   selector: 'app-monitor',
@@ -20,12 +21,14 @@ export class MonitorComponent implements OnInit {
   smartBrainDto = new SmartBrainDto();
   infotreasureDto = new InfotreasuryDto();
   sisfinanceDto = new SisfinanceDto();
+  icatuDto = new IcatuDto();
 
   status_drive : string = "consulta";
   status_sinacor : string = "consulta";
   status_smart_brain : string = "consulta";
   status_infotreasure : string = "consulta";
   status_sisfinance : string = "consulta";
+  status_icatu : string = "consulta";
 
 
   btn_drive : boolean;
@@ -33,6 +36,7 @@ export class MonitorComponent implements OnInit {
   btn_smart_brain : boolean = true;
   btn_infotreasure : boolean;
   btn_sisfinance : boolean;
+  btn_icatu : boolean;
 
   ngOnInit() {
       this.ObterStatusDriverAMnet();
@@ -40,6 +44,7 @@ export class MonitorComponent implements OnInit {
       this.ObterStatusSmartBrain();
       this.obterStatusInfotreasure();
       this.obterStatusSisFinance();
+      this.ObterStatusIcatu();
   }
 
   iniciarlizarBotao(){
@@ -123,6 +128,33 @@ obterStatusSisFinance()
     })
   }
 
+  ObterStatusIcatu(){
+    this.icatuDto = new IcatuDto();
+    this.monitorService.ObterStatusIcatu().subscribe(x =>{
+      this.icatuDto = x;
+      if(this.icatuDto.sucesso){
+        this.status_icatu = "sucesso"                
+      }else{
+        this.status_icatu = "erro";
+      }
+    },error =>{
+      if(error.status == 404){
+        if(error.error === null){
+          this.status_icatu = "erro";              
+          this.icatuDto.mensagem = "Erro desconhecido"  
+        }else{
+          this.status_icatu = "erro";   
+          this.icatuDto.mensagem = "Erro desconhecido"                       
+      }
+    }
+      else{
+        this.status_icatu = "erro";
+        this.icatuDto.mensagem = error.error.text;
+      } 
+    })
+
+  }
+
   ObterStatusSinacor(){
     this.sinacorDto = new SinacorDto();
     this.monitorService.ObterStatusSinacor().subscribe( x => {
@@ -137,7 +169,6 @@ obterStatusSisFinance()
       if(error.status == 404){
         if(error.error === null){
           this.status_sinacor = "erro";
-          this.sinacorDto.text = error.message;
         }else{
           this.sinacorDto.text = error.error.text;
           this.status_sinacor = "erro";
@@ -211,6 +242,11 @@ obterStatusSisFinance()
   AtualizarStatusSisfinance(){
     this.obterStatusSisFinance();
     this.status_sisfinance = "consulta";
+  }
+
+  AtualizarStatusIcatu(){
+    this.ObterStatusIcatu();
+    this.status_icatu = "consulta";
   }
 
 }
