@@ -135,6 +135,7 @@ ngOnDestroy(): void {
 
   AssociarChamadoQa()
   {
+    debugger;
     let pacote = new Pacote();
     pacote.branch = this.formQa.get('branch').value;
     pacote.negocioTesteId = this.listNegocio.find(item => item.id == this.formQa.get('responsavelNegQaTeste').value)?.id;
@@ -161,8 +162,9 @@ ngOnDestroy(): void {
 
   EditarAmbienteQa()
   {
+    debugger;
     let editarAmbienteQa = new AmbienteSignatureQa();
-    editarAmbienteQa.id = 1;
+    editarAmbienteQa.id = this.formQa.get('releaseId').value;
     editarAmbienteQa.release = this.formQa.get('nome').value;
     editarAmbienteQa.requisicao = this.formQa.get('requisicao').value;
     this.listaPacote.forEach(x => editarAmbienteQa.branch.push(x));

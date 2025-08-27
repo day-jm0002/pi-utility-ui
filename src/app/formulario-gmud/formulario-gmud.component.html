@@ -1,0 +1,864 @@
+<div class="container-fluid mt-4">
+  <!-- Header da aplicação -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="header-card">
+        <div class="header-content text-center">
+          <h1 class="header-title">
+            <i class="bi bi-clipboard-data me-3"></i>
+            Formulário GMUD - Gestão de Mudanças
+          </h1>
+          <p class="header-subtitle">Sistema Interno de Gestão de Mudanças da Empresa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegação por abas -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="tabs-container">
+        <div class="nav-tabs-custom" id="formTabs" role="tablist">
+          <button class="nav-tab-custom active" id="dados-tab" data-bs-toggle="tab" data-bs-target="#dados" type="button" role="tab">
+            <i class="bi bi-info-circle"></i>
+            <span>1.0 - Dados</span>
+          </button>
+          <button class="nav-tab-custom" id="mudanca-tab" data-bs-toggle="tab" data-bs-target="#mudanca" type="button" role="tab">
+            <i class="bi bi-gear"></i>
+            <span>2.0 - Mudança</span>
+          </button>
+          <button class="nav-tab-custom" id="impactos-tab" data-bs-toggle="tab" data-bs-target="#impactos" type="button" role="tab">
+            <i class="bi bi-exclamation-triangle"></i>
+            <span>3.0 - Impactos</span>
+          </button>
+          <button class="nav-tab-custom" id="usuario-tab" data-bs-toggle="tab" data-bs-target="#usuario" type="button" role="tab">
+            <i class="bi bi-person"></i>
+            <span>4.0 - Usuário</span>
+          </button>
+          <button class="nav-tab-custom" id="testes-tab" data-bs-toggle="tab" data-bs-target="#testes" type="button" role="tab">
+            <i class="bi bi-check-circle"></i>
+            <span>5.0 - Testes</span>
+          </button>
+          <button class="nav-tab-custom" id="permissoes-tab" data-bs-toggle="tab" data-bs-target="#permissoes" type="button" role="tab">
+            <i class="bi bi-shield-lock"></i>
+            <span>6.0 - Permissões</span>
+          </button>
+          <button class="nav-tab-custom" id="procedimentos-tab" data-bs-toggle="tab" data-bs-target="#procedimentos" type="button" role="tab">
+            <i class="bi bi-list-task"></i>
+            <span>7.0 - Procedimentos</span>
+          </button>
+          <button class="nav-tab-custom" id="planoVolta-tab" data-bs-toggle="tab" data-bs-target="#planoVolta" type="button" role="tab">
+            <i class="bi bi-arrow-return-left"></i>
+            <span>8.0 - Plano de Volta</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conteúdo das abas -->
+  <div class="tab-content-custom" id="formTabsContent">
+    <!-- Aba 1.0 - Dados -->
+    <div class="tab-pane-custom fade show active" id="dados" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-info-circle me-2"></i>
+            1.0 - Dados da Solicitação de Mudança
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="dadosForm" (ngSubmit)="salvarFormulario()">
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label class="form-label">
+                    <strong>1.1 Título da Mudança</strong>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <input type="text" 
+                         class="form-input" 
+                         formControlName="tituloMudanca"
+                         [class.is-invalid]="dadosForm.get('tituloMudanca')?.invalid && dadosForm.get('tituloMudanca')?.touched"
+                         placeholder="Digite o título da mudança">
+                  <div class="error-message" *ngIf="dadosForm.get('tituloMudanca')?.invalid && dadosForm.get('tituloMudanca')?.touched">
+                    Título da mudança é obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label class="form-label">
+                    <strong>1.2 Data de Abertura da Solicitação</strong>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <input type="date" 
+                         class="form-input" 
+                         formControlName="dataAbertura"
+                         [class.is-invalid]="dadosForm.get('dataAbertura')?.invalid && dadosForm.get('dataAbertura')?.touched">
+                  <div class="error-message" *ngIf="dadosForm.get('dataAbertura')?.invalid && dadosForm.get('dataAbertura')?.touched">
+                    Data de abertura é obrigatória
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label class="form-label">
+                    <strong>1.3 Solicitante</strong>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <input type="text" 
+                         class="form-input" 
+                         formControlName="solicitante"
+                         [class.is-invalid]="dadosForm.get('solicitante')?.invalid && dadosForm.get('solicitante')?.touched"
+                         placeholder="Nome do solicitante">
+                  <div class="error-message" *ngIf="dadosForm.get('solicitante')?.invalid && dadosForm.get('solicitante')?.touched">
+                    Solicitante é obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label class="form-label">
+                    <strong>1.4 Data / Hora Início</strong>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <input type="datetime-local" 
+                         class="form-input" 
+                         formControlName="dataHoraInicio"
+                         [class.is-invalid]="dadosForm.get('dataHoraInicio')?.invalid && dadosForm.get('dataHoraInicio')?.touched">
+                  <div class="error-message" *ngIf="dadosForm.get('dataHoraInicio')?.invalid && dadosForm.get('dataHoraInicio')?.touched">
+                    Data e hora de início são obrigatórias
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label class="form-label">
+                    <strong>1.5 Tempo Total de Execução</strong>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <input type="text" 
+                         class="form-input" 
+                         formControlName="tempoExecucao"
+                         [class.is-invalid]="dadosForm.get('tempoExecucao')?.invalid && dadosForm.get('tempoExecucao')?.touched"
+                         placeholder="Ex: 2 horas">
+                  <div class="error-message" *ngIf="dadosForm.get('tempoExecucao')?.invalid && dadosForm.get('tempoExecucao')?.touched">
+                    Tempo de execução é obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label class="form-label">
+                    <strong>1.6 Área Beneficiada</strong>
+                    <span class="required-mark">*</span>
+                  </label>
+                  <input type="text" 
+                         class="form-input" 
+                         formControlName="areaBeneficiada"
+                         [class.is-invalid]="dadosForm.get('areaBeneficiada')?.invalid && dadosForm.get('areaBeneficiada')?.touched"
+                         placeholder="Área que será beneficiada">
+                  <div class="error-message" *ngIf="dadosForm.get('areaBeneficiada')?.invalid && dadosForm.get('areaBeneficiada')?.touched">
+                    Área beneficiada é obrigatória
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>1.7 Se Emergencial, Justifique o Motivo</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="emergencial" formControlName="emergencial" value="Produção parada sem solução de contorno">
+                  <label class="radio-label">Produção parada sem solução de contorno</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="emergencial" formControlName="emergencial" value="Atendimento de demanda legal">
+                  <label class="radio-label">Atendimento de demanda legal</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="emergencial" formControlName="emergencial" value="Mitigação de risco">
+                  <label class="radio-label">Mitigação de risco</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões de ação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="submit" class="btn btn-success me-2" [disabled]="dadosForm.invalid">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outras abas seguem o mesmo padrão... -->
+    <!-- Aba 2.0 - Mudança -->
+    <div class="tab-pane-custom fade" id="mudanca" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-gear me-2"></i>
+            2.0 - Dados da Mudança
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="mudancaForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>2.1 Chamado(s) Associado(s) à GMUD</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <input type="text" 
+                     class="form-input" 
+                     formControlName="chamados"
+                     [class.is-invalid]="mudancaForm.get('chamados')?.invalid && mudancaForm.get('chamados')?.touched"
+                     placeholder="Número(s) do(s) chamado(s)">
+              <div class="error-message" *ngIf="mudancaForm.get('chamados')?.invalid && mudancaForm.get('chamados')?.touched">
+                Chamado(s) é obrigatório
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <strong>2.2 Descrição da Mudança</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <textarea class="form-textarea" 
+                        formControlName="descricao" 
+                        rows="4"
+                        [class.is-invalid]="mudancaForm.get('descricao')?.invalid && mudancaForm.get('descricao')?.touched"
+                        placeholder="Descreva detalhadamente a mudança a ser implementada"></textarea>
+              <div class="error-message" *ngIf="mudancaForm.get('descricao')?.invalid && mudancaForm.get('descricao')?.touched">
+                Descrição da mudança é obrigatória
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Continua com as outras abas... -->
+    
+    <!-- Aba 3.0 - Impactos -->
+    <div class="tab-pane-custom fade" id="impactos" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-exclamation-triangle me-2"></i>
+            3.0 - Impactos
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="impactosForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>3.1 Impacto em Rotina Noturna</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="rotinaNoturna" formControlName="rotinaNoturna" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="rotinaNoturna" formControlName="rotinaNoturna" value="Não">
+                  <label class="radio-label">Não</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <strong>3.2 Operador Noturno</strong>
+              </label>
+              <input type="text" 
+                     class="form-input" 
+                     formControlName="operadorNoturno"
+                     placeholder="Nome do operador noturno">
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba 4.0 - Usuário -->
+    <div class="tab-pane-custom fade" id="usuario" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-person me-2"></i>
+            4.0 - Usuário
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="usuarioForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>4.1 Necessita de Treinamento?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="treinamento" formControlName="treinamento" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="treinamento" formControlName="treinamento" value="Não">
+                  <label class="radio-label">Não</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <strong>4.2 Responsável pelo Treinamento</strong>
+              </label>
+              <input type="text" 
+                     class="form-input" 
+                     formControlName="responsavelTreinamento"
+                     placeholder="Nome do responsável">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>4.3 Necessita de Divulgação?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="divulgacao" formControlName="divulgacao" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="divulgacao" formControlName="divulgacao" value="Não">
+                  <label class="radio-label">Não</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>4.4 Há necessidade de orientar o Help Desk após esta Mudança?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="orientacaoHelpDesk" formControlName="orientacaoHelpDesk" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="orientacaoHelpDesk" formControlName="orientacaoHelpDesk" value="Não">
+                  <label class="radio-label">Não</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba 5.0 - Testes -->
+    <div class="tab-pane-custom fade" id="testes" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-check-circle me-2"></i>
+            5.0 - Testes
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="testesForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.1 Há plano de homologação formalizado?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="homologacao" formControlName="homologacao" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="homologacao" formControlName="homologacao" value="Não">
+                  <label class="radio-label">Não - Por que?</label>
+                  <input type="text" class="form-input mt-2" formControlName="justificativaHomologacao" placeholder="Justifique o motivo">
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.2 Houve testes prévios?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="testesPrevios" formControlName="testesPrevios" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="testesPrevios" formControlName="testesPrevios" value="Não">
+                  <label class="radio-label">Não - Por que?</label>
+                  <input type="text" class="form-input mt-2" formControlName="justificativaTestesPrevios" placeholder="Justifique o motivo">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.3 Descrição dos testes</strong>
+              </label>
+              <textarea class="form-textarea" 
+                        formControlName="descricaoTestes" 
+                        rows="5"
+                        placeholder="Descreva os testes realizados"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.4 Resultado dos testes</strong>
+              </label>
+              <input type="text" 
+                     class="form-input" 
+                     formControlName="resultadoTestes"
+                     placeholder="Resultado dos testes">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.5 Responsável pelos testes</strong>
+              </label>
+              <input type="text" 
+                     class="form-input" 
+                     formControlName="responsavelTestes"
+                     placeholder="Nome do responsável">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.6 Necessário testes Pós Mudança?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="testesPos" formControlName="testesPos" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="testesPos" formControlName="testesPos" value="Não">
+                  <label class="radio-label">Não - Por que?</label>
+                  <input type="text" class="form-input mt-2" formControlName="justificativaTestesPos" placeholder="Justifique o motivo">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.7 Descrição dos testes pós mudança</strong>
+              </label>
+              <textarea class="form-textarea" 
+                        formControlName="descricaoTestesPos" 
+                        rows="3"
+                        placeholder="Descreva os testes pós mudança"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>5.8 Responsável pelos testes Pós Mudança</strong>
+              </label>
+              <input type="text" 
+                     class="form-input" 
+                     formControlName="responsavelTestesPos"
+                     placeholder="Nome do responsável">
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba 6.0 - Permissões -->
+    <div class="tab-pane-custom fade" id="permissoes" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-shield-lock me-2"></i>
+            6.0 - Permissões
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="permissoesForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>6.1 Necessária criação ou manutenção de login de banco de dados?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="loginBanco" formControlName="loginBanco" value="Não se aplica">
+                  <label class="radio-label">Não se aplica</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="loginBanco" formControlName="loginBanco" value="Criação">
+                  <label class="radio-label">Criação de login, informar finalidade:</label>
+                  <input type="text" class="form-input mt-2" formControlName="finalidadeCriacao" placeholder="Finalidade da criação">
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="loginBanco" formControlName="loginBanco" value="Manutenção">
+                  <label class="radio-label">Manutenção de login, informar finalidade:</label>
+                  <input type="text" class="form-input mt-2" formControlName="finalidadeManutencao" placeholder="Finalidade da manutenção">
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba 7.0 - Procedimentos -->
+    <div class="tab-pane-custom fade" id="procedimentos" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-list-task me-2"></i>
+            7.0 - Procedimentos
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="procedimentosForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>7.1 GMUD possui aplicação no Couchbase?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="couchbase" formControlName="couchbase" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="couchbase" formControlName="couchbase" value="Não">
+                  <label class="radio-label">Não</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <strong>Tipo de Aplicação</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="tipoAplicacao" formControlName="tipoAplicacao" value="DMZ">
+                  <label class="radio-label">DMZ</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="tipoAplicacao" formControlName="tipoAplicacao" value="LAN">
+                  <label class="radio-label">LAN</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>Procedimentos de Aplicação</strong>
+              </label>
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>Procedimentos DBA</strong>
+                </label>
+                <textarea class="form-textarea" 
+                          formControlName="procedimentosDBA" 
+                          rows="10" 
+                          style="resize: vertical"
+                          placeholder="Descreva os procedimentos DBA necessários"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>Procedimentos Redes</strong>
+                </label>
+                <textarea class="form-textarea" 
+                          formControlName="procedimentosRedes" 
+                          rows="10" 
+                          style="resize: vertical"
+                          placeholder="Descreva os procedimentos de redes necessários"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>Procedimentos Gestão de Acesso</strong>
+                </label>
+                <textarea class="form-textarea" 
+                          formControlName="procedimentosGestao" 
+                          rows="10" 
+                          style="resize: vertical"
+                          placeholder="Descreva os procedimentos de gestão de acesso"></textarea>
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="proximaAba()">
+                  Próxima<i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba 8.0 - Plano de Volta -->
+    <div class="tab-pane-custom fade" id="planoVolta" role="tabpanel">
+      <div class="content-card">
+        <div class="content-header">
+          <h2 class="content-title">
+            <i class="bi bi-arrow-return-left me-2"></i>
+            8.0 - Plano de Volta
+          </h2>
+        </div>
+        <div class="content-body">
+          <form [formGroup]="planoVoltaForm">
+            <div class="form-group">
+              <label class="form-label">
+                <strong>8.1 GMUD possui aplicação no Couchbase?</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="couchbasePlanoVolta" formControlName="couchbasePlanoVolta" value="Sim">
+                  <label class="radio-label">Sim</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="couchbasePlanoVolta" formControlName="couchbasePlanoVolta" value="Não">
+                  <label class="radio-label">Não</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <strong>Tipo de Aplicação</strong>
+                <span class="required-mark">*</span>
+              </label>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="tipoAplicacaoPlanoVolta" formControlName="tipoAplicacaoPlanoVolta" value="DMZ">
+                  <label class="radio-label">DMZ</label>
+                </div>
+                <div class="radio-item">
+                  <input class="radio-input" type="radio" name="tipoAplicacaoPlanoVolta" formControlName="tipoAplicacaoPlanoVolta" value="LAN">
+                  <label class="radio-label">LAN</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <strong>Procedimentos de Aplicação do Plano de Volta</strong>
+              </label>
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>Procedimentos DBA</strong>
+                </label>
+                <textarea class="form-textarea" 
+                          formControlName="procedimentosDBAPlanoVolta" 
+                          rows="10" 
+                          style="resize: vertical"
+                          placeholder="Descreva os procedimentos DBA para o plano de volta"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>Procedimentos Redes</strong>
+                </label>
+                <textarea class="form-textarea" 
+                          formControlName="procedimentosRedesPlanoVolta" 
+                          rows="10" 
+                          style="resize: vertical"
+                          placeholder="Descreva os procedimentos de redes para o plano de volta"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>Procedimentos Gestão de Acesso</strong>
+                </label>
+                <textarea class="form-textarea" 
+                          formControlName="procedimentosGestaoPlanoVolta" 
+                          rows="10" 
+                          style="resize: vertical"
+                          placeholder="Descreva os procedimentos de gestão de acesso para o plano de volta"></textarea>
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" (click)="anteriorAba()">
+                <i class="bi bi-arrow-left me-2"></i>Anterior
+              </button>
+              <div class="action-buttons">
+                <button type="button" class="btn btn-info me-2" (click)="gerarPDF()">
+                  <i class="bi bi-file-pdf me-2"></i>Gerar PDF
+                </button>
+                <button type="button" class="btn btn-success me-2" (click)="salvarFormulario()">
+                  <i class="bi bi-check-circle me-2"></i>Salvar
+                </button>
+                <button type="button" class="btn btn-primary" disabled>
+                  Última Aba<i class="bi bi-check ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Botões flutuantes de ação -->
+<div class="floating-actions">
+  <button class="btn btn-success fab" (click)="salvarFormulario()" title="Salvar Formulário">
+    <i class="bi bi-check-lg"></i>
+  </button>
+  <button class="btn btn-info fab" (click)="gerarPDF()" title="Gerar PDF">
+    <i class="bi bi-file-pdf"></i>
+  </button>
+  <button class="btn btn-warning fab" (click)="exibirDadosFormularios()" title="Visualizar Dados">
+    <i class="bi bi-eye"></i>
+  </button>
+</div>
+
+<!-- Toast de notificação -->
+<div class="toast-container">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" *ngIf="mostrarToast">
+    <div class="toast-header">
+      <i class="bi bi-info-circle text-primary me-2"></i>
+      <strong class="me-auto">{{toastTitulo}}</strong>
+      <button type="button" class="btn-close" (click)="fecharToast()"></button>
+    </div>
+    <div class="toast-body">
+      {{toastMensagem}}
+    </div>
+  </div>
+</div>

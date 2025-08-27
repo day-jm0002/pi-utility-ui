@@ -7,6 +7,7 @@ import { PacoteQa } from '../../model/PacoteQaDto';
 import { LimparCacheSignature } from '../../model/signature/limparCacheSignature';
 import { LimparCacheResult } from '../../model/limparCacheResult';
 import { UrlHelper } from '../../helper/UlrHelper';
+import { SistemaSignature } from '../../model/signature/sistemaSignature';
 
 @Injectable({
   providedIn: 'root'
@@ -37,14 +38,14 @@ export class AmbienteService {
   }
 
 
-  public ObterAmbientes():Observable<AmbienteDto[]>
+  public ObterAmbientes(sistema:SistemaSignature):Observable<AmbienteDto[]>
   {
-    return this.http.get<any[]>(UrlHelper.Ambiente.ObterAmbientes);
+    return this.http.get<any[]>(`${UrlHelper.Ambiente.ObterAmbientes}/${sistema.sistema}`);
   }
 
-  public ObterPacoteQa():Observable<PacoteQa>
+  public ObterPacoteQa(sistema:SistemaSignature):Observable<PacoteQa>
   {
-    return this.http.get<PacoteQa>(UrlHelper.Ambiente.ObterPacoteQa);
+    return this.http.get<PacoteQa>(`${UrlHelper.Ambiente.ObterPacoteQa}/${sistema.sistema}`);
   }
 
 
@@ -65,12 +66,12 @@ export class AmbienteService {
 
   public AtualizarChamadoAmbienteQa(signature : AmbienteChamadoSignature):Observable<any>
   {
-    return this.http.post<any>(UrlHelper.Ambiente.AtualizarChamadoAmbientesQa,signature);
+    return this.http.post<any>(UrlHelper.Ambiente.AtualizarChamadoAmbientesQa,signature,this.options);
   }
 
-  public LiberarChamadoAmbientesQa():Observable<any>
+  public LiberarChamadoAmbientesQa(ambienteSignatureQa : AmbienteSignatureQa):Observable<any>
   {
-    return this.http.post<any>(UrlHelper.Ambiente.LiberarChamadoAmbientesQa,'');
+    return this.http.post<any>(UrlHelper.Ambiente.LiberarChamadoAmbientesQa,ambienteSignatureQa);
   }
 
 

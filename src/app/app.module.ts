@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 
 import { FundosComponent } from './fundos/fundos.component';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +17,7 @@ import { GerenteComponent } from './gerente/gerente.component';
 import { MensagemComponent } from './shared/mensagem/mensagem.component';
 import { LoginSSOComponent } from './login-sso/login-sso.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -35,11 +35,12 @@ import { ModalLiberarAmbienteComponent } from './ambiente/shared/components/moda
 import { ModalTesteQaComponent } from './ambiente/shared/components/modal-teste-qa/modal-teste-qa.component';
 import { ModalLimparCacheComponent } from './ambiente/shared/components/modal-limpar-cache/modal-limpar-cache.component';
 import { StatusCacheComponent } from './ambiente/shared/components/status-cache/status-cache.component';
-import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { FormatChamadoPipe } from './shared/pipes/format-chamado.pipe';
 import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
+import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,9 +70,9 @@ import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.c
     ModalTesteQaComponent,
     ModalLimparCacheComponent,
     StatusCacheComponent,
-    NewLoaderComponent,
     FormatChamadoPipe,
-    CenarioComponent
+    CenarioComponent,
+    NewLoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AmbienteSignature } from '../../../../model/signature/ambienteSignature';
+import { AmbienteSignature, AmbienteSignatureQa } from '../../../../model/signature/ambienteSignature';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
 import { Subject, takeUntil } from 'rxjs';
-declare var window : any;
+declare var window: any;
 
 
 @Component({
@@ -12,26 +12,26 @@ declare var window : any;
   templateUrl: './modal-liberar-ambiente.component.html',
   styleUrl: './modal-liberar-ambiente.component.scss'
 })
-export class ModalLiberarAmbienteComponent implements OnInit , OnDestroy {
+export class ModalLiberarAmbienteComponent implements OnInit, OnDestroy {
 
   private unsubscribe$ = new Subject<void>();
-  modalLiberar:any;
+  modalLiberar: any;
   liberarAmbiente = new LiberarAmbiente();
 
-  constructor(private ambienteService : AmbienteService,private comunicacaoExterna : InformacoesAmbienteService) {
+  constructor(private ambienteService: AmbienteService, private comunicacaoExterna: InformacoesAmbienteService) {
     this.comunicacaoExterna.liberarAmbiente
-    .pipe(takeUntil(this.unsubscribe$))
-    .subscribe(x =>{
-      this.liberarAmbiente = x;
-      this.modalLiberar.show();
-    })
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(x => {
+        this.liberarAmbiente = x;
+        this.modalLiberar.show();
+      })
 
     this.comunicacaoExterna.liberarAmbienteQa
-    .pipe(takeUntil(this.unsubscribe$))
-    .subscribe(x =>{
-      this.liberarAmbiente = x;
-      this.modalLiberar.show();
-    })
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(x => {
+        this.liberarAmbiente = x;
+        this.modalLiberar.show();
+      })
 
   }
 
@@ -39,7 +39,7 @@ export class ModalLiberarAmbienteComponent implements OnInit , OnDestroy {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   }
-  
+
   ngOnInit(): void {
     this.modalLiberar = new window.bootstrap.Modal(
       document.getElementById('myLiberarModal')
@@ -47,37 +47,44 @@ export class ModalLiberarAmbienteComponent implements OnInit , OnDestroy {
   }
 
 
-  LiberarAmbiente(ambienteId : number)
-  {
-    if(this.liberarAmbiente.ambiente == TipoAmbiente.dev)
-    {
-    let editarAmbiente = new AmbienteSignature();
-    editarAmbiente.id = ambienteId;
-    editarAmbiente.branch =""
-    editarAmbiente.numeroChamado = ""
-    editarAmbiente.descricao = ""
-    editarAmbiente.devId = 1
-    editarAmbiente.negId = 1
-    editarAmbiente.sitId = 1
-    editarAmbiente.dependencia = ""
+  LiberarAmbiente(ambienteId: number) {
+    if (this.liberarAmbiente.ambiente == TipoAmbiente.dev) {
+      let editarAmbiente = new AmbienteSignature();
+      editarAmbiente.id = ambienteId;
+      editarAmbiente.branch = ""
+      editarAmbiente.numeroChamado = ""
+      editarAmbiente.descricao = ""
+      editarAmbiente.devId = 1
+      editarAmbiente.negId = 1
+      editarAmbiente.sitId = 1
+      editarAmbiente.dependencia = ""
 
-    this.ambienteService.AtualizarAmbiente(editarAmbiente).subscribe(x => {  
-     if(x)
-     {
-      this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
-      this.modalLiberar.hide();
-     }
-    })
-    }
-    else{
-      this.ambienteService.LiberarChamadoAmbientesQa().subscribe(x => {  
-        if(x)
-        {
-         this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
-         this.modalLiberar.hide();
+      this.ambienteService.AtualizarAmbiente(editarAmbiente).subscribe(x => {
+        if (x) {
+          this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
+          this.modalLiberar.hide();
         }
-       })
-    }  
+      })
+    }
+    else {
+      debugger;
+      let ambienteQa = new AmbienteSignatureQa();
+      ambienteQa.id = this.liberarAmbiente.stage;
+      ambienteQa.release = '';
+      ambienteQa.requisicao = '';
+      ambienteQa.branch = [];
+      ambienteQa.devId = 0;
+      ambienteQa.negId = 0;
+      ambienteQa.dataImplantacao = new Date();
+
+
+      this.ambienteService.LiberarChamadoAmbientesQa(ambienteQa).subscribe(x => {
+        if (x) {
+          this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
+          this.modalLiberar.hide();
+        }
+      })
+    }
   }
 
 

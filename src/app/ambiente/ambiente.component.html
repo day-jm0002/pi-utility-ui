@@ -1,8 +1,8 @@
 <app-new-loader [exibirLoader]="loaderDev" [mensagem]="'Ambiente de Dev'" ></app-new-loader>
-<app-tabela-ambientes *ngIf="!loaderDev"   [listAmbiente] = 'listaDev'></app-tabela-ambientes>
+<app-tabela-ambientes *ngIf="!loaderDev"   [listAmbiente] = 'listaDev' [sistema]="rota"></app-tabela-ambientes>
 
-<app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Ambiente de Qa'"></app-new-loader>
-<app-tabela-ambiente-qa *ngIf="!loaderQa"  [listAmbienteQa] = 'listaQa' ></app-tabela-ambiente-qa>
+<app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Ambiente de Qa'"  ></app-new-loader>
+<app-tabela-ambiente-qa *ngIf="!loaderQa"  [listAmbienteQa] = 'listaQa' [sistema]="rota"></app-tabela-ambiente-qa>
 
 <app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Pacote de Qa'"></app-new-loader>
 <app-tabela-testes-qa *ngIf="!loaderQa"  [pacotes] = 'listaQa.pacote' ></app-tabela-testes-qa>

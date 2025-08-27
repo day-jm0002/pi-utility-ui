@@ -1,67 +1,71 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { AmbienteDto } from '../../../../model/ambientesDto';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
-import { LimparCache } from '../../../../model/signature/LimparCache';
 import { LimparCacheSignature } from '../../../../model/signature/limparCacheSignature';
 import { Modal } from '../../../../model/signature/ModalLimparCache';
-import { LoaderService } from '../../../../shared/loader/loader.component';
+import { SistemaSignature } from '../../../../model/signature/sistemaSignature';
 
 @Component({
   selector: 'app-tabela-ambientes',
   templateUrl: './tabela-ambientes.component.html',
   styleUrl: './tabela-ambientes.component.scss'
 })
-export class TabelaAmbientesComponent {
+export class TabelaAmbientesComponent implements OnChanges {
 
-  @Input() listAmbiente : AmbienteDto[]=[];
+  @Input() listAmbiente: AmbienteDto[] = [];
+  @Input() sistema: string;
 
-  loader : boolean = true; 
-  NomeStage:string="";
 
-  carteiraDeGerentes : string = "secondary";
-  mensagemCarteiraDeGerentes : string;
-  
-  fundosRelacao : string = "secondary";
-  mensagemFundosRelacao: string;  
-  listaDeProdutos : string = "secondary";
+  loader: boolean = true;
+  nomeTela: string = "";
 
-  mensagemListaDeProdutos : string;
+  carteiraDeGerentes: string = "secondary";
+  mensagemCarteiraDeGerentes: string;
+
+  fundosRelacao: string = "secondary";
+  mensagemFundosRelacao: string;
+  listaDeProdutos: string = "secondary";
+
+  mensagemListaDeProdutos: string;
   exibirStatus = false;
-  stageCache : string ="";
+  stageCache: string = "";
   tempoStatus: number;
   habilitarBotao = false;
 
 
-  constructor(private ambienteService : AmbienteService, 
-              private comunicacaoExterna : InformacoesAmbienteService) {  
-    
-    this.comunicacaoExterna.limparCache.subscribe(x =>{
-        this.exibirStatus = true;
-        this.Confirmar(x.Stage,x.Ambiente);
+  constructor(private ambienteService: AmbienteService,
+    private comunicacaoExterna: InformacoesAmbienteService) {
+
+    this.comunicacaoExterna.limparCache.subscribe(x => {
+      this.exibirStatus = true;
+      this.Confirmar(x.Stage, x.Ambiente);
     })
 
   }
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['sistema'] && this.sistema) {
+      this.nomeTela = this.sistema === 'pi' ? 'Portal de Investimentos' : 'MiddleOffice';
+    }
+  }
 
-  Confirmar(stage : string , ambiente :string)
-  {
+  Confirmar(stage: string, ambiente: string) {
     this.habilitarBotao = true;
     this.tempoStatus = 10000;
 
     var signature = new LimparCacheSignature();
-    signature.Ambiente =  ambiente ;//this.cache  == "qa" ? "qa" : "dev";
+    signature.Ambiente = ambiente;
     signature.Stage = this.removerEspacosNoMeio(stage);
     this.stageCache = signature.Stage;
 
-    //criar o evento para fechar o modal
     let modal = new Modal();
     modal.Modal = false;
     this.comunicacaoExterna.modalLimparCache.emit(modal);
 
     this.exibirStatus = true;
 
-    this.carteiraDeGerentes = "warning"; 
+    this.carteiraDeGerentes = "warning";
     this.fundosRelacao = "warning";
     this.listaDeProdutos = "warning";
 
@@ -70,32 +74,28 @@ export class TabelaAmbientesComponent {
     this.mensagemListaDeProdutos = "Em andamento";
 
     this.ambienteService.LimparCache(signature).subscribe(x => {
-      if(x.carteiraDeGerente == 200)
-      {
+      if (x.carteiraDeGerente == 200) {
         this.carteiraDeGerentes = "success";
         this.mensagemCarteiraDeGerentes = "Realizado com sucesso";
-      }else
-      {
+      } else {
         this.carteiraDeGerentes = "danger";
         this.mensagemCarteiraDeGerentes = "Não foi possível realizar a limpeza de cache";
       }
 
-      if(x.fundosRelacao == 200)
-      {
+      if (x.fundosRelacao == 200) {
         this.fundosRelacao = "success";
         this.mensagemFundosRelacao = "Realizado com sucesso";
       }
-      else{
+      else {
         this.fundosRelacao = "danger";
         this.mensagemFundosRelacao = "Não foi possível realizar a limpeza de cache";
       }
 
-      if(x.listaDeProdutos == 200)
-      {
+      if (x.listaDeProdutos == 200) {
         this.listaDeProdutos = "success";
         this.mensagemListaDeProdutos = "Realizado com sucesso";
-      }      
-      else{
+      }
+      else {
         this.listaDeProdutos = "danger";
         this.mensagemListaDeProdutos = "Não foi possível realizar a limpeza de cache";
       }
@@ -104,7 +104,7 @@ export class TabelaAmbientesComponent {
         this.exibirStatus = false;
         this.habilitarBotao = false;
       }, this.tempoStatus);
-    },error => {
+    }, error => {
 
       this.carteiraDeGerentes = "danger";
       this.mensagemCarteiraDeGerentes = "Não foi possível realizar a limpeza de cache";
@@ -128,23 +128,20 @@ export class TabelaAmbientesComponent {
   }
 
 
-  
-  openEditarModal(ambiente : AmbienteDto)
-  {
+
+  openEditarModal(ambiente: AmbienteDto) {
     this.comunicacaoExterna.informacoesAmbiente.emit(ambiente);
   }
 
-  openLiberarModal(ambienteId : number,nome : string)
-  {
+  openLiberarModal(ambienteId: number, nome: string) {
     let liberarAmbiente = new LiberarAmbiente();
-    liberarAmbiente.titulo = `Deseja liberar o ambiente ${nome}` ;
+    liberarAmbiente.titulo = `Deseja liberar o ambiente ${nome}`;
     liberarAmbiente.ambiente = TipoAmbiente.dev;
     liberarAmbiente.stage = ambienteId;
     this.comunicacaoExterna.liberarAmbiente.emit(liberarAmbiente);
   }
 
-  LimparStage(ambiente : AmbienteDto)
-  {
+  LimparStage(ambiente: AmbienteDto) {
     let modal = new Modal();
     modal.Ambiente = "dev";
     modal.Stage = ambiente.nome;
@@ -152,11 +149,11 @@ export class TabelaAmbientesComponent {
     this.comunicacaoExterna.modalLimparCache.emit(modal);
   }
 
-  habilitarbotao(id : any){
+  habilitarbotao(id: any) {
 
-    if(id == 3 || id == 5 ){
+    if (id == 3 || id == 5) {
       return false;
     }
-  return true;
+    return true;
   }
 }

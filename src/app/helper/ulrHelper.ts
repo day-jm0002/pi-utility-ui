@@ -1,7 +1,7 @@
 export class UrlHelper {
 
-//    public static BASE_URL = 'https://localhost:44326'
-   public static BASE_URL = 'http://sdaysp06d005/LimparCacheApi';
+   public static BASE_URL = 'https://localhost:44326'
+//   public static BASE_URL = 'http://wdaymtspr04737:8070';
     private static readonly LIMPAR_CACHE_API = "http://sdaysp06d005/LimparCacheApi/api/";
 
 

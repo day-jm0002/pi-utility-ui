@@ -7,16 +7,12 @@ import { LoaderService } from '../loader/loader.component';
   styleUrl: './new-loader.component.scss'
 })
 export class NewLoaderComponent {
+  @Input() exibirLoader: boolean;
+  @Input() mensagem: string;
 
-@Input() exibirLoader:boolean;
-@Input() mensagem:string;
-
-  constructor(private loader:LoaderService) { 
+  constructor(private loader: LoaderService) { 
   }
-
 
   ngOnInit() {
   }
-
-
 }

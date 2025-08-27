@@ -12,78 +12,83 @@ import { LoginSSOComponent } from './login-sso/login-sso.component';
 import { AmbienteComponent } from './ambiente/ambiente.component';
 import { SuitabilityComponent } from './suitability/suitability.component';
 import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
+import { FormularioGmudComponent } from './formulario-gmud/formulario-gmud.component';
 
 const routes: Routes = [
   {
-    path:"",
-    component:HomeComponent
+    path: "",
+    component: HomeComponent
 
   }
   ,
   {
-    path:"home",
-    component:HomeComponent
+    path: "home",
+    component: HomeComponent
   }
   ,
   {
-    path:"dashboard",
-    component:DashboardComponent
+    path: "dashboard",
+    component: DashboardComponent
   }
   ,
   {
-    path:"gestor",
-    component:GestorComponent
+    path: "gestor",
+    component: GestorComponent
   }
   ,
   {
-    path:"fundos",
-    component:FundosComponent
+    path: "fundos",
+    component: FundosComponent
   }
   ,
   {
-    path:"monitor",
-    component:MonitorComponent
+    path: "monitor",
+    component: MonitorComponent
   }
   ,
   {
-    path:"fundos/:IdGestor/:NomeGestor",
-    component:FundosComponent
+    path: "fundos/:IdGestor/:NomeGestor",
+    component: FundosComponent
   }
   ,
   {
-    path:"usuario",
-    component:UsuarioComponent
+    path: "usuario",
+    component: UsuarioComponent
   }
   ,
   {
-    path:"usuario/editar/:Ambiente/:CodUsuario",
-    component:EditarUsuarioComponent
+    path: "usuario/editar/:Ambiente/:CodUsuario",
+    component: EditarUsuarioComponent
   },
   {
-    path:"gerente",
-    component:GerenteComponent
+    path: "gerente",
+    component: GerenteComponent
   }
   ,
   {
-    path:"Login-sso",
-    component:LoginSSOComponent
+    path: "Login-sso",
+    component: LoginSSOComponent
   }
   ,
   {
-    path:"ambiente",
-    component:AmbienteComponent
+    path: "ambiente/:sistema",
+    component: AmbienteComponent
   }
   ,
   {
-    path:"suitability",
-    component:SuitabilityComponent
+    path: "suitability",
+    component: SuitabilityComponent
   }
   ,
   {
-    path:"cenario",
-    component:CenarioComponent
-  }
-   
+    path: "cenario",
+    component: CenarioComponent
+  },
+  {
+    path: 'formularioGMUD',
+    component: FormularioGmudComponent
+  },
+  { path: '', redirectTo: '/formulario-gmud', pathMatch: 'full' }
 ];
 
 @NgModule({

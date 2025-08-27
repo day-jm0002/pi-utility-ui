@@ -1,24 +1,6 @@
-<app-new-loader></app-new-loader>
-
-<app-status-cache 
-[CarteiraDeGerentes]="carteiraDeGerentes" 
-[MensagemCarteiraDeGerentes]="mensagemCarteiraDeGerentes" 
-
-
-[FundosRelacao]="fundosRelacao" 
-[MensagemFundosRelacao]="mensagemFundosRelacao" 
-
-[ListaDeProdutos]="listaDeProdutos" 
-[MensagemListaDeProdutos]="mensagemListaDeProdutos" 
-
-[StageCache]="stageCache"
-[ExibirStatus]="exibirStatus">
-
-</app-status-cache>
-
 <div>
 <h2 style="text-align: center;margin: 15px 15px;">
-  Ambiente de Desenvolvimento  
+  Ambiente de Desenvolvimento  - {{nomeTela}}
 </h2>
 
 <section class="tabela" >
@@ -59,14 +41,6 @@
             <td style="text-align: center;vertical-align: middle;">               
             <button style="margin-right: 0px;" type="button" class="btn btn-danger btn-sm" (click)="openLiberarModal(ambiente.id , ambiente.nome)">Liberar</button>
           </td>
-          <!-- <td>
-            <button  
-            style="margin-right: 0px;" 
-            type="button" 
-            class="btn btn-primary btn-sm" 
-            (click)="openEditarModal(ambiente)"
-            >Cenário</button>   
-          </td> -->
         </tr>     
       </tbody>
     </table>
