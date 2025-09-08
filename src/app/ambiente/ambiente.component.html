@@ -1,25 +1,18 @@
-<app-new-loader [exibirLoader]="loaderDev" [mensagem]="'Ambiente de Dev'" ></app-new-loader>
-<app-tabela-ambientes *ngIf="!loaderDev"   [listAmbiente] = 'listaDev' [sistema]="rota"></app-tabela-ambientes>
+<app-new-loader [exibirLoader]="loaderDev" [mensagem]="'Ambiente de Dev'"></app-new-loader>
+<app-tabela-ambientes *ngIf="!loaderDev" [listAmbiente]='listaDev'></app-tabela-ambientes>
+<div class="alert alert-danger" role="alert" *ngIf="alertDev">Não foi possível carregar os chamados de Dev</div>
 
-<app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Ambiente de Qa'"  ></app-new-loader>
-<app-tabela-ambiente-qa *ngIf="!loaderQa"  [listAmbienteQa] = 'listaQa' [sistema]="rota"></app-tabela-ambiente-qa>
+
+<app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Ambiente de Qa'"></app-new-loader>
+<app-tabela-ambiente-qa *ngIf="!loaderQa" [listAmbienteQa]='listaQa'></app-tabela-ambiente-qa>
+<div class="alert alert-danger" role="alert" *ngIf="alertQa">Não foi possível carregar os chamados de Dev</div>
+
 
 <app-new-loader [exibirLoader]="loaderQa" [mensagem]="'Pacote de Qa'"></app-new-loader>
-<app-tabela-testes-qa *ngIf="!loaderQa"  [pacotes] = 'listaQa.pacote' ></app-tabela-testes-qa>
+<app-tabela-testes-qa *ngIf="!loaderQa" [pacotes]='listaQa.pacote'></app-tabela-testes-qa>
 
 <app-modal-editar-ambiente></app-modal-editar-ambiente>
-<app-modal-editar-ambiente-qa></app-modal-editar-ambiente-qa>        
+<app-modal-editar-ambiente-qa></app-modal-editar-ambiente-qa>
 <app-modal-liberar-ambiente></app-modal-liberar-ambiente>
 <app-modal-teste-qa></app-modal-teste-qa>
 <app-modal-limpar-cache></app-modal-limpar-cache>
-
-
-
-
-
-
-
-
-
-
-

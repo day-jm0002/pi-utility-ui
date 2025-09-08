@@ -1,5 +1,9 @@
 import { Pacote } from "../PacoteQaDto";
 
+export class ExcluirAmbienteSignature{
+  public id: number;
+}
+
 export class AmbienteSignature {
     public id: number;
     public nome: string;
@@ -9,6 +13,7 @@ export class AmbienteSignature {
     public devId : number;
     public negId : number;
     public sitId : number;
+    public sisId : number;
     public dependencia : string;
   }
 

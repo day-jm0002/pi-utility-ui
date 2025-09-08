@@ -1,18 +1,17 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AmbienteDto } from '../../../../model/ambientesDto';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
 import { LimparCacheSignature } from '../../../../model/signature/limparCacheSignature';
 import { Modal } from '../../../../model/signature/ModalLimparCache';
-import { SistemaSignature } from '../../../../model/signature/sistemaSignature';
 
 @Component({
   selector: 'app-tabela-ambientes',
   templateUrl: './tabela-ambientes.component.html',
   styleUrl: './tabela-ambientes.component.scss'
 })
-export class TabelaAmbientesComponent implements OnChanges {
+export class TabelaAmbientesComponent {
 
   @Input() listAmbiente: AmbienteDto[] = [];
   @Input() sistema: string;
@@ -43,11 +42,6 @@ export class TabelaAmbientesComponent implements OnChanges {
       this.Confirmar(x.Stage, x.Ambiente);
     })
 
-  }
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['sistema'] && this.sistema) {
-      this.nomeTela = this.sistema === 'pi' ? 'Portal de Investimentos' : 'MiddleOffice';
-    }
   }
 
   Confirmar(stage: string, ambiente: string) {
@@ -155,5 +149,11 @@ export class TabelaAmbientesComponent implements OnChanges {
       return false;
     }
     return true;
+  }
+
+  AdicionarAmbiente(){
+    this.ambienteService.AdicionarAmbiente().subscribe(data =>{
+       this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);    
+    })
   }
 }

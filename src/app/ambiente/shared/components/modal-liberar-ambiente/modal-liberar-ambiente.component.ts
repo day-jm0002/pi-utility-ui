@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AmbienteSignature, AmbienteSignatureQa } from '../../../../model/signature/ambienteSignature';
+import { AmbienteSignature, AmbienteSignatureQa, ExcluirAmbienteSignature } from '../../../../model/signature/ambienteSignature';
 import { AmbienteService } from '../../../service/ambiente.service';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
@@ -48,18 +48,11 @@ export class ModalLiberarAmbienteComponent implements OnInit, OnDestroy {
 
 
   LiberarAmbiente(ambienteId: number) {
+    debugger;
     if (this.liberarAmbiente.ambiente == TipoAmbiente.dev) {
-      let editarAmbiente = new AmbienteSignature();
+      let editarAmbiente = new ExcluirAmbienteSignature();
       editarAmbiente.id = ambienteId;
-      editarAmbiente.branch = ""
-      editarAmbiente.numeroChamado = ""
-      editarAmbiente.descricao = ""
-      editarAmbiente.devId = 1
-      editarAmbiente.negId = 1
-      editarAmbiente.sitId = 1
-      editarAmbiente.dependencia = ""
-
-      this.ambienteService.AtualizarAmbiente(editarAmbiente).subscribe(x => {
+      this.ambienteService.ExcluirAmbiente(editarAmbiente).subscribe(x => {
         if (x) {
           this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
           this.modalLiberar.hide();
@@ -67,7 +60,6 @@ export class ModalLiberarAmbienteComponent implements OnInit, OnDestroy {
       })
     }
     else {
-      debugger;
       let ambienteQa = new AmbienteSignatureQa();
       ambienteQa.id = this.liberarAmbiente.stage;
       ambienteQa.release = '';

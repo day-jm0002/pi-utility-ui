@@ -71,7 +71,7 @@ const routes: Routes = [
   }
   ,
   {
-    path: "ambiente/:sistema",
+    path: "ambiente",
     component: AmbienteComponent
   }
   ,

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { AmbienteDto } from '../../model/ambientesDto';
-import { AmbienteChamadoSignature, AmbienteSignature, AmbienteSignatureQa } from '../../model/signature/ambienteSignature';
+import { AmbienteChamadoSignature, AmbienteSignature, AmbienteSignatureQa, ExcluirAmbienteSignature } from '../../model/signature/ambienteSignature';
 import { PacoteQa } from '../../model/PacoteQaDto';
 import { LimparCacheSignature } from '../../model/signature/limparCacheSignature';
 import { LimparCacheResult } from '../../model/limparCacheResult';
@@ -37,15 +37,27 @@ export class AmbienteService {
     return this.http.get<any[]>(UrlHelper.Situacao.ObterStatusSituacao);
   }
 
-
-  public ObterAmbientes(sistema:SistemaSignature):Observable<AmbienteDto[]>
+  public ObterSistemas():Observable<any[]>
   {
-    return this.http.get<any[]>(`${UrlHelper.Ambiente.ObterAmbientes}/${sistema.sistema}`);
+    return this.http.get<any[]>(UrlHelper.Sistemas.ObterTodosSistemas);
   }
 
-  public ObterPacoteQa(sistema:SistemaSignature):Observable<PacoteQa>
+  public ObterAmbientes():Observable<AmbienteDto[]>
   {
-    return this.http.get<PacoteQa>(`${UrlHelper.Ambiente.ObterPacoteQa}/${sistema.sistema}`);
+    return this.http.get<any[]>(`${UrlHelper.Ambiente.ObterAmbientes}`)
+     .pipe(
+        catchError((error) => {
+          debugger;
+          console.error('Erro ao buscar ambientes:', error);
+          return throwError(() => error); // repassa o erro para o componente
+        })
+      );
+    ;
+  }
+
+  public ObterPacoteQa():Observable<PacoteQa>
+  {
+    return this.http.get<PacoteQa>(`${UrlHelper.Ambiente.ObterPacoteQa}`);
   }
 
 
@@ -74,5 +86,12 @@ export class AmbienteService {
     return this.http.post<any>(UrlHelper.Ambiente.LiberarChamadoAmbientesQa,ambienteSignatureQa);
   }
 
+  public AdicionarAmbiente(): Observable<any>{
+    return this.http.post<any>(UrlHelper.Ambiente.AdicionarAmbiente,{})
+  }
+
+    public ExcluirAmbiente(signature : ExcluirAmbienteSignature): Observable<any>{
+    return this.http.post<any>(UrlHelper.Ambiente.ExcluirAmbiente,signature);
+  }
 
 }

@@ -23,6 +23,9 @@ export class AmbienteComponent implements OnInit, OnDestroy {
   loaderDev: boolean = true;
   loaderQa: boolean = true;
 
+  alertDev: boolean = false;
+  alertQa: boolean = false;
+
   listaDev: AmbienteDto[];
   listaQa = new PacoteQa();
 
@@ -36,33 +39,23 @@ export class AmbienteComponent implements OnInit, OnDestroy {
   listSituacao: Situacao[] = [];
   listNegocio: Negocio[] = [];
 
-  sistema: SistemaSignature;
-  rota: any;
-
-
-
-
   constructor(private ambienteService: AmbienteService,
     private comunicacaoExterna: InformacoesAmbienteService,
-    private route: ActivatedRoute
   ) {
     this.comunicacaoExterna.informacoesTodosAmbiente
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe(x => {
         if (x) {
-          this.obterAmbientes(this.rota);
-          this.obterAmbienteQa(this.rota);
+          this.obterAmbientes();
+          this.obterAmbienteQa();
         }
       })
   }
 
   ngOnInit() {
 
-    this.route.paramMap.subscribe(params => {
-    this.rota = params.get('sistema');
-    this.obterAmbientes(String(this.rota));
-    this.obterAmbienteQa(String(this.rota));
-    });
+    this.obterAmbientes();
+    this.obterAmbienteQa();
 
   }
 
@@ -72,25 +65,45 @@ export class AmbienteComponent implements OnInit, OnDestroy {
   }
 
 
-  obterAmbientes(ambiente: string) {
-    let sistema = new SistemaSignature(ambiente);
-    this.ambienteService.ObterAmbientes(sistema)
-      .subscribe(result => {
-        this.listaDev = result;
-        if (result) {
+  mostrarAlertaDev() {
+    this.alertDev = true;
+    setTimeout(() => {
+      this.alertDev = false;
+    }, 3000); // 3 segundos
+  }
+
+  mostrarAlertaQa() {
+    this.alertQa = true;
+    setTimeout(() => {
+      this.alertQa = false;
+    }, 3000);
+  }
+
+
+  obterAmbientes() {
+    this.ambienteService.ObterAmbientes()
+      .subscribe({
+        next: (result) => {
+          this.listaDev = result;
           this.loaderDev = false;
+        },
+        error: (err) => {
+          this.loaderDev = false;
+          this.mostrarAlertaDev();
         }
       });
   }
 
-  obterAmbienteQa(ambiente: string) {
-    let sistema = new SistemaSignature(ambiente);
 
-    this.ambienteService.ObterPacoteQa(sistema)
-      .subscribe(result => {
-        this.listaQa = result;
-        if (result) {
-          this.loaderQa = false;
+  obterAmbienteQa() {
+    this.ambienteService.ObterPacoteQa()
+      .subscribe({
+        next : (result) =>{
+       this.listaQa = result;
+       this.loaderQa = false;
+        },error : (err) =>{
+          this.loaderQa =false;
+          this.mostrarAlertaQa()
         }
       });
   }

@@ -17,6 +17,7 @@ export class AmbienteDto {
       this.link = ""; 
       this.situacao = "";
       this.situacaoId = 0;  
+      this.sistema = "";
       this.dependencia = "";
   }
 
@@ -32,5 +33,7 @@ export class AmbienteDto {
     public link: string;
     public situacaoId : number;
     public situacao : string;
+    public sistema : string;
+    public sistemaId : number;
     public dependencia : string;      
   }

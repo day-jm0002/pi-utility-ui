@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AmbienteSignature } from '../../../../model/signature/ambienteSignature';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AmbienteService } from '../../../service/ambiente.service';
@@ -8,6 +8,7 @@ import { Negocio } from '../../../../model/negocio';
 import { AmbienteDto } from '../../../../model/ambientesDto';
 import { InformacoesAmbienteService } from '../../../service/informacoes-ambiente.service';
 import { Subject, takeUntil } from 'rxjs';
+import { Sistema } from '../../../../model/sistema';
 declare var window : any;
 
 @Component({
@@ -26,6 +27,7 @@ ambienteDto : AmbienteDto;
 listDesenvolvedores:Desenvolvedor[]=[];
 listSituacao:Situacao[]=[];
 listNegocio:Negocio[]=[];
+listSistema:Sistema[]=[]
 
  constructor(private ambienteService : AmbienteService , private comunicacaoExterna : InformacoesAmbienteService) {
 
@@ -47,10 +49,10 @@ listNegocio:Negocio[]=[];
       ResponsavelNeg : new FormControl(),
       Status : new FormControl(),
       Dependencia : new FormControl(),
-    }); 
-
-    
+      SistemaOrigem : new FormControl(),
+    });     
   }
+
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
@@ -58,6 +60,7 @@ listNegocio:Negocio[]=[];
 
   ngOnInit(): void {
 
+    debugger;
     this.modalEditar = new window.bootstrap.Modal(
       document.getElementById('myEditarModal')      
     );
@@ -72,6 +75,10 @@ listNegocio:Negocio[]=[];
   
    this.ambienteService.ObterStatusSituacao().subscribe(result =>{
      this.listSituacao = result;
+   })
+
+   this.ambienteService.ObterSistemas().subscribe(result =>{
+    this.listSistema = result
    })
   
   }
@@ -107,6 +114,9 @@ listNegocio:Negocio[]=[];
     const responsavelNeg = this.form.get('ResponsavelNeg') as FormControl;
     responsavelNeg.setValue(this.ambienteDto.negId);
 
+    const sistemaOrigem = this.form.get('SistemaOrigem') as FormControl;
+    sistemaOrigem.setValue(this.ambienteDto.sistemaId);
+
     const situacaoId = this.form.get('Status') as FormControl;
     situacaoId.setValue(this.ambienteDto.situacaoId);
 
@@ -124,9 +134,10 @@ listNegocio:Negocio[]=[];
     editarAmbiente.descricao = this.form.get('Descricao').value;
     editarAmbiente.devId = Number(this.form.get('ResponsavelDev').value);
     editarAmbiente.negId = Number(this.form.get('ResponsavelNeg').value);
+    editarAmbiente.sisId = Number(this.form.get('SistemaOrigem').value);
     editarAmbiente.sitId = Number(this.form.get('Status').value);
     editarAmbiente.dependencia = this.form.get('Dependencia').value;    
-
+    debugger;
     this.ambienteService.AtualizarAmbiente(editarAmbiente).subscribe(x => {   
       if(x)
       {

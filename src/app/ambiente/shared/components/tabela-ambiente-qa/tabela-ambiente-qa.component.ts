@@ -12,7 +12,7 @@ import { SistemaSignature } from '../../../../model/signature/sistemaSignature';
   templateUrl: './tabela-ambiente-qa.component.html',
   styleUrl: './tabela-ambiente-qa.component.scss'
 })
-export class TabelaAmbienteQaComponent implements OnChanges {
+export class TabelaAmbienteQaComponent {
 
   @Input() listAmbienteQa: PacoteQa;
   habilitarBotao = false;
@@ -23,27 +23,18 @@ export class TabelaAmbienteQaComponent implements OnChanges {
 
   constructor(private comunicacaoExterna: InformacoesAmbienteService, private loaderService: LoaderService, private route: ActivatedRoute) {
   }
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['sistema'] && this.sistema) {
-      this.nomeTela = this.sistema === 'pi' ? 'Portal de Investimentos' : 'MiddleOffice';
-    }
-  }
-
 
   openEditarModalQa(listPacoteQa: PacoteQa) {
     this.comunicacaoExterna.informacoesAmbienteQa.emit(listPacoteQa);
   }
 
   openLiberarModalQa() {
-    debugger;
     const rota = this.route.snapshot.paramMap.get('sistema') ?? '';
     let liberarAmbiente = new LiberarAmbiente();
     liberarAmbiente.titulo = `Deseja liberar o ambiente de Qa`;
     liberarAmbiente.ambiente = TipoAmbiente.qa;
-    liberarAmbiente.stage = rota.toUpperCase() === 'PI' ? 1 : 2;
+    liberarAmbiente.stage = 1 ;
     this.comunicacaoExterna.liberarAmbienteQa.emit(liberarAmbiente);
-
-
   }
 
 }

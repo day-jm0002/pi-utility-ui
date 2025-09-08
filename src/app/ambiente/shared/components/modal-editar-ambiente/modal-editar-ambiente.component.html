@@ -1,20 +1,14 @@
-
-<div class="modal fade" id="myEditarModal"  tabindex="-1"  aria-labelledby="exampleModalLabel"  aria-hidden="true">
-    <form [formGroup]="form">
+<div class="modal fade" id="myEditarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <form [formGroup]="form">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Editar Ambiente</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col">
+            <!-- <div class="col">
               <label>
                 <strong>              
                 Branch
@@ -26,48 +20,39 @@
                  class="form-control" 
                  placeholder="Nº da Branch" 
                  aria-label="Last name" >
-            </div>
+            </div> -->
             <div class="col">
               <label>
                 <strong>
                   Nº Chamado
                 </strong>
               </label>
-              <input  
-              formControlName="NumeroChamado"
-              type="text" 
-              class="form-control" 
-              placeholder="Nº do Chamado" 
-              aria-label="Last name">
+              <input formControlName="NumeroChamado" type="text" class="form-control" placeholder="Nº do Chamado"
+                aria-label="Last name">
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label>
                 <strong>
-                Descrição
-              </strong>
+                  Descrição
+                </strong>
               </label>
-              <input 
-              formControlName="Descricao"
-              type="text" 
-              class="form-control" 
-              placeholder="Descrição" 
-              aria-label="First name" >
+              <input formControlName="Descricao" type="text" class="form-control" placeholder="Descrição"
+                aria-label="First name">
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label>
                 <strong>
-                Responsavel - Dev
-              </strong>
+                  Responsavel - Dev
+                </strong>
               </label>
-              <select class="form-select"
-              formControlName="ResponsavelDev">
-                <option *ngFor="let dev of listDesenvolvedores" [value]="dev.id" >
-                {{dev.nome}}
-              </option>
+              <select class="form-select" formControlName="ResponsavelDev">
+                <option *ngFor="let dev of listDesenvolvedores" [value]="dev.id">
+                  {{dev.nome}}
+                </option>
               </select>
             </div>
           </div>
@@ -75,14 +60,13 @@
             <div class="col">
               <label>
                 <strong>
-                Responsavel - Negocio
-              </strong>
+                  Responsavel - Negocio
+                </strong>
               </label>
-              <select class="form-select"
-              formControlName="ResponsavelNeg">
-                <option *ngFor="let neg of listNegocio" [value]="neg.id" >
-                {{neg.nome}}
-              </option>
+              <select class="form-select" formControlName="ResponsavelNeg">
+                <option *ngFor="let neg of listNegocio" [value]="neg.id">
+                  {{neg.nome}}
+                </option>
               </select>
             </div>
           </div>
@@ -90,14 +74,13 @@
             <div class="col">
               <label>
                 <strong>
-                Situação do Chamado
-              </strong>
+                  Sistema Origem 
+                </strong>
               </label>
-              <select class="form-select"
-              formControlName="Status">
-                <option *ngFor="let sit of listSituacao" [value]="sit.id" >
-                {{sit.descricao}}
-              </option>
+              <select class="form-select" formControlName="SistemaOrigem">
+                <option *ngFor="let sis of listSistema" [value]="sis.id">
+                  {{sis.nome}}
+                </option>
               </select>
             </div>
           </div>
@@ -105,39 +88,39 @@
             <div class="col">
               <label>
                 <strong>
-                Dependencia
-              </strong>
+                  Situação do Chamado
+                </strong>
               </label>
-              <input 
-              formControlName="Dependencia"
-              type="text" 
-              class="form-control" 
-              placeholder="Numero do chamado de outra equipe" 
-              aria-label="Dependencia" 
-              mask="S00 00 00000"
-              >
+              <select class="form-select" formControlName="Status">
+                <option *ngFor="let sit of listSituacao" [value]="sit.id">
+                  {{sit.descricao}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>
+                <strong>
+                  Dependencia
+                </strong>
+              </label>
+              <input formControlName="Dependencia" type="text" class="form-control"
+                placeholder="Numero do chamado de outra equipe" aria-label="Dependencia" mask="S00 00 00000">
             </div>
           </div>
 
         </div>
         <div class="modal-footer">
-          <button 
-          type="button" 
-          class="btn btn-secondary" 
-          data-bs-dismiss="modal" 
-          arial-label="Close" 
-          (click)="FecharModal()">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" arial-label="Close"
+            (click)="FecharModal()">
             Fechar
           </button>
-          <button 
-          type="button" 
-          class="btn btn-primary" 
-          (click)="EditarAmbiente()">
+          <button type="button" class="btn btn-primary" (click)="EditarAmbiente()">
             Salvar
           </button>
         </div>
       </div>
     </div>
   </form>
-  </div>
-  
+</div>

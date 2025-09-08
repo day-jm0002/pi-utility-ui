@@ -135,7 +135,6 @@ ngOnDestroy(): void {
 
   AssociarChamadoQa()
   {
-    debugger;
     let pacote = new Pacote();
     pacote.branch = this.formQa.get('branch').value;
     pacote.negocioTesteId = this.listNegocio.find(item => item.id == this.formQa.get('responsavelNegQaTeste').value)?.id;
