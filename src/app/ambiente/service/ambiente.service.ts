@@ -6,8 +6,8 @@ import { AmbienteChamadoSignature, AmbienteSignature, AmbienteSignatureQa, Exclu
 import { PacoteQa } from '../../model/PacoteQaDto';
 import { LimparCacheSignature } from '../../model/signature/limparCacheSignature';
 import { LimparCacheResult } from '../../model/limparCacheResult';
-import { UrlHelper } from '../../helper/UlrHelper';
-import { SistemaSignature } from '../../model/signature/sistemaSignature';
+import { UrlHelper } from '../../helper/ulrHelper';
+import { FiltrarAmbientesSignature } from '../../model/signature/filtrarAmbientesSignature';
 
 @Injectable({
   providedIn: 'root'
@@ -88,6 +88,11 @@ export class AmbienteService {
 
   public AdicionarAmbiente(): Observable<any>{
     return this.http.post<any>(UrlHelper.Ambiente.AdicionarAmbiente,{})
+  }
+
+  public FiltrarAmbiente(signature : FiltrarAmbientesSignature) : Observable<any>
+  {
+    return this.http.post<any>(UrlHelper.Ambiente.FiltrarAmbiente,signature);
   }
 
     public ExcluirAmbiente(signature : ExcluirAmbienteSignature): Observable<any>{

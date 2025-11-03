@@ -1,7 +1,7 @@
 export class UrlHelper {
 
     public static BASE_URL_LOCAL = 'https://localhost:44326'
-    public static BASE_URL = 'http://wdaymtspr04737:8070';
+    public static BASE_URL = 'https://localhost:44326';
     private static readonly LIMPAR_CACHE_API = "http://sdaysp06d005/LimparCacheApi/api/";
 
 
@@ -13,7 +13,9 @@ export class UrlHelper {
         LiberarChamadoAmbientesQa: `${UrlHelper.BASE_URL}/api/Ambiente/LiberarChamadoAmbientesQa`,
         ObterPacoteQa: `${UrlHelper.BASE_URL}/api/Ambiente/ObterPacoteQa`,
         AdicionarAmbiente: `${UrlHelper.BASE_URL}/api/Ambiente/AdicionarAmbiente`,
-        ExcluirAmbiente: `${UrlHelper.BASE_URL}/api/Ambiente/ExcluirAmbiente`
+        ExcluirAmbiente: `${UrlHelper.BASE_URL}/api/Ambiente/ExcluirAmbiente`,
+        FiltrarAmbiente: `${UrlHelper.BASE_URL}/api/Ambiente/FiltrarAmbiente`
+
     };
 
     public static Sistemas = {
@@ -62,7 +64,8 @@ export class UrlHelper {
         SmartBrain: `${UrlHelper.BASE_URL}/api/Monitor/StatusSmartBrain`,
         Sisfinance: `${UrlHelper.BASE_URL}/api/Monitor/StatusSisfinance`,
         Infotreasury: `${UrlHelper.BASE_URL}/api/Monitor/ObterStatusInfotreasury`,
-        Icatu: `${UrlHelper.BASE_URL}/api/Monitor/StatusIcatu`
+        Icatu: `${UrlHelper.BASE_URL}/api/Monitor/StatusIcatu`,
+        ObterCacheInfo: `${UrlHelper.BASE_URL}/api/Monitor/LimparCacheCatalogoRendaFixa`
     };
 
     public static GestoresDeFundos = {

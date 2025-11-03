@@ -12,7 +12,6 @@ import { LoginSSOComponent } from './login-sso/login-sso.component';
 import { AmbienteComponent } from './ambiente/ambiente.component';
 import { SuitabilityComponent } from './suitability/suitability.component';
 import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
-import { FormularioGmudComponent } from './formulario-gmud/formulario-gmud.component';
 
 const routes: Routes = [
   {
@@ -83,10 +82,6 @@ const routes: Routes = [
   {
     path: "cenario",
     component: CenarioComponent
-  },
-  {
-    path: 'formularioGMUD',
-    component: FormularioGmudComponent
   },
   { path: '', redirectTo: '/formulario-gmud', pathMatch: 'full' }
 ];

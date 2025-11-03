@@ -12,11 +12,11 @@ import { PosicaoSsoSignature } from '../model/posicaoSSoSignature';
 })
 export class LoginSSOService {
 
- url :string = "http://sdaysp06d006/PortalInvestimentosApi/api/AcessoExternoUsuario/SalvarAsync"
- urlToken:string = "http://sdaysp06d005/LimparCacheApi/api/AccessoControl/ObterLoginToken"
- urlSSo : string = "http://sdaysp06d005/LimparCacheApi/api/AccessoControl/AutenticacaoSSO";
+ url :string = "http://wdaymtspr04737:8070/api/AcessoExternoUsuario/SalvarAsync"
+ urlToken:string = "http://wdaymtspr04737:8070/api/AccessoControl/ObterLoginToken"
+ urlSSo : string = "http://wdaymtspr04737:8070/api/AccessoControl/AutenticacaoSSO";
 
- urlTokenLocal:string = "https://localhost:44326/api/AccessoControl/AutenticacaoSSO"
+ urlTokenLocal:string = "http://wdaymtspr04737:8070/api/AccessoControl/AutenticacaoSSO"
 
   constructor(private httpClient : HttpClient) { }
 

@@ -25,6 +25,7 @@ export class TabelaAmbienteQaComponent {
   }
 
   openEditarModalQa(listPacoteQa: PacoteQa) {
+    debugger;
     this.comunicacaoExterna.informacoesAmbienteQa.emit(listPacoteQa);
   }
 

@@ -1,13 +1,26 @@
 <div>
   <div style="display: flex; align-items: center; justify-content: center; margin: 15px 0; position: relative;">
     <h2 style="margin: 0;">Ambiente de Desenvolvimento</h2>
-    <button 
-    (click)="AdicionarAmbiente()"
-      type="button" 
-      class="btn btn-primary btn-sm" 
+    <button (click)="AdicionarAmbiente()" type="button" class="btn btn-primary btn-sm"
       style="position: absolute; right: 0;">
       Adicionar Chamado
     </button>
+  </div>
+
+  <div class="container">
+    <h2>Pesquise seu Chamado</h2>
+    <form class="row g-3" [formGroup]="formulario">
+      <div class="col-sm-3">
+        <input formControlName="pesquisa" type="text" class="form-control" id="inputPassword2"
+          placeholder="Digite o que procura">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3"(click)="Pesquisar()" >Pesquisar</button>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-danger mb-3" (click)="Atualizar()" >Limpar</button>
+      </div>
+    </form>
   </div>
 
   <section class="tabela">

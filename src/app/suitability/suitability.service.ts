@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { SuitabilitySignature } from '../model/signature/suitabilitySignature';
 import { Observable } from 'rxjs';
 import { SuitabilityDto } from '../model/suitabilityDto';
-import { UrlHelper } from '../helper/UlrHelper';
+import { UrlHelper } from '../helper/ulrHelper';
 
 @Injectable({
   providedIn: 'root'

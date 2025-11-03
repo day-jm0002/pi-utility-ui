@@ -7,7 +7,7 @@ import { TipoAutenticacaoDto } from '../../model/tipoAutenticacaoDto';
 import { TipoUsuarioDto } from '../../model/tipoUsuarioDto';
 import { TipoRoleDto } from '../../model/tipoRoleDto';
 import { StatusUsuario } from '../../model/statusUsuario';
-import { UrlHelper } from '../../helper/UlrHelper';
+import { UrlHelper } from '../../helper/ulrHelper';
 
 @Injectable({
   providedIn: 'root'

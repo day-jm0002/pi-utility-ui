@@ -5,6 +5,8 @@ import { InformacoesAmbienteService } from '../../../service/informacoes-ambient
 import { LiberarAmbiente, TipoAmbiente } from '../../../../model/LiberarAmbiente';
 import { LimparCacheSignature } from '../../../../model/signature/limparCacheSignature';
 import { Modal } from '../../../../model/signature/ModalLimparCache';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FiltrarAmbientesSignature } from '../../../../model/signature/filtrarAmbientesSignature';
 
 @Component({
   selector: 'app-tabela-ambientes',
@@ -33,6 +35,8 @@ export class TabelaAmbientesComponent {
   tempoStatus: number;
   habilitarBotao = false;
 
+  formulario: any;
+
 
   constructor(private ambienteService: AmbienteService,
     private comunicacaoExterna: InformacoesAmbienteService) {
@@ -42,6 +46,26 @@ export class TabelaAmbientesComponent {
       this.Confirmar(x.Stage, x.Ambiente);
     })
 
+    this.formulario = new FormGroup({
+      pesquisa: new FormControl("", [Validators.required, Validators.minLength(1)]),
+    });
+  }
+
+  Atualizar(){
+    let form = this.formulario.get('pesquisa') as FormControl;
+    form.setValue("");
+    this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
+  }
+
+  Pesquisar() {
+    let filtro = new FiltrarAmbientesSignature();   
+    let pesquisa : string = this.formulario.controls.pesquisa.value;
+    filtro.filtro = pesquisa;
+    this.ambienteService.FiltrarAmbiente(filtro).subscribe(
+      x => {
+        this.listAmbiente = x
+      }
+    )
   }
 
   Confirmar(stage: string, ambiente: string) {
@@ -151,9 +175,9 @@ export class TabelaAmbientesComponent {
     return true;
   }
 
-  AdicionarAmbiente(){
-    this.ambienteService.AdicionarAmbiente().subscribe(data =>{
-       this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);    
+  AdicionarAmbiente() {
+    this.ambienteService.AdicionarAmbiente().subscribe(data => {
+      this.comunicacaoExterna.informacoesTodosAmbiente.emit(true);
     })
   }
 }

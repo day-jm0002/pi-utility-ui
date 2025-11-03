@@ -1,113 +1,44 @@
 <div class="titulo">
-<h1>
-  Limpar Cache - Portal de Investimentos
-</h1>
-<hr>
+  <h1>
+    Limpar Cache - Serviços
+  </h1>
+  <hr>
 </div>
 <div class="menu">
 
   <div class="card" style="width: 18rem;">
-    <div *ngIf="stage_octopus_status == 'consulta'" style="text-align: center;">
-      <div class="alert alert-secondary" role="alert">
-        Validando Comunicação
+    <div *ngIf="apiCatalog == 'consulta' && showCard" style="text-align: center;">
+      <div class="alert alert-info" role="alert">
+        <p>{{mensagem}}</p>
       </div>
     </div>
-      <div *ngIf="stage_octopus_status == 'sucesso'" style="text-align: center;">
-        <div class="alert alert-success" role="alert">
-          <p>Ambiente em Funcionamento</p>
-        </div>
-      </div>
-      <div *ngIf="stage_octopus_status == 'erro'" style="text-align: center;">
-        <div class="alert alert-danger" role="alert">
-          <p>Ambiente com Falha</p>
-        </div>
-      </div>    
-      <img class="card-img-top" src="../../assets/ambiente/limpezacacheOctopus.jpg" alt="Card image cap" style="height: 160px;">
-      <div class="card-body">
-        <h5 class="card-title">Ambiente Octopus</h5>
-        <p class="card-text">Realiza a limpeza do cache do ambiente que é publicado via Octopus do Portal de Investimentos</p>
-        <div style="text-align: center;">
-        <button class="btn btn-primary btn-lg" id="botaoLimpar" (click)="LimparAmbienteOctopus()" [disabled]="botaoAmbiente0"><span>Limpar</span></button>     
-      </div>
-      </div>   
-    </div>
-
-  
-  <div class="card" style="width: 18rem;">
-  <div *ngIf="stage1_status == 'consulta'" style="text-align: center;">
-    <div class="alert alert-secondary" role="alert">
-      Validando Comunicação
-    </div>
-  </div>
-    <div *ngIf="stage1_status == 'sucesso'" style="text-align: center;">
+    <div *ngIf="apiCatalog == 'sucesso' && showCard" style="text-align: center;">
       <div class="alert alert-success" role="alert">
-        <p>Ambiente em Funcionamento</p>
+        <p>{{mensagem}}</p>
       </div>
     </div>
-    <div *ngIf="stage1_status == 'erro'" style="text-align: center;">
+    <div *ngIf="apiCatalog =='erro' && showCard" style="text-align: center;">
       <div class="alert alert-danger" role="alert">
-        <p>Ambiente com Falha</p>
+        <p>{{mensagem}}</p>
       </div>
-    </div>    
+    </div>
     <img class="card-img-top" src="../../assets/ambiente/limpezacache1.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Ambiente 1</h5>
-      <p class="card-text">Esta funcionalidade realiza a limpeza do cache do ambiente 1 do Portal de Investimentos</p>
-      <div style="text-align: center;">
-      <button class="btn btn-primary btn-lg" id="botaoLimpar" (click)="LimparAmbiente(1)" [disabled]="botaoAmbiente1"><span>Limpar</span></button>     
-    </div>
-    </div>   
-  </div>
+      <h5 class="card-title">Api - Catalogo Renda Fixa</h5>
+      <p class="card-text">Esta funcionalidade realiza a limpeza do cache do Catalogo de Renda Fixa</p>
+      <div class="d-flex flex-column align-items-center gap-3">
+        <select class="form-select w-auto" [(ngModel)]="opcaoSelecionada">
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="0">Cache de Gerentes</option>
+          <option value="1">Cache de Lastros</option>
+          <option value="2">Cache de Produtos Bancários</option>
+          <option value="3">Cache de Produtos Privados</option>
+        </select>
 
-  <div class="card" style="width: 18rem;">
-    <div *ngIf="stage2_status == 'consulta'" style="text-align: center;">
-      <div class="alert alert-secondary" role="alert">
-        Validando Comunicação
+        <button class="btn btn-primary" [disabled]="opcaoSelecionada === ''" (click)="limparCache(opcaoSelecionada)">
+          Limpar Cache
+        </button>
       </div>
-    </div>
-      <div *ngIf="stage2_status == 'sucesso'" style="text-align: center;">
-        <div class="alert alert-success" role="alert">
-          <p>Ambiente em Funcionamento</p>
-        </div>
-      </div>
-      <div *ngIf="stage2_status == 'erro'" style="text-align: center;">
-        <div class="alert alert-danger" role="alert">
-          <p>Ambiente com Falha</p>
-        </div>
-      </div> 
-    <img class="card-img-top" src="../../assets/ambiente/limpezacache2.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Ambiente 2</h5>
-      <p class="card-text">Esta funcionalidade realiza a limpeza do cache do ambiente 2 do Portal de Investimentos</p>
-      <div style="text-align: center;">
-      <button class="btn btn-primary btn-lg" (click)="LimparAmbiente(2)" [disabled]="botaoAmbiente2"><span>Limpar</span></button>     
-    </div>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <div *ngIf="stage3_status == 'consulta'" style="text-align: center;">
-      <div class="alert alert-secondary" role="alert">
-        Validando Comunicação
-      </div>
-    </div>
-      <div *ngIf="stage3_status == 'sucesso'" style="text-align: center;">
-        <div class="alert alert-success" role="alert">
-          <p>Ambiente em Funcionamento</p>
-        </div>
-      </div>
-      <div *ngIf="stage3_status == 'erro'" style="text-align: center;">
-        <div class="alert alert-danger" role="alert">
-          <p>Ambiente com Falha</p>
-        </div>
-      </div> 
-    <img class="card-img-top" src="../../assets/ambiente/limpezacache3.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Ambiente 3</h5>
-      <p class="card-text">Esta funcionalidade realiza a limpeza do cache do ambiente 3 do Portal de Investimentos</p>
-      <div style="text-align: center;">
-      <button class="btn btn-primary btn-lg" (click)="LimparAmbiente(3)" [disabled]="botaoAmbiente3"><span>Limpar</span></button>     
-    </div>
     </div>
   </div>
 </div>
@@ -116,41 +47,3 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
-<div style="text-align: center;">
-  <div *ngIf="integracao">
-    <hr>
-    <div class="container">    
-    <div>
-      <h3>Status da limpeza do cache - {{NomeAmbiente}}</h3>
-    </div>
-    <div *ngIf="statusFundosRelacao == 'Sucesso'" class="alert alert-success" role="alert">Fundos Relação - Status = {{mensagemfundosRelacao}}</div>
-    <div *ngIf="statusFundosRelacao == 'Em andamento'" class="alert alert-warning" role="alert">Fundos Relação - Status = {{mensagemfundosRelacao}}</div>
-    <div *ngIf="statusFundosRelacao == 'Erro'" class="alert alert-danger" role="alert">Fundos Relação - Status = {{mensagemfundosRelacao}}</div>
-
-    <div *ngIf="statusLimparListaDeProdutos == 'Sucesso'" class="alert alert-success" role="alert">Limpar Lista De Produtos - Status = {{mensagemLimparListaDeProdutos}}</div>
-    <div *ngIf="statusLimparListaDeProdutos == 'Em andamento'" class="alert alert-warning" role="alert">Limpar Lista De Produtos - Status = {{mensagemLimparListaDeProdutos}}</div>
-    <div *ngIf="statusLimparListaDeProdutos == 'Erro'" class="alert alert-danger" role="alert">Limpar Lista De Produtos - Status = {{mensagemLimparListaDeProdutos}}</div>
-
-    <div *ngIf="statusCarteiraDeGerentes == 'Sucesso'" class="alert alert-success" role="alert">Carteira De Gerentes - Status = {{mensagemCarteiraDeGerentes}}</div>
-    <div *ngIf="statusCarteiraDeGerentes == 'Em andamento'" class="alert alert-warning" role="alert">Carteira De Gerentes - Status = {{mensagemCarteiraDeGerentes}}</div>
-    <div *ngIf="statusCarteiraDeGerentes == 'Erro'" class="alert alert-danger" role="alert">Carteira De Gerentes - Status = {{mensagemCarteiraDeGerentes}}</div>
-
-  </div>
-  <hr>
-  </div>
-</div>
-
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Formulário GMUD</h5>
-          <p class="card-text">Acesse o formulário de Gestão de Mudanças.</p>
-          <a routerLink="/formulario-gmud" class="btn btn-primary">Acessar Formulário</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-

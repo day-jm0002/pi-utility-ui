@@ -32,6 +32,7 @@ constructor(private ambienteService: AmbienteService , private comunicacaoExtern
   this.comunicacaoExterna.informacoesAmbienteQa
   .pipe(takeUntil(this.unsubscribe$))
   .subscribe((x =>{
+    debugger;
     this.modalEditaQa.show();
     this.InformacoesPacoteQa(x);
   }));
@@ -77,6 +78,7 @@ ngOnDestroy(): void {
 
   InformacoesPacoteQa(pacote : PacoteQa){
 
+    debugger;
     const releaseId = this.formQa.get('releaseId') as FormControl;
     releaseId.setValue(pacote.releaseId);
 
@@ -92,7 +94,8 @@ ngOnDestroy(): void {
     const negId= this.formQa.get('responsavelNegQa') as FormControl;
     negId.setValue(pacote.negocioId);
 
-    this.formQa.get('dataImplantacao').setValue(this.formatarDataParaInput(pacote.dataImplantacao));
+    const data = this.formQa.get('dataImplantacao') as FormControl;
+    data.setValue(this.formatarDataParaInput(pacote.dataImplantacao))
 
     const a = this.formQa.get('responsavelNegQaTeste') as FormControl;
     a.setValue('1');
@@ -135,6 +138,7 @@ ngOnDestroy(): void {
 
   AssociarChamadoQa()
   {
+    debugger;
     let pacote = new Pacote();
     pacote.branch = this.formQa.get('branch').value;
     pacote.negocioTesteId = this.listNegocio.find(item => item.id == this.formQa.get('responsavelNegQaTeste').value)?.id;
@@ -143,7 +147,7 @@ ngOnDestroy(): void {
     pacote.situacao = this.listSituacao.find(item => item.id == this.formQa.get('statusTeste').value)?.descricao;
     pacote.dependencia = this.formQa.get('dependencia').value;
     pacote.chamadoId = 0;
-  
+
     this.listaPacote.push(pacote);
 
     const ambienteID = this.formQa.get('branch') as FormControl;
