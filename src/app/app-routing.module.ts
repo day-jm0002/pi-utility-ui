@@ -12,6 +12,7 @@ import { LoginSSOComponent } from './login-sso/login-sso.component';
 import { AmbienteComponent } from './ambiente/ambiente.component';
 import { SuitabilityComponent } from './suitability/suitability.component';
 import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
+import { GmudComponent } from './gmud/gmud.component';
 
 const routes: Routes = [
   {
@@ -80,10 +81,10 @@ const routes: Routes = [
   }
   ,
   {
-    path: "cenario",
-    component: CenarioComponent
+    path: "gmud",
+    component: GmudComponent
   },
-  { path: '', redirectTo: '/formulario-gmud', pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({

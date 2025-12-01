@@ -1,0 +1,218 @@
+.page-content {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.titulo-pagina {
+  font-size: 24px;
+  font-weight: 600;
+  color: #285ec2;
+  margin-bottom: 20px;
+}
+
+.sessao-principal {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.sessao-principal.container-shadow {
+  padding: 0;
+}
+
+.sessao-principal h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #285ec2;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-gmud {
+  .form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .form-control {
+    padding: 0.75rem 0.75rem;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+      border-color: #285ec2;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(40, 94, 194, 0.25);
+    }
+
+    &.is-invalid {
+      border-color: #dc3545;
+      
+      &:focus {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+      }
+    }
+  }
+
+  textarea.form-control {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 87.5%;
+    color: #dc3545;
+  }
+
+  .custom-control {
+    padding-left: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .custom-control-input {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.125rem;
+    margin-left: -1.75rem;
+
+    &:checked ~ .custom-control-label::before {
+      color: #fff;
+      border-color: #285ec2;
+      background-color: #285ec2;
+    }
+
+    &:focus ~ .custom-control-label::before {
+      box-shadow: 0 0 0 0.2rem rgba(40, 94, 194, 0.25);
+    }
+  }
+
+  .custom-control-label {
+    font-size: 14px;
+    color: #495057;
+    cursor: pointer;
+
+    &::before {
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 2px solid #adb5bd;
+      background-color: #fff;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid #e9ecef;
+  }
+
+  .text-danger {
+    color: #dc3545 !important;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+
+    &.btn-primary {
+      background-color: #285ec2;
+      border-color: #285ec2;
+
+      &:hover:not(:disabled) {
+        background-color: #1e4a8f;
+        border-color: #1e4a8f;
+      }
+
+      &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+      }
+    }
+
+    &.btn-outline-secondary {
+      color: #6c757d;
+      border-color: #6c757d;
+
+      &:hover {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+    }
+  }
+
+  .spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+  }
+}
+
+// Responsividade
+@media only screen and (max-width: 768px) {
+  .card-body {
+    padding: 20px 15px;
+  }
+
+  .titulo-pagina {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .form-gmud {
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .col-md-6,
+    .col-md-4,
+    .col-md-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .btn {
+      width: 100%;
+      margin-bottom: 10px;
+
+      &.mr-2 {
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .titulo-pagina {
+    font-size: 18px;
+  }
+
+  .sessao-principal h5 {
+    font-size: 14px;
+  }
+}

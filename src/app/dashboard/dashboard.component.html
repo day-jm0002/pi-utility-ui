@@ -1,6 +1,6 @@
 <div class="titulo">
   <h1>
-    Limpar Cache - Serviços
+    Cache - Serviços
   </h1>
   <hr>
 </div>
@@ -25,7 +25,7 @@
     <img class="card-img-top" src="../../assets/ambiente/limpezacache1.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Api - Catalogo Renda Fixa</h5>
-      <p class="card-text">Esta funcionalidade realiza a limpeza do cache do Catalogo de Renda Fixa</p>
+      <p class="card-text">Esta funcionalidade realiza a atualização do cache do Catalogo de Renda Fixa</p>
       <div class="d-flex flex-column align-items-center gap-3">
         <select class="form-select w-auto" [(ngModel)]="opcaoSelecionada">
           <option value="" disabled selected>Selecione uma opção</option>
@@ -33,6 +33,7 @@
           <option value="1">Cache de Lastros</option>
           <option value="2">Cache de Produtos Bancários</option>
           <option value="3">Cache de Produtos Privados</option>
+          <option value="4">Todos</option>
         </select>
 
         <button class="btn btn-primary" [disabled]="opcaoSelecionada === ''" (click)="limparCache(opcaoSelecionada)">

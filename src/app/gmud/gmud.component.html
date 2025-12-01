@@ -1,0 +1,598 @@
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="py-2">
+          <h3 class="ml-3 titulo-pagina">Formulário de GMUD - Comitê</h3>
+        </div>
+      </div>
+    </div>
+
+    <section class="sessao-principal container-shadow">
+      <div class="card-body">
+        <form [formGroup]="gmudForm" autocomplete="off">
+          
+          <!-- Mensagem de Erro -->
+          <div class="alert alert-danger" *ngIf="errosValidacao.length > 0" role="alert">
+            <strong><i class="bi bi-exclamation-triangle"></i> Por favor, preencha todos os campos obrigatórios antes de adicionar à lista.</strong>
+            <ul class="mb-0 mt-2">
+              <li *ngFor="let erro of errosValidacao">{{ erro }}</li>
+            </ul>
+          </div>
+          
+          <!-- Seção: Informações Básicas da GMUD -->
+          <div class="row">
+            <div class="col-12 mt-3">
+              <h5>Informações Básicas da GMUD</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="numeroGmud" class="form-label">
+                Nº da GMUD <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="numeroGmud" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('numeroGmud')?.invalid && gmudForm.get('numeroGmud')?.touched"
+                formControlName="numeroGmud"
+                placeholder="Rxx xx xxxxx"
+                maxlength="13">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('numeroGmud')?.invalid && gmudForm.get('numeroGmud')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group">
+              <label for="headResponsavelTI" class="form-label">
+                Head Responsável TI <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="headResponsavelTI" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('headResponsavelTI')?.invalid && gmudForm.get('headResponsavelTI')?.touched"
+                formControlName="headResponsavelTI"
+                placeholder="Digite o nome do Head Responsável">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('headResponsavelTI')?.invalid && gmudForm.get('headResponsavelTI')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="quemIraExecutar" class="form-label">
+                Quem irá executar a GMUD <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="quemIraExecutar" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('quemIraExecutar')?.invalid && gmudForm.get('quemIraExecutar')?.touched"
+                formControlName="quemIraExecutar"
+                placeholder="Digite quem irá executar">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('quemIraExecutar')?.invalid && gmudForm.get('quemIraExecutar')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group">
+              <label for="tipo" class="form-label">
+                Tipo <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="tipo" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('tipo')?.invalid && gmudForm.get('tipo')?.touched"
+                formControlName="tipo"
+                placeholder="Digite o tipo da GMUD">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('tipo')?.invalid && gmudForm.get('tipo')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Seção: Impactos e Aprovações -->
+          <div class="row">
+            <div class="col-12 mt-3">
+              <h5>Impactos e Aprovações</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="sistemasImpactados" class="form-label">
+                Sistema(s) Impactado(s) <span class="text-danger">*</span>
+              </label>
+              <textarea 
+                id="sistemasImpactados" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('sistemasImpactados')?.invalid && gmudForm.get('sistemasImpactados')?.touched"
+                formControlName="sistemasImpactados"
+                rows="3"
+                placeholder="Digite os sistemas impactados"></textarea>
+              <div class="invalid-feedback" *ngIf="gmudForm.get('sistemasImpactados')?.invalid && gmudForm.get('sistemasImpactados')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group">
+              <label for="servidoresImpactados" class="form-label">
+                Servidor(es) Impactado(s) <span class="text-danger">*</span>
+              </label>
+              <textarea 
+                id="servidoresImpactados" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('servidoresImpactados')?.invalid && gmudForm.get('servidoresImpactados')?.touched"
+                formControlName="servidoresImpactados"
+                rows="3"
+                placeholder="Digite os servidores impactados"></textarea>
+              <div class="invalid-feedback" *ngIf="gmudForm.get('servidoresImpactados')?.invalid && gmudForm.get('servidoresImpactados')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="possuiRollback" class="form-label">
+                GMUD é devido um rollback?
+              </label>
+              <select 
+                id="possuiRollback" 
+                class="form-control"
+                formControlName="possuiRollback">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group">
+              <label for="critica" class="form-label">
+                Crítica?
+              </label>
+              <select 
+                id="critica" 
+                class="form-control"
+                formControlName="critica">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="possuiAprovacaoAreaUsuario" class="form-label">
+                Possui aprovação da área usuária?
+              </label>
+              <select 
+                id="possuiAprovacaoAreaUsuario" 
+                class="form-control"
+                formControlName="possuiAprovacaoAreaUsuario">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group">
+              <label for="necessarioComitePresencial" class="form-label">
+                Necessário Comitê Presencial?
+              </label>
+              <select 
+                id="necessarioComitePresencial" 
+                class="form-control"
+                formControlName="necessarioComitePresencial">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="usuarioInformado" class="form-label">
+                Quem foi usuário informado? <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="usuarioInformado" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('usuarioInformado')?.invalid && gmudForm.get('usuarioInformado')?.touched"
+                formControlName="usuarioInformado"
+                placeholder="Digite o usuário informado">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('usuarioInformado')?.invalid && gmudForm.get('usuarioInformado')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="possuiImpactoOutrosTimesTI" class="form-label">
+                Possui impacto em outros times da TI?
+              </label>
+              <select 
+                id="possuiImpactoOutrosTimesTI" 
+                class="form-control"
+                formControlName="possuiImpactoOutrosTimesTI">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('possuiImpactoOutrosTimesTI')?.value === 'Sim'">
+              <label for="headInformado" class="form-label">
+                Qual Head foi informado? <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="headInformado" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('headInformado')?.invalid && gmudForm.get('headInformado')?.touched"
+                formControlName="headInformado"
+                placeholder="Digite o Head informado">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('headInformado')?.invalid && gmudForm.get('headInformado')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Seção: Descrição e Execução -->
+          <div class="row">
+            <div class="col-12 mt-3">
+              <h5>Descrição e Execução</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="descricaoExecucao" class="form-label">
+                Breve descrição do que será executado na GMUD <span class="text-danger">*</span>
+              </label>
+              <textarea 
+                id="descricaoExecucao" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('descricaoExecucao')?.invalid && gmudForm.get('descricaoExecucao')?.touched"
+                formControlName="descricaoExecucao"
+                rows="4"
+                placeholder="Descreva o que será executado na GMUD"></textarea>
+              <div class="invalid-feedback" *ngIf="gmudForm.get('descricaoExecucao')?.invalid && gmudForm.get('descricaoExecucao')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <label for="dataExecucao" class="form-label">
+                Data execução da GMUD <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="date" 
+                id="dataExecucao" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('dataExecucao')?.invalid && gmudForm.get('dataExecucao')?.touched"
+                formControlName="dataExecucao">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('dataExecucao')?.invalid && gmudForm.get('dataExecucao')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-4 form-group">
+              <label for="horaInicioExecucao" class="form-label">
+                Hora de início execução da GMUD <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="time" 
+                id="horaInicioExecucao" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('horaInicioExecucao')?.invalid && gmudForm.get('horaInicioExecucao')?.touched"
+                formControlName="horaInicioExecucao">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('horaInicioExecucao')?.invalid && gmudForm.get('horaInicioExecucao')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-4 form-group">
+              <label for="tempoExecucao" class="form-label">
+                Tempo de Execução <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="tempoExecucao" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('tempoExecucao')?.invalid && gmudForm.get('tempoExecucao')?.touched"
+                formControlName="tempoExecucao"
+                placeholder="Ex: 2 horas">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('tempoExecucao')?.invalid && gmudForm.get('tempoExecucao')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Seção: Plano B -->
+          <div class="row">
+            <div class="col-12 mt-3">
+              <h5>Plano B</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="temPlanoB" class="form-label">
+                Tem Plano B?
+              </label>
+              <select 
+                id="temPlanoB" 
+                class="form-control"
+                formControlName="temPlanoB">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 form-group">
+              <label for="descricaoPlanoB" class="form-label">
+                Descrição do Plano B <span class="text-danger">*</span>
+              </label>
+              <textarea 
+                id="descricaoPlanoB" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('descricaoPlanoB')?.invalid && gmudForm.get('descricaoPlanoB')?.touched"
+                formControlName="descricaoPlanoB"
+                rows="4"
+                placeholder="Descreva o Plano B"></textarea>
+              <div class="invalid-feedback" *ngIf="gmudForm.get('descricaoPlanoB')?.invalid && gmudForm.get('descricaoPlanoB')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Seção: Horários de Execução por Time -->
+          <div class="row">
+            <div class="col-12 mt-3">
+              <h5>Horários de Execução por Time</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="necessarioTimeServidores" class="form-label">
+                Time de Servidores?
+              </label>
+              <select 
+                id="necessarioTimeServidores" 
+                class="form-control"
+                formControlName="necessarioTimeServidores">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioTimeServidores')?.value === 'Sim'">
+              <label for="horaExecucaoTimeServidores" class="form-label">
+                Hora Execução time Servidores <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="datetime-local" 
+                id="horaExecucaoTimeServidores" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('horaExecucaoTimeServidores')?.invalid && gmudForm.get('horaExecucaoTimeServidores')?.touched"
+                formControlName="horaExecucaoTimeServidores">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('horaExecucaoTimeServidores')?.invalid && gmudForm.get('horaExecucaoTimeServidores')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioTimeServidores')?.value !== 'Sim'">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="necessarioTimeDBA" class="form-label">
+                Time de DBA?
+              </label>
+              <select 
+                id="necessarioTimeDBA" 
+                class="form-control"
+                formControlName="necessarioTimeDBA">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioTimeDBA')?.value === 'Sim'">
+              <label for="horaExecucaoTimeDBA" class="form-label">
+                Hora execução time DBA <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="datetime-local" 
+                id="horaExecucaoTimeDBA" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('horaExecucaoTimeDBA')?.invalid && gmudForm.get('horaExecucaoTimeDBA')?.touched"
+                formControlName="horaExecucaoTimeDBA">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('horaExecucaoTimeDBA')?.invalid && gmudForm.get('horaExecucaoTimeDBA')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioTimeDBA')?.value !== 'Sim'">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="necessarioTimeRedesSeguranca" class="form-label">
+                Time de Redes e Segurança?
+              </label>
+              <select 
+                id="necessarioTimeRedesSeguranca" 
+                class="form-control"
+                formControlName="necessarioTimeRedesSeguranca">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioTimeRedesSeguranca')?.value === 'Sim'">
+              <label for="horaExecucaoTimeRedesSeguranca" class="form-label">
+                Hora execução time Redes Segurança <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="datetime-local" 
+                id="horaExecucaoTimeRedesSeguranca" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('horaExecucaoTimeRedesSeguranca')?.invalid && gmudForm.get('horaExecucaoTimeRedesSeguranca')?.touched"
+                formControlName="horaExecucaoTimeRedesSeguranca">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('horaExecucaoTimeRedesSeguranca')?.invalid && gmudForm.get('horaExecucaoTimeRedesSeguranca')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioTimeRedesSeguranca')?.value !== 'Sim'">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="necessarioDemaisTimes" class="form-label">
+                Demais Times?
+              </label>
+              <select 
+                id="necessarioDemaisTimes" 
+                class="form-control"
+                formControlName="necessarioDemaisTimes">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioDemaisTimes')?.value === 'Sim'">
+              <label for="horaExecucaoDemaisTimes" class="form-label">
+                Hora execução demais times <span class="text-danger">*</span>
+              </label>
+              <input 
+                type="datetime-local" 
+                id="horaExecucaoDemaisTimes" 
+                class="form-control"
+                [class.is-invalid]="gmudForm.get('horaExecucaoDemaisTimes')?.invalid && gmudForm.get('horaExecucaoDemaisTimes')?.touched"
+                formControlName="horaExecucaoDemaisTimes">
+              <div class="invalid-feedback" *ngIf="gmudForm.get('horaExecucaoDemaisTimes')?.invalid && gmudForm.get('horaExecucaoDemaisTimes')?.touched">
+                Este campo é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-md-6 form-group" *ngIf="gmudForm.get('necessarioDemaisTimes')?.value !== 'Sim'">
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Botões de Ação do Formulário -->
+          <div class="row mt-4 mb-4">
+            <div class="col-12 d-flex justify-content-end">
+              <button 
+                type="button" 
+                class="btn btn-outline-secondary me-2"
+                (click)="limparFormulario()">
+                Limpar Formulário
+              </button>
+              <button 
+                type="button" 
+                class="btn btn-primary me-2"
+                (click)="adicionarALista()">
+                <i class="bi bi-plus-circle"></i> Adicionar à Lista
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Seção: Lista de GMUDs -->
+    <section class="sessao-principal container-shadow mt-4" *ngIf="listaGmuds.length > 0">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="mb-3">
+              Lista de GMUDs 
+              <span class="badge bg-primary ms-2">{{ listaGmuds.length }}</span>
+            </h5>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Nº da GMUD</th>
+                <th>Head Responsável TI</th>
+                <th>Quem irá executar</th>
+                <th>Data Execução</th>
+                <th>Tipo</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let gmud of listaGmuds; let i = index">
+                <td>{{ gmud.numeroGmud || '-' }}</td>
+                <td>{{ gmud.headResponsavelTI || '-' }}</td>
+                <td>{{ gmud.quemIraExecutar || '-' }}</td>
+                <td>{{ formatarData(gmud.dataExecucao) || '-' }}</td>
+                <td>{{ gmud.tipo || '-' }}</td>
+                <td>
+                  <button 
+                    type="button" 
+                    class="btn btn-sm btn-danger"
+                    (click)="removerDaLista(i)"
+                    title="Remover da lista">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 d-flex justify-content-end">
+            <button 
+              type="button" 
+              class="btn btn-outline-danger me-2"
+              (click)="limparLista()"
+              [disabled]="listaGmuds.length === 0">
+              <i class="bi bi-x-circle"></i> Limpar Lista
+            </button>
+            <button 
+              type="button" 
+              class="btn btn-success"
+              (click)="exportarParaExcel()"
+              [disabled]="listaGmuds.length === 0">
+              <i class="bi bi-file-earmark-excel"></i> Exportar {{ listaGmuds.length }} GMUD(s) para Excel
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+

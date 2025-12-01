@@ -6,5 +6,6 @@ export enum TipoCacheRendaFixa {
   Gerentes = 0,
   Lastros = 1,
   ProdutosBancarios = 2,
-  ProdutosPrivados = 3
+  ProdutosPrivados = 3,
+  Todos = 4
 }

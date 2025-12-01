@@ -40,6 +40,7 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { FormatChamadoPipe } from './shared/pipes/format-chamado.pipe';
 import { CenarioComponent } from './ambiente/shared/components/cenario/cenario.component';
 import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
+import { GmudComponent } from './gmud/gmud.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { NewLoaderComponent } from './shared/new-loader/new-loader.component';
     StatusCacheComponent,
     FormatChamadoPipe,
     CenarioComponent,
-    NewLoaderComponent
+    NewLoaderComponent,
+    GmudComponent
   ],
   imports: [
     BrowserModule,
