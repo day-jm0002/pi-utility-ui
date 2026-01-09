@@ -22,10 +22,6 @@ export class GmudComponent implements OnInit {
     this.configurarValidacaoCondicionalTimes();
   }
 
-  /**
-   * Configura validação condicional do campo Head Informado
-   * Se possuiImpactoOutrosTimesTI for "Sim", headInformado se torna obrigatório
-   */
   configurarValidacaoCondicionalHead(): void {
     this.gmudForm.get('possuiImpactoOutrosTimesTI')?.valueChanges.subscribe(valor => {
       const headInformadoControl = this.gmudForm.get('headInformado');
